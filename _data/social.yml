@@ -1,0 +1,7 @@
+- name: "email"
+  fa-icon: ""
+  href: "mailto:edinburghhoppers@gmail.com"
+  
+- name: "facebook"
+  fa-icon: ""
+  href: "https://www.facebook.com/edinburghhopppers/?modal=admin_todo_tour"

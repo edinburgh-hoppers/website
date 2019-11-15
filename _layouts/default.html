@@ -1,0 +1,33 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+  {% include head.html %}
+  </head>
+  <body>
+  
+  {% include nav.html %}
+  
+  <div class="container">
+    <div class="card shadow-sm border-0 mb-3 bg-light">
+      <div class="card-body">
+        <h1 class="card-title mb-3 text-center">
+          {% if page.heading %}
+            {{ page.heading }}
+          {% else %}
+            {{ page.title }}
+          {% endif %}</h1>
+        <hr class="mb-4">
+        {% if page.subheading %}
+        <h2 class="card-subtitle text-center mb-3">{{ page.subheading }}</h2>
+        {% endif %}
+        
+        {{ content }}
+      </div>
+    </div>
+  </div>
+  
+  {% include footer.html %}
+  </body>
+</html>

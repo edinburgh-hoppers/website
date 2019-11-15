@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+
+{% assign team = site.data.team %}
+
+{%- for member in team -%}
+<div class="row justify-content-{% cycle 'start', 'end' %}">
+
+  <div class="col-12 col-lg-6 my-2 my-lg-1">
+    <div class="card flex-row flex-nowrap subcard shadow-sm border-0" style="overflow: hidden">
+
+      <div class="img-center-vert border-0 card-img-xs">
+        <img src="
+          {%- if member.img -%}
+            {{ '/assets/img/team/' | append: member.img | relative_url }}
+          {%- else -%}
+           {{ '/assets/img/hoppers-logo.png' | relative_url }}
+          {%- endif -%}"
+         class="w-100 h-0">
+      </div>
+
+      <div class="card-body text-center my-auto p-1 p-md-3" style="overflow-y: hidden">
+        <h3 class="card-title" style="font-family: 'Roboto Condensed', sans-serif">{{ member.name }}</h3>
+        <h5 class="card-text text-center px-3 mb-2">{{ member.role }}</h5>
+      </div>
+    </div>
+  </div>
+    
+</div>
+{%- endfor -%}
+
+

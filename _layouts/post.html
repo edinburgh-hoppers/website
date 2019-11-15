@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+{% if page.img %}
+<div class="img-center-vert mb-3 mb-md-4" style="max-height: 400px; margin: auto -20px;">
+  <img src="{{ page.img }}" alt="" class="w-100" />
+</div>
+{% endif %}
+<div class="card-text mx-auto" style="max-width: 800px;">
+  {{ content }}
+</div>

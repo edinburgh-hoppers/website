@@ -1,0 +1,31 @@
+---
+layout: default
+name: contact
+title: Contact Us
+heading:
+subheading: "Here's how to reach us!"
+---
+
+{% assign social = site.data.social %}
+
+<div class="row justify-content-around">
+{% for item in social %}
+  <div class="col-12 col-md-4 col-lg-3 my-2 my-lg-1">
+    <a href="{{ item.href }}" class="nodecor">
+      <div class="card subcard clickable shadow-sm border-0">
+
+        {% if item.icon %}
+        <div class="card-img-top card-img-sm img-center-vert w-100">
+          <img src="{{ item.img }}" class="w-100">
+        </div>
+        {% endif %}
+
+        <div class="card-body">
+          <h4 class="card-title text-center">{{ item.name }}</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+{% endfor %}
+    
+</div>

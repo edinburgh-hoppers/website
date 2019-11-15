@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="container">
+  {% for row in site.data.partners %}
+  <div class="row partner-row justify-content-around text-center">
+    {% for partner in row %}
+      <div class="col-{{ partner.col | plus: 2}} col-md-{{ partner.col }} d-flex">
+        <img src="{{ site.baseurl }}/assets/img/partners/{{ partner.img }}.png" alt="" class="mw-100 m-auto" style="max-height: 120px">
+      </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

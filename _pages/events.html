@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+
+{% assign posts = site.posts %}
+
+<div class="row justify-content-around">
+
+<!--  temporarily link to facebook  -->
+  <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <a href="https://www.facebook.com/groups/edinburghhoppers/events/" class="nodecor">
+        <div class="card subcard clickable shadow-sm border-0">
+
+          <div class="card-img-top card-img-sm img-center-vert w-100">
+            <img src="{{ '/assets/img/hoppers-cover.png' | relative_url }}" class="w-100">
+          </div>
+
+          <div class="card-body" style="height: 160px; overflow-y: hidden">
+            <h3 class="card-title text-center">Check out our events on Facebook!</h3>
+            <p class="card-text px-3 mb-2">Our past events will appear here soon, in the meantime, check Facebook for the most updated list.</p>
+          </div>
+          <div class="card-footer border-0">
+            <code class="text-category">
+            events
+            </code>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+<!--   {%- for post in posts -%}
+
+    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+      <a href="{{ post.url | relative_url }}" class="nodecor">
+        <div class="card subcard clickable shadow-sm border-0">
+
+          <div class="card-img-top card-img-sm img-center-vert w-100">
+          {%- if post.img -%}
+            <img src="{{ post.img }}" class="w-100">
+          {%- else -%}
+            <img src="{{ '/assets/img/hoppers-cover.png' | relative_url }}" class="w-100">
+          {%- endif -%}
+          </div>
+
+          <div class="card-body" style="height: 160px; overflow-y: hidden">
+            <h3 class="card-title text-center">{{ post.title }}</h3>
+            <p class="card-text px-3 mb-2">{{ post.content | remove: '</p>' | remove: '<p>' | truncatewords: 50 }}</p>
+          </div>
+          <div class="card-footer border-0">
+            <code class="text-category">
+            {% for c in post.categories %}
+             > {{ c }}
+            {%- endfor -%}
+            </code>
+          </div>
+        </div>
+      </a>
+    </div>
+    
+  {%- endfor -%} -->
+  
+</div>

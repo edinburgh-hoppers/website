@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="row justify-content-around">
+  
+  {% for card in page.cards %}
+  
+    <div class="col-lg-{{ page.cols-per-card }} col-md-6 col-sm-12 mb-4">
+      <a href="{{ card.link }}" class="nodecor">
+        <div class="card subcard clickable shadow-sm border-0">
+         
+          {% if card.img %}
+          <div class="card-img-top card-img-sm img-center-vert w-100">
+            <img src="{{ card.img }}" class="w-100">
+          </div>
+          {% endif %}
+          
+          <div class="card-body">
+            <h3 class="card-title text-center">{{ card.title }}</h3>
+          
+              {% for item in card.content %}
+              <p class="card-text px-3 mb-2 text-center">{{ item }}</p>
+              {% endfor %}
+          </div>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+
+</div>

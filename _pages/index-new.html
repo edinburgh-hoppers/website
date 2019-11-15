@@ -1,0 +1,35 @@
+---
+layout: default
+name: index
+title:
+heading: Welcome to Hoppers!
+subheading: 
+---
+
+<div class="row justify-content-around">
+  {% for column in site.data[page.name] %}
+  <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+
+    {% capture card-content %}
+    <div class="card subcard clickable shadow-sm p-3 border-0">
+      <h3 class="card-title">{{ column.title }}</h3>
+      {% if column.img %}
+      <img class="rounded mb-3 shadow-sm" src="{{ column.img }}" width="100%" style="background-color: #fafafb" />
+      {% endif %}
+      {% for item in column.content %}
+      <p class="card-text text-center px-3 mb-2">{{ item }}</p>
+      {% endfor %}
+    </div>
+    {% endcapture %}
+
+    {% if column.link %}
+      <a href="{{ column.link }}" class="nodecor">
+        {{ card-content }}
+      </a>
+    {% else %}
+      {{ card-content }}
+    {% endif %}
+
+  </div>
+  {% endfor %}
+</div>

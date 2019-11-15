@@ -1,0 +1,26 @@
+# dash dash is equivalent to list format
+
+- - name: "School of Informatics"
+    img: inf
+    col: 6
+  
+  - name: "Google"
+    img: google
+    col: 6
+
+- - name: "RBS"
+    img: rbs
+    col: 4
+    
+  - name: "American Express"
+    img: amex
+    col: 4
+
+    
+- - name: "Skyscanner"
+    img: skyscanner
+    col: 3
+  
+  - name: "Amazon"
+    img: amazon
+    col: 3
