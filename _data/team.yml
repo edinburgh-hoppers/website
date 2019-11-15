@@ -1,24 +1,56 @@
-- name: Ojasvi Jalal 
-  img: ojasvi.jpg
+- name: Gosia Borowiec
+  img: gosia.jpg
   role: President
-    
+
+- name: Amiee Redbond
+  role: Secretary
+
+- name: Vaida Plankyte
+  img: vaida.jpg
+  role: Diversity Officer
+
 - name: Asmita Dulan
   img: asmita.jpg
-  role: Treasurer
- 
+  role: Treasurer and Head of Finance Sector
+
+- name: Ioana Buzduga
+  img: ioana.jpg
+  role: Head of Media Sector 
+
 - name: Nicole Meng
   img: nicole.jpg
-  role: Tech Sec
+  role: Head of Big Event Sector
 
-- name: Joanna Graiver
-  img: joanna.jpg
-  role: Interview Coach & Head of PR
-  
-- name: Julia Castillo
-  img: julia.jpg
-  role: Social Sec
-  
-- name: Aimee Redbond
-  img: aimee.jpg
-  role: 2nd Year Rep
-  
+- name: Alejandra Amaro
+  img: alejandra.jpg
+  role: Head of Social Sector
+
+- name: Kornelija Sukyte
+  img: kornelija.jpg
+  role: Head of Tech Sector
+
+- name: Ramlah Abeaw
+  role: Head of Media Sector
+
+- name: Sarah Kayser
+  img: sarah.jpg
+  role: Media Coordinator
+
+- name: Jacintha Chen
+  img: jacintha.jpg
+  role: Media Coordinator
+
+- name: Nuiok Dicaire
+  img: nuiok.jpg
+  role: Social Coordinator
+
+- name: Julia Castillo Trujillo
+  role: Social Coordinator
+
+- name: Marina Flores Payan
+  img: marina.jpg
+  role: Volunteer Coordinator
+
+- name: Athiya Deviyani
+  img: athiya.jpg
+  role: Interview Preparation Coach (Tech Coordinator)
