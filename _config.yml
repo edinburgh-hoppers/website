@@ -17,7 +17,7 @@ title: Edinburgh Hoppers
 email: edinburghhoppers@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Edinburgh Hoppers Official Website
-baseurl: "/hoppers-website" # the subpath of your site, e.g. /blog
+baseurl: "/website" # the subpath of your site, e.g. /blog
 url: "http://hoppers.inf.ed.ac.uk/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ~
 github_username:  ~
