@@ -14,7 +14,7 @@ git pull
 **You are strongly suggested to have a look at the [Jekyll documentation](https://jekyllrb.com/docs/home/) and familiarise yourself with it**
 
 ## jekyll installation
-Please refer to [these instructions](https://jekyllrb.com/docs/installation/) to install Jekyll on your own machine. For reference, I (@JMaio aka "lemon") am running Jekyll on [Windows Subsystem for Linux (WSL)] on [Windows 10]
+Please refer to [these instructions](https://jekyllrb.com/docs/installation/) to install Jekyll on your own machine.
 
 ## running the web server
 Jekyll runs a server on your local machine that will allow the website to be viewed on your web browser by navigating to, by default, the following address:
