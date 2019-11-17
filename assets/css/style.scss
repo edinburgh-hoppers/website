@@ -151,3 +151,32 @@ p {
   }
 }
 
+.button {
+  color: rgba(0,0,0,.5);
+  padding: .5rem!important;
+  border: 1.5px #eee solid;
+  border-radius: 0.25rem;
+}
+
+.button:hover{
+  color: rgba(0,0,0,.7);
+  text-decoration: none;
+  transition-property: background;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0,1,0.5,1);
+  transition-delay: 0s;
+  background-color: #eee;
+  border-radius: 0.25rem;
+}
+
+.button-div{
+  flex: 1 1 auto;
+  padding:0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.center-content{
+  justify-content: center;
+}
