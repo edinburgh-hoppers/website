@@ -3,28 +3,27 @@ layout: default
 ---
 
 <!-- INTRODUCTION -->
-<div class="row">
-  <div class="col-12 col-lg-8 mb-4 mb-md-0">
+<div class="row mb-4">
+  <div class="col-12 col-lg-8">
     <div class="row">
       <div class="col-md-6 col-lg-12 mb-4">
         <div class="row event-categories">
           <div class="col-12 col-lg-4 button-div">
-            <a class="button">Big Events</a>
+            <a class="button" href="#bigEvents">Big Events</a>
           </div>
           <div class="col-12 col-lg-4 button-div">
-            <a class="button">Tech Events</a>
+            <a class="button" href="#techEvents">Tech Events</a>
           </div>
           <div class="col-12 col-lg-4 button-div">
-            <a class="button">Social Events</a>
+            <a class="button" href="#socialEvents">Social Events</a>
           </div>
         </div>
       </div>
 
       <div class="col-md-6 col-lg-12">
-        <p>Over the year we organise many different events. Every semester, there is a Big Tech Event.
-         The Ada Lovelace Day in the first semester and the  International Women's Day in the second
-         semester. On a monthly basis, we host Tech Events like workshops and talks, and Socials
-         like movie nights or a mini golf get-together.</p>
+        <p>Over the year we organise many different events. Every semester, there is a Big Event.
+         On a monthly basis, we host Tech Events like workshops and talks, and Social ones like movie
+         nights or a mini golf get-together.</p>
       </div>
     </div>
   </div>
@@ -39,7 +38,26 @@ layout: default
 </div>
 
 <!-- EVENT CATEGORIES -->
-<div>
+
+<div class="row event-cards">
+
+  {% for member in site.data.event-categories %}
+
+  <div class="col-12 col-lg-4 my-4 my-lg-0" id="{{ member.link }}">
+    <div class="card subcard">
+      <div class="card-img-top img-center-vert w-100">
+        <img src="{{ site.baseurl }}/assets/img/{{ member.img }}" class="w-100"
+             alt="{{ member.name }}">
+      </div>
+
+      <div class="card-body">
+        <h3 class="card-title text-center">{{ member.name }}</h3>
+        <p class="card-text px-3 mb-2 text-center">{{ member.text }}</p>
+      </div>
+    </div>
+  </div>
+
+  {% endfor %}
 
 </div>
 

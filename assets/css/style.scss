@@ -207,6 +207,10 @@ p {
 }
 
 @media (min-width: 992px){
+  .event-categories {
+    display: none;
+  }
+
   .event-categories .button{
     margin: 0;
   }
@@ -258,4 +262,10 @@ p {
 .facebook h2 {
   color: inherit;
   margin-bottom: 1.5rem;
+}
+
+@media (min-width:992px){
+  .event-cards img {
+    height: 20%;
+  }
 }
