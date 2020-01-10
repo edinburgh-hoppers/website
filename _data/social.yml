@@ -1,5 +1,5 @@
 - name: "email"
-  href: "mailto:edinburghhoppers@gmail.com"
+  link: "mailto:edinburghhoppers@gmail.com"
   
 - name: "facebook"
-  href: "https://www.facebook.com/edinburghhopppers/?modal=admin_todo_tour"
+  link: "https://www.facebook.com/edinburghhopppers/?modal=admin_todo_tour"

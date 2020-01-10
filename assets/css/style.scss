@@ -180,3 +180,14 @@ p {
 .center-content{
   justify-content: center;
 }
+
+.sponsors div {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.sponsors img {
+  max-height: 100px;
+  margin: 1.5rem auto;
+  display: block;
+}

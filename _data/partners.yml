@@ -1,13 +1,11 @@
-# dash dash is equivalent to list format
-
-- - name: "School of Informatics"
-    img: inf
-    col: 6
+- name: "School of Informatics"
+  img: inf
+  col: 6
   
-  - name: "Google"
-    img: google
-    col: 6
+- name: "Google"
+  img: google
+  col: 6
 
-- - name: "Modulr"
-    img: modulr
-    col: 4
+- name: "Modulr"
+  img: modulr
+  col: 4

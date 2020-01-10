@@ -1,0 +1,30 @@
+<!-- nav start -->
+<nav class="nav navbar nav-pills shadow-sm navbar-expand-sm navbar-light bg-light sticky-top">
+
+<!--  toggle buttons (only on small screens)  -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+<!--  main navbar content  -->
+  <div class="collapse navbar-collapse justify-content-center align-items-center text-center" id="navbar">
+    <ul class="nav navbar-nav row">
+      <li class="navbar-brand mx-1 p-0 d-none d-sm-block">
+        <a class="nav-link" href="{{ site.baseurl }}/{{ page.data }}" style="height: 0">
+          <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="100" class="navbar-logo rounded-circle clickable clickable-sm shadow-sm">
+        </a>
+      </li>
+
+      {% for item in site.data[page.navItems] %}
+      <li class="nav-item rounded mx-1">
+        <a class="nav-link" href="{{ site.baseurl }}/{{ item.href }}">{{ item.text }}</a>
+      </li>
+      {% endfor %}
+
+    </ul>
+  </div>
+  <a href="{{ site.baseurl }}/" style="height: 0">
+    <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="96" class="navbar-logo-sm rounded-circle clickable clickable-sm shadow-sm d-sm-none m-0">
+  </a>
+</nav>
+<!-- nav end -->
