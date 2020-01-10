@@ -2,12 +2,50 @@
 layout: default
 ---
 
+<!-- INTRODUCTION -->
+<div class="row">
+  <div class="col-12 col-lg-8 mb-4 mb-md-0">
+    <div class="row">
+      <div class="col-md-6 col-lg-12 mb-4">
+        <div class="row event-categories">
+          <div class="col-12 col-lg-4 button-div">
+            <a class="button">Big Events</a>
+          </div>
+          <div class="col-12 col-lg-4 button-div">
+            <a class="button">Tech Events</a>
+          </div>
+          <div class="col-12 col-lg-4 button-div">
+            <a class="button">Social Events</a>
+          </div>
+        </div>
+      </div>
 
-{% assign posts = site.posts %}
+      <div class="col-md-6 col-lg-12">
+        <p>Over the year we organise many different events. Every semester, there is a Big Tech Event.
+         The Ada Lovelace Day in the first semester and the  International Women's Day in the second
+         semester. On a monthly basis, we host Tech Events like workshops and talks, and Socials
+         like movie nights or a mini golf get-together.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-4">
+    <div class="facebook clickable clickable-sm shadow-sm">
+      <h2>facebook</h2>
+      <p>Always up to date</p>
+      <p>Check out all our events!</p>
+    </div>
+  </div>
+</div>
+
+<!-- EVENT CATEGORIES -->
+<div>
+
+</div>
+
+<!-- temporarily link to facebook
 
 <div class="row justify-content-around">
-
-<!--  temporarily link to facebook  -->
   <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
       <a href="https://www.facebook.com/pg/edinburghhopppers/events/?ref=page_internal" class="nodecor">
         <div class="card subcard clickable shadow-sm border-0">
@@ -28,8 +66,16 @@ layout: default
         </div>
       </a>
     </div>
+</div>
+-->
 
-<!--   {%- for post in posts -%}
+
+<!-- HOW TO CODE POSTS
+
+
+  {% assign posts = site.posts %}
+
+  {%- for post in posts -%}
 
     <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
       <a href="{{ post.url | relative_url }}" class="nodecor">
@@ -58,6 +104,4 @@ layout: default
       </a>
     </div>
 
-  {%- endfor -%} -->
-
-</div>
+  {%- endfor -%}-->
