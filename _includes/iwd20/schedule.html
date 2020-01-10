@@ -1,8 +1,12 @@
 <div id="schedule">
-  {%- for member in site.data[page.schedule] -%}
-    <div>
-      <h5>{{ member.time }}</h5>
-      <p>{{ member.description }}</h5>
-    </div>
-  {%- endfor -%}
+  <table>
+    {%- for member in site.data[page.schedule] -%}
+
+    <tr>
+      <td>{{ member.time }}</td>
+      <td>{{ member.description }}</h5>
+    </tr>
+
+    {%- endfor -%}
+  </table>
 </div>

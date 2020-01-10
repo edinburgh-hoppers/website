@@ -79,6 +79,15 @@ body{
   display: inline;
 }
 
+#schedule td{
+  padding: .5rem;
+}
+
+#schedule tr td:first-child{
+  text-align: right;
+  font-weight: 500;
+}
+
 #schedule div {
   margin-bottom: 1rem;
 }
