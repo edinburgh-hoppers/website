@@ -2,6 +2,8 @@
   includeFrom: "iwd20/schedule.html"
 - title: "Location"
   includeFrom: "iwd20/location.html"
+- title: "Poster Competition"
+  includeFrom: "iwd20/posterCompetition.html"
 - title: "FAQ (Frequently asked questions)"
   includeFrom: "iwd20/faq.html"
 - title: "Sponsors"
