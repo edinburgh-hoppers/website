@@ -1,11 +1,19 @@
 - name: "School of Informatics"
   img: inf
+  link: "https://www.ed.ac.uk/informatics/undergraduate/why-study-here/student-societies"
+  width: 418px
   
 - name: "Google"
   img: google
+  link: "https://about.google/"
+  width: 296px
 
 - name: "Modulr"
   img: modulr
+  link: "https://www.modulrfinance.com/company"
+  width: 268px
 
 - name: "Amazon"
   img: amazon
+  link: "https://www.aboutamazon.co.uk/"
+  width: 325px
