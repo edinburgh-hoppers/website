@@ -1,4 +1,8 @@
 - name: Modulr
   file: modulr.png
+  link: "https://www.modulrfinance.com/company"
+  width: 269px
 - name: Amazon
   file: amazon.png
+  link: "https://www.aboutamazon.co.uk/"
+  width: 325px

@@ -1,6 +1,12 @@
 - name: Dresscode
   file: dresscode.png
+  link: "https://dresscode.org.uk/"
+  width: 447px
 - name: "School of Informatics"
   file: inf.png
+  link: "https://www.ed.ac.uk/informatics/undergraduate/why-study-here/student-societies"
+  width: 418px
 - name: HubSpot
   file: HubSpot.png
+  link: "https://www.hubspot.com/our-story"
+  width: 321px

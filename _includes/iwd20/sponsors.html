@@ -1,9 +1,11 @@
 <div id="sponsors" class="sponsors">
-  <div class="row">
+  <div class="row justify-content-center">
     {%- for member in site.data[page.sponsors] -%}
 
     <div class="col-12 col-lg-6">
-      <img src="{{ site.baseurl }}/assets/img/partners/{{ member.file }}" alt="{{ member.name }}">
+      <a href="{{ member.link }}" target="_blank" style="width: {{ member.width }}" class="d-block mx-auto">
+        <img src="{{ site.baseurl }}/assets/img/partners/{{ member.file }}" alt="{{ member.name }}">
+      </a>
     </div>
 
     {%- endfor -%}
