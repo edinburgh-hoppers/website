@@ -1,7 +1,7 @@
 - name: Dresscode
   file: dresscode.png
   link: "https://dresscode.org.uk/"
-  width: 447px
+  width: 557px
 - name: "School of Informatics"
   file: inf.png
   link: "https://www.ed.ac.uk/informatics/undergraduate/why-study-here/student-societies"
