@@ -10,7 +10,7 @@
 
     {% include nav-bigEvent.html %}
 
-    <section class="cover">
+    <section class="cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url({{'/assets/img/' | append: page.cover | relative_url}}">
       <div class="cover-inner">
         <img src="{{ '/assets/img/' | append: page.titleLogo | relative_url }}"/>
         <h1>{{ page.title }}</h1>
