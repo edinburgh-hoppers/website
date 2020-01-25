@@ -2,22 +2,22 @@
   href: 
 
 - text: "Schedule"
-  href: "iwd20#schedule"
+  href: "iwd20?pi=3#schedule"
     
 - text: "Location"
-  href: "iwd20#location"
+  href: "iwd20?pi=14#location"
 
 - text: "Poster Competition"
-  href: "iwd20#posterCompetition"
+  href: "iwd20?pi=15#posterCompetition"
 
 - text: "FAQ"
-  href: "iwd20#faq"
+  href: "iwd20?pi=92#faq"
 
 - text: "Sponsors"
-  href: "iwd20#sponsors"
+  href: "iwd20?pi=65#sponsors"
 
 - text: "Partners"
-  href: "iwd20#partners"
+  href: "iwd20?pi=35#partners"
 
 - text: "Contact Us"
-  href: "iwd20#contact"
+  href: "iwd20?pi=89#contact"
