@@ -207,8 +207,13 @@ p {
 }
 
 @media (min-width: 992px){
+  .event-categories-wrapper{
+    display: none;
+  }
+
   .event-categories {
     display: none;
+    margin: 0;
   }
 
   .event-categories .button{
@@ -263,6 +268,32 @@ p {
   color: inherit;
   margin-bottom: 1.5rem;
 }
+
+.announcement {
+  color: #ffffff;
+  text-align: center;
+
+  background-color: $hoppers-green;
+  margin: 0;
+  padding: 1rem;
+  border-radius: .25rem;
+}
+
+.announcement p {
+  color: inherit;
+  text-align: inherit;
+  margin-bottom: 0.75rem;
+}
+
+.announcement h2 {
+  color: inherit;
+  margin-bottom: 0.75rem;
+}
+
+.announcement h4 {
+  margin-bottom: 1.5rem;
+}
+
 
 @media (min-width:992px){
   .event-cards img {
