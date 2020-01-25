@@ -1,9 +1,13 @@
-<div id="sponsors" class="sponsors row">
-  {%- for member in site.data[page.sponsors] -%}
+<div id="sponsors" class="sponsors">
+  <div class="row">
+    {%- for member in site.data[page.sponsors] -%}
 
-  <div class="col-12 col-lg-6">
-    <img src="{{ site.baseurl }}/assets/img/partners/{{ member.file }}" alt="{{ member.name }}">
+    <div class="col-12 col-lg-6">
+      <img src="{{ site.baseurl }}/assets/img/partners/{{ member.file }}" alt="{{ member.name }}">
+    </div>
+
+    {%- endfor -%}
+
   </div>
 
-  {%- endfor -%}
 </div>
