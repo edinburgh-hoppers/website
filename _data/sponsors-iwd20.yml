@@ -1,2 +1,4 @@
-- name: HubSpot
-  file: HubSpot.png
+- name: Modulr
+  file: modulr.png
+- name: Amazon
+  file: amazon.png

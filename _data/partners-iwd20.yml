@@ -1,0 +1,6 @@
+- name: Dresscode
+  file: dresscode.png
+- name: "School of Informatics"
+  file: inf.png
+- name: HubSpot
+  file: HubSpot.png

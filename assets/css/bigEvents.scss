@@ -60,11 +60,11 @@ body{
   margin-top: 2rem;
 }
 
-#schedule::before, #location::before, #faq::before, #sponsors::before, #contact::before, #posterCompetition::before {
+#schedule::before, #location::before, #faq::before, #sponsors::before, #contact::before, #posterCompetition::before, #partners::before {
   display: block;
   content: " ";
-  margin-top: -160px;
-  height: 160px;
+  margin-top: -200px;
+  height: 200px;
   visibility: hidden;
   pointer-events: none;
 }
