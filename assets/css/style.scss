@@ -270,28 +270,23 @@ p {
 }
 
 .announcement {
-  color: #ffffff;
-  text-align: center;
-
-  background-color: $hoppers-green;
   margin: 0;
-  padding: 1rem;
   border-radius: .25rem;
+  width: 100%;
+
+  border: 1px solid #ccc;
+
+  color: #fff;
+  text-align: center;
+  background-color: $hoppers-green;
 }
 
-.announcement p {
-  color: inherit;
-  text-align: inherit;
-  margin-bottom: 0.75rem;
+.announcement img {
+  width: 100%;
 }
 
-.announcement h2 {
-  color: inherit;
-  margin-bottom: 0.75rem;
-}
-
-.announcement h4 {
-  margin-bottom: 1.5rem;
+.announcement h5 {
+  padding: 0.5rem 0 0.25rem;
 }
 
 
@@ -299,4 +294,10 @@ p {
   .event-cards img {
     height: 20%;
   }
+}
+
+.shadow-btn {
+  -webkit-box-shadow: 5px 5px 4px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    5px 5px 4px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 4px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
