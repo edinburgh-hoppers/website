@@ -7,7 +7,7 @@ layout: default
   {% for member in site.data.partners %}
 
   <div class="col-12 col-lg-6">
-    <a href="{{ member.link }}" target="_blank" style="width: {{ member.width }}" class="d-block mx-auto">
+    <a href="{{ member.link }}" target="_blank" style="width: {{ member.width }}; max-width:100%;" class="d-block mx-auto">
       <img src="{{ site.baseurl }}/assets/img/partners/{{ member.img }}.png" alt="{{ member.name }}">
     </a>
   </div>
