@@ -16,7 +16,15 @@
         <h1>{{ page.title }}</h1>
         <h3>{{ page.subtitle }}</h3>
         <h4>{{ page.day }}</h4>
-        <a class="cover-btn" target="_blank" href="{{ page.facebook }}">Facebook</a>
+        <div class="row center-content align-items-center">
+          <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
+            <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
+            <!-- later: delete style attribute, add classes: clickable clickable-sm shadow-sm -->
+            <a style="background-color: #aaa; pointer-events: none; cursor: default;" class="button" target="_blank" href="">Book Tickets - Opening Soon</a>
+          </div>
+        </div>
       </div>
     </section>
     <main class="event-info">
