@@ -3,17 +3,19 @@
 - time: "10:00"
   description: "Welcome from Hoppers"
 - time: "10:15"
-  description: "Keynote by Katie Ho, the founder of Hoppers"
+  description: "Keynote by Kate Ho, Hoppers' Founder and First President"
 - time: "11:30"
   description: "Break"
 - time: "11:45"
-  description: "Series of short talks (TBC)"
-- time: "12:30"
+  description: "Lightning Talks
+                <ul><li>Toni Scullion from Dresscode</li>
+                <li>Nadia from HubSpot on the importance of side project and how to combine python and crocheting</li></ul>"
+- time: "13:00"
   description: "Lunch and Poster Session with Prizes"
 - time: "14:00"
-  description: "Workshops (2 running in parallel) (TBC)"
-- time: "15:30"
-  description: "Break"
+  description: "Workshops
+                <ul><li>GDG Edinburgh (Google Developer Group)&#58; TensorFlow Workshop</li>
+                <li>HubSpot&#58; How to build a React WebApp</li></ul>"
 - time: "16:00"
   description: "&ldquo;Future Challenges&rdquo; - Discussion competition with tech leaders"
 - time: "17:00"
