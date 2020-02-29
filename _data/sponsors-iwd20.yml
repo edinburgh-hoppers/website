@@ -6,3 +6,19 @@
   file: amazon.png
   link: "https://www.aboutamazon.co.uk/"
   width: 325px
+- name: "GDG Edinburgh"
+  file: GDG-logo.png
+  link: "https://www.meetup.com/de-DE/gdg-edinburgh/"
+  width: 355px
+- name: "SmartSheet"
+  file: smartsheet.png
+  link: "https://www.smartsheet.com/"
+  width: 560px
+- name: "HubSpot"
+  file: HubSpot.png
+  link: "https://www.hubspot.com/our-story"
+  width: 321px
+- name: "Nexmo"
+  file: nexmo.png
+  link: https://www.nexmo.com/
+  width: 460px
