@@ -12,8 +12,8 @@
   description: "Lunch and Poster Competition"
 - time: "14:00"
   description: "Workshops
-                <ul><li>React Workshop by HubSpot</li>
-                <li>Tensorflow Workshop by GDG Edinburgh</li></ul>"
+                <ul><li>&ldquo;Get started with ML Explainability and Trust&rdquo; by HubSpot</li>
+                <li>&ldquo;Make your first web app&rdquo; by GDG Edinburgh</li></ul>"
 - time: "15:30"
   description: "Refreshments"
 - time: "16:00"
