@@ -8,12 +8,13 @@
   description: "Refreshments"
 - time: "11:45"
   description: "Series of Lightning Talks by HubSpot, Dresscode and SmartSheet"
+  content: "addContentTalks"
 - time: "13:00"
   description: "Lunch and Poster Competition"
 - time: "14:00"
-  description: "Workshops
-                <ul><li>&ldquo;Build Your First Web App Workshop&rdquo; by HubSpot</li>
-                <li>&ldquo;Get started with ML Explainability and Trust - Trensorflow Workshop&rdquo;
+  description: "Workshops"
+  content: "<ul><li>&ldquo;Build Your First Web App Workshop&rdquo; by HubSpot</li>
+           <li>&ldquo;Get started with ML Explainability and Trust - Trensorflow Workshop&rdquo;
                     by GDG Edinburgh</li></ul>"
 - time: "15:30"
   description: "Refreshments"

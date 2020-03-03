@@ -2,10 +2,26 @@
   <table>
     {%- for member in site.data[page.schedule] -%}
 
-    <tr>
-      <td>{{ member.time }}</td>
-      <td>{{ member.description }}</h5>
-    </tr>
+      <tr>
+        <td class="time">{{ member.time }}</td>
+        <td>{{ member.description }}</h5>
+      </tr>
+
+      {%- if member.content -%}
+      <tr>
+        <td colspan="2">
+          {%- if member.content == "addContentTalks" -%}
+            <div class="d-flex flex-row justify-content-around flex-wrap align-content-between">
+              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Toni.png" alt="Information about Toni's talk">
+              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Nadia.png" alt="Information about Nadia's talk">
+              <img src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Jean.png" alt="Information about Jean's talk">
+            </div>
+          {%- elsif member.content -%}
+            {{ member.content }}
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- endif -%}
 
     {%- endfor -%}
   </table>

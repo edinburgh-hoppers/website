@@ -83,9 +83,14 @@ body{
   padding: .5rem;
 }
 
-#schedule tr td:first-child{
+#schedule tr .time{
   text-align: right;
   font-weight: 500;
+}
+
+#schedule img{
+  width: 200px;
+  border: 2px solid #aaa;
 }
 
 #schedule div {
