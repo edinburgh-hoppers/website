@@ -89,8 +89,16 @@ body{
 }
 
 #schedule img{
-  width: 200px;
   border: 2px solid #aaa;
+}
+
+#schedule .portrait-imgs img{
+  width: 200px;
+}
+
+#schedule .info-imgs img{
+  max-width: 45%;
+  min-width: 400px;
 }
 
 #schedule div {

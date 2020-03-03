@@ -13,9 +13,7 @@
   description: "Lunch and Poster Competition"
 - time: "14:00"
   description: "Workshops"
-  content: "<ul><li>&ldquo;Build Your First Web App Workshop&rdquo; by HubSpot</li>
-           <li>&ldquo;Get started with ML Explainability and Trust - Trensorflow Workshop&rdquo;
-                    by GDG Edinburgh</li></ul>"
+  content: "addContentWorkshops"
 - time: "15:30"
   description: "Refreshments"
 - time: "16:00"

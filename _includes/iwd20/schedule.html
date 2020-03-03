@@ -1,5 +1,8 @@
+{% assign img_div = "d-flex flex-row justify-content-around flex-wrap align-content-between" %}
+{% assign img_path = "/assets/img/events/iwd20-schedule/" %}
+
 <div id="schedule">
-  <table>
+  <table style="width: 100%">
     {%- for member in site.data[page.schedule] -%}
 
       <tr>
@@ -11,13 +14,16 @@
       <tr>
         <td colspan="2">
           {%- if member.content == "addContentTalks" -%}
-            <div class="d-flex flex-row justify-content-around flex-wrap align-content-between">
-              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Toni.png" alt="Information about Toni's talk">
-              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Nadia.png" alt="Information about Nadia's talk">
-              <img src="{{ site.baseurl }}/assets/img/events/iwd20-schedule/Jean.png" alt="Information about Jean's talk">
+            <div class="{{ img_div }} portrait-imgs">
+              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}{{ img_path }}Toni.png" alt="Information about Toni's talk">
+              <img class="mb-3 mb-md-0" src="{{ site.baseurl }}{{ img_path }}Nadia.png" alt="Information about Nadia's talk">
+              <img src="{{ site.baseurl }}{{ img_path }}Jean.png" alt="Information about Jean's talk">
             </div>
-          {%- elsif member.content -%}
-            {{ member.content }}
+          {%- elsif member.content == "addContentWorkshops" -%}
+            <div class="{{ img_div }} info-imgs">
+              <img class="mb-2 mb-lg-0" src="{{ site.baseurl }}{{ img_path }}hubspot_workshop.png" alt="Information about workshop by HubSpot">
+              <img src="{{ site.baseurl }}{{ img_path }}GDG_workshop.png" alt="Information about workshop by GDG">
+            </div>
           {%- endif -%}
         </td>
       </tr>
