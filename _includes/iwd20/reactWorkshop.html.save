@@ -1,0 +1,48 @@
+<div id="reactWorkshop">
+  <p>Hey there,</p>
+  <p>We are really looking forward to meeting you for the International Women's Day event and workshop! One thing
+     you will need to bring is your own machines and chargers.</p>
+  <p>We also require that you complete the tasks below before Saturday so that you are ready to go when you get to
+     the workshop:</p>
+
+  <ol>
+    <li>Create Heroku account (primary language = node) - https://signup.heroku.com/</li>
+    <li>Download and install heroku's command line tools - https://toolbelt.heroku.com/</li>
+    <li>Create Github account - https://github.com/join</li>
+    <li>Download and install github's command line tools -Hey there, 
+
+We are really looking forward to meeting you for the International Women's Day event and workshop!  One thing you will need to bring is your own machines and chargers.
+
+We also require that you complete the tasks below before Saturday so that you are ready to go when you get to the workshop : 
+
+ Create Heroku account (primary language = node) - https://signup.heroku.com/
+ Download and install heroku's command line tools - https://toolbelt.heroku.com/
+ Create Github account - https://github.com/join
+Download and install github's command line tools -- https://help.github.com/articles/set-up-git/#setting-up-git
+Download and install Node.js (latest LTS version of node js is 10.13.0 not the Latest LTS Version: v6.10.1) - https://nodejs.org/en/download/ 
+ Download and install a text editor (I recommend sublime text- https://www.sublimetext.com/3)
+
+It is really important for us that every tool is installed, so we can start the workshop on time on Saturday, and help you build your web app! If you are having any trouble with the above tasks please plan to arrive at the event a little early and we will be more
+than happy to assist you with getting set up.
+
+Thanks so much and we can't wait to meet everyone on the day! 
+
+See you at the event!  
+Nadia, Sarah, Conor & Steph 
+HubSpot
+Dublin 
+
+ https://help.github.com/articles/set-up-git/#setting-up-git</li>
+    <li>Download and install Node.js (latest LTS version of node js is 10.13.0 not the Latest LTS Version: v6.10.1) - https://nodejs.org/en/download/ </li>
+    <li>Download and install a text editor (I recommend sublime text- https://www.sublimetext.com/3)</li>
+  </ol>
+
+  <p>It is really important for us that every tool is installed, so we can start the workshop on time on Saturday,
+     and help you build your web app! If you are having any trouble with the above tasks please plan to arrive at
+     the event a little early and we will be more than happy to assist you with getting set up.</p>
+  <p>Thanks so much and we can't wait to meet everyone on the day!</p>
+  <p>See you at the event!<br>
+     Nadia, Sarah, Conor & Steph<br>
+     HubSpot<br>
+     Dublin</p>
+</div>

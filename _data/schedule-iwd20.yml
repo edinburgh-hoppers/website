@@ -3,7 +3,7 @@
 - time: "10:00"
   description: "Welcome from Hoppers and our Head of School Jane Hillston"
 - time: "10:15"
-  description: "Keynote given by Hoppers' Founder and First President Kate Ho"
+  description: "Keynote by Hoppers' Founder and First President Kate Ho"
 - time: "11:30"
   description: "Refreshments"
 - time: "11:45"
@@ -12,11 +12,12 @@
   description: "Lunch and Poster Competition"
 - time: "14:00"
   description: "Workshops
-                <ul><li>&ldquo;Get started with ML Explainability and Trust&rdquo; by HubSpot</li>
-                <li>&ldquo;Make your first web app&rdquo; by GDG Edinburgh</li></ul>"
+                <ul><li>&ldquo;Build Your First Web App Workshop&rdquo; by HubSpot</li>
+                <li>&ldquo;Get started with ML Explainability and Trust - Trensorflow Workshop&rdquo;
+                    by GDG Edinburgh</li></ul>"
 - time: "15:30"
   description: "Refreshments"
 - time: "16:00"
   description: "&ldquo;Future Challenges&rdquo; Discussion competition"
-- time: "17:00"
+- time: "17:30"
   description: "Reception and Prize Giving and Networking"
