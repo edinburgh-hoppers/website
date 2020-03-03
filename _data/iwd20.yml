@@ -1,5 +1,7 @@
 - title: "Schedule"
   includeFrom: "iwd20/schedule.html"
+- title: "Instructions for React Workshop"
+  includeFrom: "iwd20/reactWorkshop.html"
 - title: "Location"
   includeFrom: "iwd20/location.html"
 - title: "Poster Competition"

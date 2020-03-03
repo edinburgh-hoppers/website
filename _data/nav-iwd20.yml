@@ -3,6 +3,9 @@
 
 - text: "Schedule"
   href: "iwd20?pi=3#schedule"
+
+- text: "Instructions for React Workshop"
+  href: "iwd20?pi=22#reactWorkshop"
     
 - text: "Location"
   href: "iwd20?pi=14#location"
