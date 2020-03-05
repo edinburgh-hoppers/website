@@ -97,8 +97,14 @@ body{
 }
 
 #schedule .info-imgs img{
-  max-width: 45%;
-  min-width: 400px;
+  width: 90%;
+}
+
+@media (min-width: 600px){
+  #schedule .info-imgs img{
+    width: 45%;
+    min-width: 400px;
+  }
 }
 
 #schedule div {
