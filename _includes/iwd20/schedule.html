@@ -13,7 +13,15 @@
       {%- if member.content -%}
       <tr>
         <td colspan="2">
-          {%- if member.content == "addContentTalks" -%}
+          {%- if member.content == "addContentBreakfast" -%}
+            <div class="{{ img_div }} breakfast">
+              <img src="{{ site.baseurl }}{{ img_path }}breakfast.png" alt="Information about Breakfast">
+            </div>
+          {%- elsif member.content == "addContentKate" -%}
+            <div class="{{ img_div }} breakfast">
+              <img src="{{ site.baseurl }}{{ img_path }}Kate.png" alt="Information about Kate">
+            </div>
+          {%- elsif member.content == "addContentTalks" -%}
             <div class="{{ img_div }} portrait-imgs">
               <img class="mb-3 mb-md-0" src="{{ site.baseurl }}{{ img_path }}Toni.png" alt="Information about Toni's talk">
               <img class="mb-3 mb-md-0" src="{{ site.baseurl }}{{ img_path }}Nadia.png" alt="Information about Nadia's talk">

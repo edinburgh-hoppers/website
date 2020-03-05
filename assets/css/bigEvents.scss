@@ -90,20 +90,25 @@ body{
 
 #schedule img{
   border: 2px solid #aaa;
-}
-
-#schedule .portrait-imgs img{
-  width: 200px;
-}
-
-#schedule .info-imgs img{
   width: 90%;
 }
 
+#schedule .breakfast img{
+  width: 100%;
+}
+
 @media (min-width: 600px){
+  #schedule .breakfast img{
+    max-width: 700px;
+  }
+
+  #schedule .portrait-imgs img{
+    width: 25%;
+    min-width: 200px;
+  }
+
   #schedule .info-imgs img{
-    width: 45%;
-    min-width: 400px;
+    width: 450px;
   }
 }
 
