@@ -32,6 +32,12 @@
               <img class="mb-2 mb-lg-0" src="{{ site.baseurl }}{{ img_path }}hubspot_workshop.png" alt="Information about workshop by HubSpot">
               <img src="{{ site.baseurl }}{{ img_path }}GDG_workshop.png" alt="Information about workshop by GDG">
             </div>
+          {%- elsif member.content == "addContentLogos" -%}
+            <div class="{{ img_div }} logos">
+              <img class="mb-2 mb-md-0" src="{{ site.baseurl }}/assets/img/partners/freeagent.png" alt="FreeAgent">
+              <img class="mb-2 mb-md-0" src="{{ site.baseurl }}/assets/img/partners/HubSpot.png" alt="HubSpot">
+              <img src="{{ site.baseurl }}/assets/img/partners/smartsheet.png" alt="smartsheet">
+            </div>
           {%- endif -%}
         </td>
       </tr>

@@ -20,5 +20,6 @@
   description: "Refreshments"
 - time: "16:00"
   description: "&ldquo;Future Challenges&rdquo; Discussion competition"
+  content: "addContentLogos"
 - time: "17:30"
   description: "Reception and Prize Giving and Networking"
