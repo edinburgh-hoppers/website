@@ -2,17 +2,17 @@
 {% assign img_path = "/assets/img/events/iwd20-schedule/" %}
 
 <div id="schedule">
-  <table style="width: 100%">
+  <table>
     {%- for member in site.data[page.schedule] -%}
 
-      <tr>
-        <td class="time">{{ member.time }}</td>
-        <td>{{ member.description }}</h5>
+      <tr style="padding: 5px;">
+        <td class="time bd-l bd-t {% unless member.content %}bd-b{% endunless %}">{{ member.time }}</td>
+        <td class="bd-t bd-r {% unless member.content %}bd-b{% endunless %}">{{ member.description }}</h5>
       </tr>
 
       {%- if member.content -%}
       <tr>
-        <td colspan="2">
+        <td colspan="2" class="bd-l bd-r bd-b">
           {%- if member.content == "addContentBreakfast" -%}
             <div class="{{ img_div }} breakfast">
               <img src="{{ site.baseurl }}{{ img_path }}breakfast.png" alt="Information about Breakfast">

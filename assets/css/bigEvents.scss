@@ -125,6 +125,26 @@ body{
   margin-bottom: 1rem;
 }
 
+#schedule table {
+  width: 100%;
+}
+
+#schedule .bd-l{
+  border-left: 2px #aaa solid;
+}
+
+#schedule .bd-r{
+  border-right: 2px #aaa solid;
+}
+
+#schedule .bd-t{
+  border-top: 2px #aaa solid;
+}
+
+#schedule .bd-b{
+  border-bottom: 2px #aaa solid;
+}
+
 #location iframe {
   margin: auto;
   display: block;
