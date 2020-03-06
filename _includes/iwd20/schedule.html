@@ -5,14 +5,14 @@
   <table>
     {%- for member in site.data[page.schedule] -%}
 
-      <tr style="padding: 5px;">
-        <td class="time bd-l bd-t {% unless member.content %}bd-b{% endunless %}">{{ member.time }}</td>
-        <td class="bd-t bd-r {% unless member.content %}bd-b{% endunless %}">{{ member.description }}</h5>
+      <tr>
+        <td class="time {% unless member.content or member.last == "true" %}bd-b{% endunless %}">{{ member.time }}</td>
+        <td class="{% unless member.content or member.last == "true" %}bd-b{% endunless %}">{{ member.description }}</h5>
       </tr>
 
       {%- if member.content -%}
       <tr>
-        <td colspan="2" class="bd-l bd-r bd-b">
+        <td colspan="2" class="bd-b">
           {%- if member.content == "addContentBreakfast" -%}
             <div class="{{ img_div }} breakfast">
               <img src="{{ site.baseurl }}{{ img_path }}breakfast.png" alt="Information about Breakfast">
