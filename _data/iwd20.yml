@@ -2,6 +2,8 @@
   includeFrom: "iwd20/schedule.html"
 - title: "Instructions for HubSpot Workshop"
   includeFrom: "iwd20/hubSpotWorkshop.html"
+- title: "Challenges"
+  includeFrom: "iwd20/challenges.html"
 - title: "Location"
   includeFrom: "iwd20/location.html"
 - title: "Poster Competition"
