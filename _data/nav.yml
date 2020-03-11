@@ -1,13 +1,14 @@
-left:
-  - text: "Events"
-    href: events
-  
-  - text: "Team"
-    href: team
+- text: "Events"
+  href: events
+ 
+- text: "Team"
+  href: team
 
-right:
-  - text: "Partners"
-    href: partners
+- text: "Constitution"
+  href: constitution
+
+- text: "Partners"
+  href: partners
     
-  - text: "Contact Us"
-    href: contact
+- text: "Contact Us"
+  href: contact

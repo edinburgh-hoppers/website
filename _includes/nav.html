@@ -15,18 +15,11 @@
         </a>
       </li>
 
-      {% for item in site.data.nav.left %}
+      {% for item in site.data.nav %}
       <li class="nav-item rounded mx-1">
         <a class="nav-link" href="{{ site.baseurl }}/{{ item.href }}">{{ item.text }}</a>
       </li>
       {% endfor %}
-
-      {% for item in site.data.nav.right %}
-      <li class="nav-item rounded mx-1">
-        <a class="nav-link" href="{{ site.baseurl }}/{{ item.href }}">{{ item.text }}</a>
-      </li>
-      {% endfor %}
-
     </ul>
   </div>
   <a href="{{ site.baseurl }}/" style="height: 0">
