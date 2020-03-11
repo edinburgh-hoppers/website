@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<!-- Special Announcement: IWD 2020 -->
+<!-- Special Announcement Template -->
 
+<!--
+add EVENT-TITLE and BANNER image
 <div class="col-12 mb-4">
-  <a href="{{ site.baseurl }}/iwd20" class="nodecor" target="_blank">
+  <a href="{{ site.baseurl }}/EVENT-TITLE" class="nodecor" target="_blank">
     <div class="announcement clickable clickable-sm shadow-btn">
-      <img src="{{ site.baseurl }}/assets/img/events/iwd20_banner.png">
+      <img src="{{ site.baseurl }}/assets/img/events/BANNER.png">
       <h5>Click here for more information!</h5>
     </div>
   </a>
 </div>
+-->
 
 
 <!-- INTRODUCTION -->
@@ -66,7 +69,7 @@ layout: default
 
       <div class="card-body">
         <h3 class="card-title text-center">{{ member.name }}</h3>
-        <p class="card-text px-3 mb-2 text-center">{{ member.text }}</p>
+        <p class="card-text px-3 mb-2 text-center">{% include {{ member.includeFrom }} %}</p>
       </div>
     </div>
   </div>
@@ -74,66 +77,3 @@ layout: default
   {% endfor %}
 
 </div>
-
-<!-- temporarily link to facebook
-
-<div class="row justify-content-around">
-  <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-      <a href="https://www.facebook.com/pg/edinburghhopppers/events/?ref=page_internal" class="nodecor">
-        <div class="card subcard clickable shadow-sm border-0">
-
-          <div class="card-img-top card-img-sm img-center-vert w-100">
-            <img src="{{ '/assets/img/hoppers-cover.png' | relative_url }}" class="w-100">
-          </div>
-
-          <div class="card-body" style="height: 160px; overflow-y: hidden">
-            <h3 class="card-title text-center">Check out our events on Facebook!</h3>
-            <p class="card-text px-3 mb-2">Our past events will appear here soon, in the meantime, check Facebook for the most updated list.</p>
-          </div>
-          <div class="card-footer border-0">
-            <code class="text-category">
-            events
-            </code>
-          </div>
-        </div>
-      </a>
-    </div>
-</div>
--->
-
-
-<!-- HOW TO CODE POSTS
-
-
-  {% assign posts = site.posts %}
-
-  {%- for post in posts -%}
-
-    <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
-      <a href="{{ post.url | relative_url }}" class="nodecor">
-        <div class="card subcard clickable shadow-sm border-0">
-
-          <div class="card-img-top card-img-sm img-center-vert w-100">
-          {%- if post.img -%}
-            <img src="{{ post.img }}" class="w-100">
-          {%- else -%}
-            <img src="{{ '/assets/img/hoppers-cover.png' | relative_url }}" class="w-100">
-          {%- endif -%}
-          </div>
-
-          <div class="card-body" style="height: 160px; overflow-y: hidden">
-            <h3 class="card-title text-center">{{ post.title }}</h3>
-            <p class="card-text px-3 mb-2">{{ post.content | remove: '</p>' | remove: '<p>' | truncatewords: 50 }}</p>
-          </div>
-          <div class="card-footer border-0">
-            <code class="text-category">
-            {% for c in post.categories %}
-             > {{ c }}
-            {%- endfor -%}
-            </code>
-          </div>
-        </div>
-      </a>
-    </div>
-
-  {%- endfor -%}-->
