@@ -1,0 +1,16 @@
+- role: President
+  nominees:
+    - name: Test Alla Testa
+      pictureLink: test.png
+      manifestLink: http://www.google.com
+    - name: Harry Potter
+      pictureLink: test.png
+      manifestLink: https://www.wizardingworld.com/writing-by-jk-rowling
+    - name: Another HP Character
+      pictureLink: test.png
+      manifestLink: https://www.wizardingworld.com/writing-by-jk-rowling
+- role: Secretary
+  nominees:
+    - name: Some One
+      pictureLink: test.png
+      manifestlink: http://www.google.com

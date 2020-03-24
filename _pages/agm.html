@@ -13,3 +13,21 @@ title: AGM
 </div>
 
 The role descriptions can be found on our facebook: <a href="https://www.facebook.com/events/2658506030945911/" target="_blank">AGM Online</a>.
+
+<!--
+  {%- for member in site.data.agm20 -%}
+  <h3>{{ member.role }}</h3>
+  <div class="d-flex flex-row justify-content-around">
+    {%- for person in member.nominees -%}
+    <div class="col-8 col-md-4 mb-4">
+      <a href="{{ person.manifestLink }}" class="nodecor" target="_blank">
+        <div class="announcement clickable clickable-sm shadow-btn">
+          <img src="{{ site.baseurl }}/assets/img/events/AGM20-nominations/{{ person.pictureLink }}">
+          <h5>{{ person.name }}</h5>
+        </div>
+      </a>
+    </div>
+    {%- endfor -%}
+  </div>
+  {%- endfor -%}
+-->
