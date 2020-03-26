@@ -1,10 +1,25 @@
-{% assign social = site.data.social %}
+{% assign socials = site.data.social %}
 
-<div class="row center-content">
-{% for item in social %}
-  <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
-    <a class="button clickable clickable-sm shadow-sm" href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+<div class="row justify-content">
+  {% for item in socials %}
+  <div class="col-12 col-md-6 col-lg-3 mb-4">
+    {% if item.link %}
+      <a href="{{ item.link }}" class="nodecor" target="_blank">
+        <div class="announcement clickable clickable-sm shadow-btn">
+          <h5>{{ item.name }}</h5>
+          <div class="announcement-description">
+            <h6>{{ item.description }}</h6>
+          </div>
+        </div>
+      </a>
+    {% else %}
+      <div class="announcement">
+        <h5>{{ item.name }}</h5>
+        <div class="announcement-description">
+          <h6>{{ item.description }}</h6>
+        </div>
+      </div>
+    {% endif %}
   </div>
-{% endfor %}
+  {% endfor %}
 </div>
-

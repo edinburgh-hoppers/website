@@ -1,5 +1,18 @@
 - name: "email"
-  link: "mailto:edinburghhoppers@gmail.com"
+  description: "Feel free to write us an email to edinburghhoppers@gmail.com!"
   
 - name: "facebook"
+  description: "Click here to see all our events on @edinburghhoppers!"
   link: "https://www.facebook.com/edinburghhopppers/?modal=admin_todo_tour"
+
+- name: "LinkedIn"
+  description: "Keep up to date by following us on LinkedIn. Click here to see more!"
+  link: "https://www.linkedin.com/company/hoppers-society-women-in-tech/"
+
+- name: "Instagram"
+  description: "Click here to see what's going on in Hoppers!"
+  link: "https://www.instagram.com/edinburghuniversityhoppers/?hl=de"
+
+- name: "twitter"
+  description: "Click here to visit us at @edihoppers!"
+  link: "https://twitter.com/edihoppers"

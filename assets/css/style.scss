@@ -290,6 +290,15 @@ p {
   padding: 0.5rem 0 0.25rem;
 }
 
+.announcement-description {
+  color: #000;
+  background-color: #fff;
+
+  padding: 0.5rem;
+
+  border: 3px solid $hoppers-green;
+  border-radius: 0.5rem;
+}
 
 @media (min-width:992px){
   .event-cards img {
