@@ -1,16 +1,26 @@
 - role: President
   nominees:
-    - name: Test Alla Testa
-      pictureLink: test.png
-      manifestLink: http://www.google.com
-    - name: Harry Potter
-      pictureLink: test.png
-      manifestLink: https://www.wizardingworld.com/writing-by-jk-rowling
-    - name: Another HP Character
-      pictureLink: test.png
-      manifestLink: https://www.wizardingworld.com/writing-by-jk-rowling
+    - name: Alice Vlasov
+      pictureLink: Alice-Vlasov.jpg
+      manifestName: Alice-Vlasov.pdf
+    - name: Ioana Buzduga
+      pictureLink: Ioana-Buzduga.jpg
+      manifestName: Ioana-Buzduga.docx
 - role: Secretary
   nominees:
-    - name: Some One
-      pictureLink: test.png
-      manifestlink: http://www.google.com
+    - name: Gosia Borowiec
+      pictureLink: Gosia-Borowiec.jpeg
+      manifestName: Borowiec.pdf
+    - name: Siang Jun Teo
+      pictureLink: default.png
+      manifestName: Siang-Jun-Teo.pdf
+- role: Treasurer
+  nominees:
+    - name: Ioana Buzduga
+      pictureLink: Ioana-Buzduga.jpg
+      manifestName: Ioana-Buzduga.docx
+- role: Diversity and Wellness Officer
+  nominees:
+    - name: Siang Jun Teo
+      pictureLink: default.png
+      manifestName: Siang-Jun-Teo.pdf
