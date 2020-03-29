@@ -1,25 +1,32 @@
 {% assign socials = site.data.social %}
 
-<div class="row justify-content">
+<div class="row center-content">
   {% for item in socials %}
-  <div class="col-12 col-md-6 col-lg-3 mb-4">
-    {% if item.link %}
+  {% if item.link == "" %}
+    <div class="col-12 col-md-6 col-lg-4 mb-4">
       <a href="{{ item.link }}" class="nodecor" target="_blank">
-        <div class="announcement clickable clickable-sm shadow-btn">
+        <div class="announcement">
           <h5>{{ item.name }}</h5>
           <div class="announcement-description">
             <h6>{{ item.description }}</h6>
           </div>
         </div>
       </a>
-    {% else %}
-      <div class="announcement">
-        <h5>{{ item.name }}</h5>
-        <div class="announcement-description">
-          <h6>{{ item.description }}</h6>
-        </div>
-      </div>
-    {% endif %}
   </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div class="row justify-content-center align-items-center announcement p-3 col-12 col-md-7 col-lg-5 col-xl-4 m-auto">
+  {% for item in socials %}
+  {% unless item.link == "" %}
+  <div class="col-3">
+      <a href="{{ item.link }}" class="nodecor" target="_blank">
+        <div class="clickable clickable-sm">
+          <img style="width:100%;" src="{{ site.baseurl }}/assets/img/socials/{{ item.img }}"/>
+        </div>
+      </a>
+  </div>
+  {% endunless %}
   {% endfor %}
 </div>
