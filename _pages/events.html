@@ -2,6 +2,10 @@
 layout: default
 ---
 
+<!-- To include events from facebook -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v6.0"></script>
+
 <!-- Special Announcement Template -->
 
 <!--
@@ -19,7 +23,7 @@ add EVENT-TITLE and BANNER image
 
 <!-- INTRODUCTION -->
 <div class="row mb-4">
-  <div class="col-12 col-lg-8">
+  <div class="col-12">
     <div class="row">
       <div class="col-md-6 col-lg-12 mb-4 event-categories-wrapper">
         <div class="row event-categories">
@@ -42,15 +46,15 @@ add EVENT-TITLE and BANNER image
       </div>
     </div>
   </div>
+</div>
 
-  <div class="col-12 col-lg-4">
-    <a href="https://www.facebook.com/edinburghhopppers/events/" class="nodecor" target="_blank">
-      <div class="facebook clickable clickable-sm shadow-btn">
-        <h2>facebook</h2>
-        <p>Always up to date</p>
-        <p>Click here to see all our events!</p>
-      </div>
-    </a>
+<div class="row center-content mb-4">
+  <div class="col-11 col-md-7 col-lg-5 col-xl-4 announcement">
+    <div class="fb-page mt-3 mb-3" data-href="https://www.facebook.com/edinburghhopppers/" data-tabs="events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+      <blockquote cite="https://www.facebook.com/edinburghhopppers/" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/edinburghhopppers/">Edinburgh University Hoppers</a>
+      </blockquote>
+    </div>
   </div>
 </div>
 
