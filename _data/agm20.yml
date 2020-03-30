@@ -6,6 +6,9 @@
     - name: Ioana Buzduga
       pictureLink: Ioana-Buzduga.jpg
       manifestName: Ioana-Buzduga.pdf
+    - name: Hallelujah Kebede
+      pictureLink: default.png
+      manifestName: ""
 
 - role: Secretary
   nominees:
@@ -30,6 +33,9 @@
 
 - role: Head of Tech
   nominees:
+    - name: Hallelujah Kebede
+      pictureLink: default.png
+      manifestName: ""
     - name: Kenza Amria
       pictureLink: default.png
       manifestName: Kenza-Amria.pdf

@@ -12,12 +12,16 @@ title: AGM
     {% if member.nominees != "" %}
       {%- for person in member.nominees -%}
       <div class="col-8 col-sm-5 col-lg-3 mb-4">
+        {% if person.manifestName != "" %}
         <a href="{{ site.baseurl }}/assets/pdf/agm20/{{ person.manifestName }}" class="nodecor" target="_blank">
+        {% endif %}
           <div class="announcement clickable clickable-sm shadow-btn">
             <img src="{{ site.baseurl }}/assets/img/events/AGM20-nominations/{{ person.pictureLink }}">
             <h5>{{ person.name }}</h5>
           </div>
+        {% if person.manifestName != "" %}
         </a>
+        {% endif %}
       </div>
       {%- endfor -%}
     {% else %}
