@@ -3,31 +3,27 @@ layout: default
 title: AGM
 ---
 
-<div class="col-12 mb-4">
-  <a href="https://forms.gle/7PRFDyGjZmuyVsC99?fbclid=IwAR3hKG2baBEcpwA72r4ZQz237prWAKYFwl0IWcR5XeA7yFOrCRwwYvbceWw" class="nodecor" target="_blank">
-    <div class="announcement clickable clickable-sm shadow-btn">
-      <img src="{{ site.baseurl }}/assets/img/events/agm-banner.jpg">
-      <h5>Click here for more information!</h5>
-    </div>
-  </a>
-</div>
+<p>The role descriptions can be found on our facebook: <a href="https://www.facebook.com/events/2658506030945911/" target="_blank">AGM Online</a>.</p>
 
-The role descriptions can be found on our facebook: <a href="https://www.facebook.com/events/2658506030945911/" target="_blank">AGM Online</a>.
 
-<!--
-  {%- for member in site.data.agm20 -%}
+{%- for member in site.data.agm20 -%}
   <h3>{{ member.role }}</h3>
-  <div class="d-flex flex-row justify-content-around align-items-center">
-    {%- for person in member.nominees -%}
-    <div class="col-8 col-md-4 mb-4">
-      <a href="{{ site.baseurl }}/assets/pdf/agm20/{{ person.manifestName }}" class="nodecor" target="_blank">
-        <div class="announcement clickable clickable-sm shadow-btn">
-          <img src="{{ site.baseurl }}/assets/img/events/AGM20-nominations/{{ person.pictureLink }}">
-          <h5>{{ person.name }}</h5>
-        </div>
-      </a>
-    </div>
-    {%- endfor -%}
+  <div class="d-flex row justify-content-around align-items-center">
+    {% if member.nominees != "" %}
+      {%- for person in member.nominees -%}
+      <div class="col-8 col-sm-5 col-lg-3 mb-4">
+        <a href="{{ site.baseurl }}/assets/pdf/agm20/{{ person.manifestName }}" class="nodecor" target="_blank">
+          <div class="announcement clickable clickable-sm shadow-btn">
+            <img src="{{ site.baseurl }}/assets/img/events/AGM20-nominations/{{ person.pictureLink }}">
+            <h5>{{ person.name }}</h5>
+          </div>
+        </a>
+      </div>
+      {%- endfor -%}
+    {% else %}
+      <div class="col-12">
+        <p>There is no one running for {{ member.role }}, so there will be additional time to apply! For more information see our <a href="https://www.facebook.com/edinburghhopppers/?ref=bookmarks" target="_blank">facebook page</a>.</p>
+      </div>
+    {% endif %}
   </div>
-  {%- endfor -%}
--->
+{%- endfor -%}
