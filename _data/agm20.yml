@@ -24,9 +24,9 @@
 
 - role: Treasurer
   nominees:
-    - name: Kenza Amria
+    - name: Kenza Amira
       pictureLink: default.png
-      manifestName: Kenza-Amria.pdf
+      manifestName: Kenza-Amira.pdf
     - name: Ioana Buzduga
       pictureLink: Ioana-Buzduga.jpg
       manifestName: Ioana-Buzduga.pdf
@@ -36,9 +36,9 @@
     - name: Hallelujah Kebede
       pictureLink: default.png
       manifestName: Halleluja.pdf
-    - name: Kenza Amria
+    - name: Kenza Amira
       pictureLink: default.png
-      manifestName: Kenza-Amria.pdf
+      manifestName: Kenza-Amira.pdf
     - name: Meina Lin Wei
       pictureLink: default.png
       manifestName: Meina-Lin-Wei.pdf
