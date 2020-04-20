@@ -1,61 +1,30 @@
-- name: Gosia Borowiec
-  img: gosia.jpg
-  role: President
-
-- name: Aimee Redbond
-  role: Secretary
-
-- name: Vaida Plankyte
-  img: vaida.jpg
-  role: Diversity Officer
-
-- name: Asmita Dulan
-  img: asmita.jpg
-  role: Treasurer and Head of Finance Sector
-
 - name: Ioana Buzduga
   img: ioana.jpg
-  role: Head of Media Sector 
+  role: President
 
-- name: Nicole Meng
-  img: nicole.jpg
-  role: Head of Big Event Sector
+- name: Gosia Borowiec
+  img: gosia.jpg
+  role: Secretary
 
-- name: Alejandra Amaro
-  img: alejandra.jpg
-  role: Head of Social Sector
+- name: Siang Jun Teo
+  role: Diversity and Wellness Officer
 
-- name: Kornelija Sukyte
-  img: kornelija.jpg
-  role: Head of Tech Sector
-
-- name: Ramlah Abeaw
-  img: ramlah.jpg
-  role: Head of Sponsorship Sector
+- name: Kenza Amira
+  role: Treasurer
 
 - name: Sarah Kayser
   img: sarah.jpg
-  role: Media Coordinator
+  role: Head of Media
 
-- name: Jacintha Chen
-  img: jacintha.jpg
-  role: Media Coordinator
+- name: Nicole Meng
+  img: nicole.jpg
+  role: Head of Big Events
 
-- name: Nuiok Dicaire
-  img: nuiok.jpg
-  role: Social Coordinator
+- name: Hallelujah Kebede
+  role: Head of Tech
 
-- name: Julia Castillo Trujillo
-  img: julia.jpg
-  role: Social Coordinator
-
-- name: Marina Flores Payan
-  img: marina.jpg
-  role: Volunteer Coordinator
-
-- name: Athiya Deviyani
-  img: athiya.jpg
-  role: Interview Preparation Coach (Tech Coordinator)
+- name: Laura Ritter
+  role: Head of Sponsorship
 
 - name: Pauline Peters
   img: pauline.jpg

@@ -6,9 +6,9 @@ layout: default
 {% assign team = site.data.team %}
 
 {%- for member in team -%}
-<div class="row justify-content-{% cycle 'start', 'end' %}">
+<div class="row justify-content-center">
 
-  <div class="col-12 col-lg-6 my-2 my-lg-1">
+  <div class="col-12 col-lg-6 my-2 my-lg-2">
     <div class="card flex-row flex-nowrap subcard shadow-sm border-0" style="overflow: hidden">
 
       <div class="img-center-vert border-0 card-img-xs">
@@ -27,7 +27,7 @@ layout: default
       </div>
     </div>
   </div>
-    
+
 </div>
 {%- endfor -%}
 
