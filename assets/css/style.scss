@@ -311,3 +311,11 @@ p {
   -moz-box-shadow:    5px 5px 4px 2px #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         5px 5px 4px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
+
+.team-member {
+  color: $hoppers-green;
+}
+
+.team-member-role {
+  color: rgba(0,0,0,.5);
+}

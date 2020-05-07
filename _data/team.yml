@@ -25,11 +25,8 @@
   img: laura.jpg
   role: Head of Sponsorship
 
-- name: Siang Jun Teo
-  img: siang.jpg
-  role: Diversity and Wellness Officer
-
 - name: Alejandra Amaro
+  img: alejandra.jpg
   role: Media Coordinator
 
 - name: Jacintha Chen
@@ -45,3 +42,7 @@
 - name: Pauline Peters
   img: pauline.jpg
   role: Website Master
+
+- name: Siang Jun Teo
+  img: siang.jpg
+  role: Diversity and Wellness Officer
