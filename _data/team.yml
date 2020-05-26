@@ -19,6 +19,7 @@
   role: Head of Big Events
 
 - name: Hallelujah Kebede
+  img: hallelujah.jpg
   role: Head of Tech
 
 - name: Laura Ritter
@@ -30,6 +31,7 @@
   role: Media Coordinator
 
 - name: Jacintha Chen
+  img: jacintha.jpg
   role: Media Coordinator
 
 - name: Julia Castillo Trujillo
@@ -37,12 +39,17 @@
   role: Social Coordinator
 
 - name: Meina Lin Wei
+  img: meina.jpg
   role: Tech Coordinator
 
-- name: Pauline Peters
-  img: pauline.jpg
-  role: Website Master
+- name: Linda Mazanova
+  img: linda.jpg
+  role: Tech Coordinator
 
 - name: Siang Jun Teo
   img: siang.jpg
   role: Diversity and Wellness Officer
+
+- name: Pauline Peters
+  img: pauline.jpg
+  role: Website Master
