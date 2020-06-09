@@ -17,13 +17,20 @@
             {{ page.heading }}
           {% else %}
             {{ page.title }}
-          {% endif %}</h1>
+          {% endif %}
+        </h1>
+
         <hr class="mb-4">
+
         {% if page.subheading %}
-        <h2 class="card-subtitle text-center mb-3">{{ page.subheading }}</h2>
+          <h2 class="card-subtitle text-center mb-3">{{ page.subheading }}</h2>
         {% endif %}
-        
+
         {{ content }}
+
+        <hr class="mb-3 mt-5">
+
+        <p class="text-center mb-0">Coded with <img src="assets/img/heart.png" alt="love" style="width: 2em;"> in Edinburgh</p>
       </div>
     </div>
   </div>
