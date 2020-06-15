@@ -3,29 +3,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-  {% include head.html %}
+    {% include head.html %}
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bigEvents.css" type="text/css">
   </head>
 
   <body id="bigEvent">
 
     {% include nav-bigEvent.html %}
 
+    <!-- page cover -->
     <section class="cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url({{'/assets/img/' | append: page.cover | relative_url}}">
       <div class="cover-inner">
-        <img src="{{ '/assets/img/' | append: page.titleLogo | relative_url }}"/>
+        <img src="{{ '/assets/img/' | append: page.logo | relative_url }}"/>
         <h1>{{ page.title }}</h1>
-        <h3>{{ page.subtitle }}</h3>
+
+        <!-- optional subtitle -->
+        {% if page.subtitle %}
+          <h3>{{ page.subtitle }}</h3>
+        {% endif %}
+
         <h4>{{ page.day }}</h4>
+
         <div class="row center-content align-items-center">
+          <!-- optional facebook -->
+          {% if page.facebook %}
+            <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
+              <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
+            </div>
+          {% endif %}
+
+          <!-- optional book tickets -->
+          {% if page.bookTickets %}
           <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
-            <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
+            <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
           </div>
-          <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
-            <a class="button clickable clickable-sm shadow-sm" target="_blank" href="https://forms.gle/pNMHK58aYh5frPCp7">Book Tickets</a>
-          </div>
+          {% endif %}
         </div>
       </div>
     </section>
+
+    <!-- page content -->
     <main class="event-info">
       <div class="container">
 
@@ -48,4 +66,3 @@
 
   </body>
 </html>
-
