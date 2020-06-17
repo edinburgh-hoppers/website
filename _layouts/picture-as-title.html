@@ -1,32 +1,28 @@
 ---
 ---
 <!DOCTYPE html>
+
+<!-- picture-as-tile layout
+needs: img, img-alt, (title) -->
+
 <html>
   <head>
   {% include head.html %}
   </head>
   <body>
-  
+
   {% include nav.html %}
-  
+
   <div class="container">
     <div class="card shadow-sm border-0 mb-3">
       <div class="card-body">
-        <h1 class="card-title mb-3 text-center">
-            {{ page.title }}
-        </h1>
-
-        {% if page.subtitle %}
-          <h2 class="card-subtitle text-center mb-3">{{ page.subtitle }}</h2>
-        {% endif %}
-
-        <hr class="mb-4">
+        <img class="mx-auto d-block mb-4 card-img-top" style="max-width: 520px;" src="{{ page.img }}" alt="{{ page.img-alt }}">
 
         {{ content }}
       </div>
     </div>
   </div>
-  
+
   {% include footer.html %}
   </body>
 </html>

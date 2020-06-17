@@ -1,17 +1,19 @@
 <!-- nav start -->
 <nav class="nav navbar nav-pills shadow-sm navbar-expand-sm navbar-light bg-light mt-3 mb-4 mt-sm-4 mb-sm-5 sticky-top">
 
-<!--  toggle buttons (only on small screens)  -->
+  <!--  toggle buttons (only on small screens)  -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<!--  main navbar content  -->
+  <!--  main navbar content  -->
   <div class="collapse navbar-collapse justify-content-center align-items-center text-center" id="navbar">
     <ul class="nav navbar-nav row">
+
+      <!-- home button (only on large screens) -->
       <li class="navbar-brand mx-1 p-0 d-none d-sm-block">
         <a class="nav-link" href="{{ site.baseurl }}/" style="height: 0">
-          <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="100" class="navbar-logo rounded-circle clickable clickable-sm shadow-sm">
+          <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="100" class="navbar-logo rounded-circle clickable shadow-sm">
         </a>
       </li>
 
@@ -22,8 +24,11 @@
       {% endfor %}
     </ul>
   </div>
+
+  <!-- home button (only on small screens) -->
   <a href="{{ site.baseurl }}/" style="height: 0">
-    <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="96" class="navbar-logo-sm rounded-circle clickable clickable-sm shadow-sm d-sm-none m-0">
+    <img src="{{ site.baseurl }}/assets/img/hoppers-logo-256.png" width="96" class="navbar-logo-sm rounded-circle clickable shadow-sm d-sm-none m-0">
   </a>
+
 </nav>
 <!-- nav end -->

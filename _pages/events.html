@@ -12,7 +12,7 @@ layout: default
 add EVENT-TITLE and BANNER image
 <div class="col-12 mb-4">
   <a href="{{ site.baseurl }}/EVENT-TITLE" class="nodecor" target="_blank">
-    <div class="announcement clickable clickable-sm shadow-btn">
+    <div class="announcement clickable shadow">
       <img src="{{ site.baseurl }}/assets/img/events/BANNER.png">
       <h5>Click here for more information!</h5>
     </div>
@@ -25,17 +25,15 @@ add EVENT-TITLE and BANNER image
 <div class="row mb-4">
   <div class="col-12">
     <div class="row">
-      <div class="col-md-6 col-lg-12 mb-4 event-categories-wrapper">
+      <div class="col-md-6 mb-4 event-categories-wrapper">
         <div class="row event-categories">
-          <div class="col-12 col-lg-4 button-div">
-            <a class="button" href="#bigEvents">Big Events</a>
-          </div>
-          <div class="col-12 col-lg-4 button-div">
-            <a class="button" href="#techEvents">Tech Events</a>
-          </div>
-          <div class="col-12 col-lg-4 button-div">
-            <a class="button" href="#socialEvents">Social Events</a>
-          </div>
+
+          {% for member in site.data.event-categories %}
+            <div class="col-12 col-lg-4">
+              <a class="button" href="#{{ member.link }}">{{ member.name }}</a>
+            </div>
+          {% endfor %}
+
         </div>
       </div>
 
@@ -48,15 +46,16 @@ add EVENT-TITLE and BANNER image
   </div>
 </div>
 
-<div class="row center-content mb-4">
+<div class="row justify-content-center mb-4">
   <div class="col-11 col-md-7 col-lg-5 col-xl-4 announcement">
-    <div class="fb-page mt-3 mb-3" data-href="https://www.facebook.com/edinburghhopppers/" data-tabs="events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+    <div class="fb-page mt-3 mb-3 center-horizentally" data-href="https://www.facebook.com/edinburghhopppers/" data-tabs="events" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
       <blockquote cite="https://www.facebook.com/edinburghhopppers/" class="fb-xfbml-parse-ignore">
         <a href="https://www.facebook.com/edinburghhopppers/">Edinburgh University Hoppers</a>
       </blockquote>
     </div>
   </div>
 </div>
+
 
 <!-- EVENT CATEGORIES -->
 
@@ -66,7 +65,7 @@ add EVENT-TITLE and BANNER image
 
   <div class="col-12 col-lg-4 my-4 my-lg-0" id="{{ member.link }}">
     <div class="card subcard">
-      <div class="card-img-top img-center-vert w-100">
+      <div class="card-img-top">
         <img src="{{ site.baseurl }}/assets/img/{{ member.img }}" class="w-100"
              alt="{{ member.name }}">
       </div>

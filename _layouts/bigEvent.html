@@ -12,7 +12,7 @@
 
     {% include nav-bigEvent.html %}
 
-    <!-- page cover -->
+    <!-- PAGE COVER -->
     <section class="cover" style="background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url({{'/assets/img/' | append: page.cover | relative_url}}">
       <div class="cover-inner">
         <img src="{{ '/assets/img/' | append: page.logo | relative_url }}"/>
@@ -25,31 +25,31 @@
 
         <h4>{{ page.day }}</h4>
 
-        <div class="row center-content align-items-center">
+        <div class="row justify-content-center align-items-center">
           <!-- optional facebook -->
           {% if page.facebook %}
-            <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
-              <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
+            <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
+              <a class="button clickable shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
             </div>
           {% endif %}
 
           <!-- optional book tickets -->
           {% if page.bookTickets %}
-          <div class="col-12 col-md-4 col-lg-3 my-2 button-div">
-            <a class="button clickable clickable-sm shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
+          <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
+            <a class="button clickable shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
           </div>
           {% endif %}
         </div>
       </div>
     </section>
 
-    <!-- page content -->
+    <!-- PAGE CONTENT -->
     <main class="event-info">
       <div class="container">
 
         {%- for member in site.data[page.data] -%}
 
-          <div class="card shadow-sm border-0 mb-3 bg-light">
+          <div class="card shadow-sm border-0 mb-3">
             <div class="card-body">
               <h3 class="card-title mb-3 text-center">{{ member.title }}</h3>
               <hr class="mb-4">
@@ -62,7 +62,7 @@
       </div>
     </main>
 
-    {% include scripts.html %}
+    {% include footer.html %}
 
   </body>
 </html>
