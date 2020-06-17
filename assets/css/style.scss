@@ -24,10 +24,6 @@ body {
   }
 }
 
-//.nav-container {
-//  margin-bottom: 4em;
-//}
-
 .clickable {
   // standard effect for larger items
   transition: transform $jwow-ease-out;
@@ -318,4 +314,11 @@ p {
 
 .team-member-role {
   color: rgba(0,0,0,.5);
+}
+
+
+/* About Us page */
+
+.aboutUsVoices p {
+  margin-bottom: 0.7rem;
 }
