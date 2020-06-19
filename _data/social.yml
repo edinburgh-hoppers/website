@@ -17,3 +17,7 @@
 - name: "twitter"
   img: "Twitter_icon.png"
   link: "https://twitter.com/edihoppers"
+
+- name: "YouTube"
+  img: "yt_social_icon.png"
+  link: "https://www.youtube.com/channel/UC8kHxhiU2BHaKPQThGRtFfQ"
