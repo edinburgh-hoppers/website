@@ -18,6 +18,7 @@
   link: "https://www.aboutamazon.co.uk/"
   width: 325px
 
-- name: "Citi"
+- name: "Citigroup"
   img: citi
   link: ""
+  width: 155px
