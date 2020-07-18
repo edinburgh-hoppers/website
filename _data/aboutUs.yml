@@ -1,0 +1,10 @@
+- name: Jane Hillston
+  description: Head of School of Informatics
+  year: "2020"
+  includeTextFrom: jane.html
+  img: jane.jpg
+- name: Gosia Borowiec
+  description: Hoppers President 2019/20
+  year: "2020"
+  includeTextFrom: gosia.html
+  img: gosia.jpg
