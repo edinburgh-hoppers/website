@@ -18,6 +18,11 @@
   link: "https://www.aboutamazon.co.uk/"
   width: 325px
 
+- name: "HubSpot"
+  img: HubSpot
+  link: "https://www.hubspot.com/"
+  width: 321px
+
 #- name: "Citigroup"
 #  img: citi
 #  link: ""
