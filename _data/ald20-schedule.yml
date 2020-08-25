@@ -1,0 +1,17 @@
+- time: "9:00"
+  events: 
+      - name: "Event1"
+        description: "Some workshop"
+        eventLink: ""
+      - name: "Event2"
+        description: "Some talk "
+      - name: "Event 3"
+        description: "More things to add - adding blank text to see if text is being wrapped"
+
+- time: "10:00"
+  events: 
+      - name: "Event1"
+        description: "Some workshop"
+        eventLink: ""
+      - name: "Event2"
+        description: "Some talk "

@@ -1,0 +1,98 @@
+--- 
+--- 
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+$pinkish:#DB5461;
+$hoppers-green: #3da08c;
+$powder-blue: #C7EBF0;
+$hoppers-gray: #eee;
+
+
+
+
+body {
+    margin: 0;
+}
+
+.cover {
+    font-family: 'Raleway Dots', monospace;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: linear-gradient($powder-blue, $hoppers-gray);
+    // border: 2px solid black;
+    // border-bottom-right-radius: 20%;
+    // border-top-left-radius: 20%;
+    // background: fixed url('../img/events/ald20/cover-background.png') no-repeat center;
+}
+
+
+/*
+Nav menu design
+*/
+
+#cover {
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, #50C9CE, #FDCA40, #DB5461, #72A1E5);
+}
+
+.cover h4 {
+    color: $pinkish;
+    margin: 2rem 0 2rem;
+}
+
+.cover img {
+    width: 50%;
+    max-width: 700px;
+    margin-left: -170px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.cover-btn {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    letter-spacing: .5px;
+    display: inline-block;
+    line-height: 2.5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.cover-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    text-decoration: none;
+}
+
+#header {
+    margin-top: 9rem;
+    text-align: center;
+}
+
+#header h1,
+#header h3,
+#header h4 {
+    font-size: 2em;
+    font-weight: 500;
+    &:hover {
+        font-weight: 600;
+    }
+}
+
+#header h1 {
+    cursor: pointer;
+    font-size: 3.5em;
+}
+
+.card-title {
+    font-family: 'Inconsolatas', monospace;
+    color: #50C9CE;
+}

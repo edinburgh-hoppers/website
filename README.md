@@ -1,5 +1,7 @@
 # Edinburgh Hoppers Website
 
+## NOTE - added new layout for ald20 - very similar to iwd. I also set up a few includes and data files - need to fix that. Added an extra button to nav bar to access ALD website easily (for now).
+
 ## intro
 The website runs on [**Jekyll**](https://jekyllrb.com/). This means it's relatively easy to work with collaboratively, and it's possible to make the pages look and feel consistent across the whole of the website with the use of **templates**.
 

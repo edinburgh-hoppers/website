@@ -1,0 +1,18 @@
+<div id = "schedule">
+    <table class = "table table-bordered" style = "table-layout:auto;">
+      <thead>
+        <th scope="col">Time</td>
+        <th scope="col-lg-2" class="text-center" colspan=3 >Event name</td>
+      </thead>
+      <tbody>
+        {%- for member in site.data[page.schedule] -%}
+        <tr>
+          <th scope = "row"> {{member.time}} </th>
+          {%- for event in member.events -%}
+            <td style ="width: 30%"> {{ event.name }} - {{ event.description }} </td>
+          {%- endfor -%}
+        </tr>
+        {%- endfor -%}
+      </tbody>  
+    </table>  
+</div>
