@@ -47,9 +47,10 @@ Nav menu design
 .cover img {
     width: 50%;
     max-width: 700px;
-    margin-left: -170px;
-    margin-top: 30px;
-    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      float: left;
+    }
 }
 
 .cover-btn {
@@ -72,14 +73,14 @@ Nav menu design
     text-decoration: none;
 }
 
-#header {
+.cover {
     margin-top: 9rem;
     text-align: center;
 }
 
-#header h1,
-#header h3,
-#header h4 {
+.cover h1,
+.cover h3,
+.cover h4 {
     font-size: 2em;
     font-weight: 500;
     &:hover {
@@ -87,7 +88,7 @@ Nav menu design
     }
 }
 
-#header h1 {
+.cover h1 {
     cursor: pointer;
     font-size: 3.5em;
 }
