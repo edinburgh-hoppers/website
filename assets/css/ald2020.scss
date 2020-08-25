@@ -15,6 +15,7 @@ $nav-turquoise: #50C9CE;
 
 body {
     margin: 0;
+    background-color: $hoppers-gray;
 }
 
 .cover {
@@ -28,26 +29,18 @@ body {
 }
 
 
-/*
-Nav menu design - id: cover
-*/
-
-#cover {
-    margin-top: 1rem;
-    background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
-}
-
 .cover h4 {
     color: $pinkish;
-    margin: 2rem 0 2rem;
+    // margin: 2rem 0 2rem;
 }
 
 .cover img {
-    width: 50%;
-    max-width: 700px;
+    width: 60%;
+    max-width: 1000px;
 
     @media (min-width: 768px) {
       float: left;
+      margin-left: -10vw;
     }
 }
 
@@ -72,7 +65,6 @@ Nav menu design - id: cover
 }
 
 .cover {
-    margin-top: 9rem;
     text-align: center;
 }
 
@@ -81,6 +73,7 @@ Nav menu design - id: cover
 .cover h4 {
     font-size: 2em;
     font-weight: 500;
+    margin-top: 3vw;
     &:hover {
         font-weight: 600;
     }
@@ -92,6 +85,20 @@ Nav menu design - id: cover
 }
 
 .card-title {
-    font-family: 'Inconsolatas', monospace;
+    font-family: 'Quantico', monospace;
     color: #50C9CE;
 }
+
+/*
+Nav menu design - id: cover
+*/
+
+#cover {
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
+}
+
+.table td{
+    font-family: 'Inconsolata', monospace;
+}
+

@@ -1,8 +1,8 @@
 <div id="faq">
   {%- for member in site.data[page.faq] -%}
     <div>
-      <h5>Question : {{ member.question }}</h5>
-      <p>Answer: {{ member.answer }}</h5>
+      <h5>{{ member.question }}</h5>
+      <p>{{ member.answer }}</h5>
     </div>
   {%- endfor -%}
 </div>
