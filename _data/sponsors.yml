@@ -13,6 +13,11 @@
   link: "https://www.hubspot.com/"
   width: 321px
 
+- name: "Google"
+  img: google
+  link: "https://about.google/"
+  width: 296px
+
 #- name: "Citigroup"
 #  img: citi
 #  link: ""
