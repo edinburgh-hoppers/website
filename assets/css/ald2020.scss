@@ -1,13 +1,16 @@
 --- 
 --- 
 
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway+Dot&family=Quantico&display=swap');
+
 $pinkish:#DB5461;
 $hoppers-green: #3da08c;
 $powder-blue: #C7EBF0;
 $hoppers-gray: #eee;
-
+$nav-blue: #72A1E5;
+$nav-red: #DB5461;
+$nav-yellow:#FDCA40;
+$nav-turquoise: #50C9CE;
 
 
 
@@ -16,27 +19,23 @@ body {
 }
 
 .cover {
-    font-family: 'Raleway Dots', monospace;
+    font-family: 'Quantico', sans-serif;
 
     display: flex;
     justify-content: center;
     align-items: center;
     
     background-image: linear-gradient($powder-blue, $hoppers-gray);
-    // border: 2px solid black;
-    // border-bottom-right-radius: 20%;
-    // border-top-left-radius: 20%;
-    // background: fixed url('../img/events/ald20/cover-background.png') no-repeat center;
 }
 
 
 /*
-Nav menu design
+Nav menu design - id: cover
 */
 
 #cover {
     margin-top: 1rem;
-    background-image: linear-gradient(to right, #50C9CE, #FDCA40, #DB5461, #72A1E5);
+    background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
 }
 
 .cover h4 {
