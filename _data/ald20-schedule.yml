@@ -3,15 +3,20 @@
       - name: "Event1"
         description: "Some workshop"
         eventLink: ""
+        colspan: 2
       - name: "Event2"
-        description: "Some talk "
+        description: "Some talk"
+        colspan: 2
       - name: "Event 3"
         description: "More things to add - adding blank text to see if text is being wrapped"
+        colspan: 2
 
 - time: "10:00"
   events: 
       - name: "Event1"
         description: "Some workshop"
         eventLink: ""
+        colspan: 3
       - name: "Event2"
         description: "Some talk "
+        colspan: 3

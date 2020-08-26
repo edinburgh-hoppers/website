@@ -2,17 +2,21 @@
     <table class = "table table-bordered" style = "table-layout:auto;">
       <thead>
         <th scope="col">Time</td>
-        <th scope="col-lg-2" class="text-center" colspan=3 >Event name</td>
+        <th scope="col-lg-2" class="text-center" colspan=100>Event name</td> <!-- Really high colspan to span over all columns -->
       </thead>
       <tbody>
+
         {%- for member in site.data[page.schedule] -%}
-        <tr>
-          <th scope = "row"> {{member.time}} </th>
-          {%- for event in member.events -%}
-            <td style ="width: 30%"> {{ event.name }} - {{ event.description }} </td>
-          {%- endfor -%}
-        </tr>
+	        <tr>
+	          <th scope="row"> {{member.time}} </th>
+	          {%- for event in member.events -%}
+	            <td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+	            	{{ event.name }} - {{ event.description }}
+	            </td>
+	          {%- endfor -%}
+	        </tr>
         {%- endfor -%}
-      </tbody>  
-    </table>  
+
+      </tbody>
+    </table>
 </div>
