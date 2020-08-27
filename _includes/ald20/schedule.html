@@ -11,8 +11,13 @@
 	          <th scope="row"> {{member.time}} </th>
 	          {%- for event in member.events -%}
 	            <td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
-	            	{{ event.name }} - {{ event.description }}
-	            </td>
+	            	{{ event.name }} {%- if event.description %} - {{ event.description }} {% endif%}
+                {%- if event.link -%} 
+                  <br> <a id = "eventLink" href = '{{ event.link }}' target = '_blank'>  Event link </a>
+                {%- endif -%}
+              </td>
+
+              
 	          {%- endfor -%}
 	        </tr>
         {%- endfor -%}

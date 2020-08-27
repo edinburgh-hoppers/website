@@ -11,12 +11,49 @@ $nav-blue: #72A1E5;
 $nav-red: #DB5461;
 $nav-yellow:#FDCA40;
 $nav-turquoise: #50C9CE;
-
+$salmon: rgb(247, 160, 114);
+$gold-crayola: #EDC79B;
+$dark-grey: #4A5859;
+$dark-purple: #2C1320;
+$stone: #A7ADC6;
 
 body {
     margin: 0;
     background-color: $hoppers-gray;
 }
+
+.card-title {
+    font-family: 'Quantico', monospace;
+    font-size: 2em;
+
+    //combination 1
+    // color: $nav-yellow;
+    // background: rgba($dark-grey, 0.8);
+    // padding: 20px 0;
+
+    //combination 2
+    // color: $dark-purple;
+    // background: $stone;
+    // padding: 20px 0;
+
+
+    //combination 3
+    // color: $stone;
+    // background-color: $hoppers-green;
+    // padding: 20px 0;
+
+    //personal favourite - a simple text shadow (can change color to $hoppers-gray)
+    color: $nav-yellow;
+    text-shadow: 1px 1px $stone;
+    padding: 10px 0;
+    
+    margin: -10px -10px;
+}
+
+//the horizontal line below each subtitle
+// .mb-4{
+//     display: none;
+// }
 
 .cover {
     font-family: 'Quantico', sans-serif;
@@ -74,9 +111,9 @@ body {
     font-size: 2em;
     font-weight: 500;
     margin-top: 3vw;
-    &:hover {
-        font-weight: 600;
-    }
+    // &:hover {
+    //     font-weight: 600;
+    // }
 }
 
 .cover h1 {
@@ -84,10 +121,6 @@ body {
     font-size: 3.5em;
 }
 
-.card-title {
-    font-family: 'Quantico', monospace;
-    color: #50C9CE;
-}
 
 /*
 Nav menu design - id: cover
@@ -101,4 +134,5 @@ Nav menu design - id: cover
 .table td{
     font-family: 'Inconsolata', monospace;
 }
+
 
