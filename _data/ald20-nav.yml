@@ -1,0 +1,20 @@
+- text: "About Hoppers"
+  href: "index"
+
+- text: "Schedule"
+  href: "ald20/#schedule"
+
+- text: "Challenges"
+  href: "ald20?pi=1234#challenges"
+
+- text: "FAQ"
+  href: "ald20?pi=92#faq"
+
+- text: "Sponsors"
+  href: "ald20?pi=65#sponsors"
+
+- text: "Partners"
+  href: "ald20?pi=35#partners"
+
+- text: "Contact Us"
+  href: "ald20?pi=89#contact"

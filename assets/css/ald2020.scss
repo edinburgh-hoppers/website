@@ -1,0 +1,150 @@
+--- 
+--- 
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway+Dot&family=Quantico&display=swap');
+
+$pinkish:#DB5461;
+$hoppers-green: #3da08c;
+$powder-blue: #C7EBF0;
+$hoppers-gray: #eee;
+$nav-blue: #72A1E5;
+$nav-red: #DB5461;
+$nav-yellow:#FDCA40;
+$nav-turquoise: #50C9CE;
+$salmon: rgb(247, 160, 114);
+$gold-crayola: #EDC79B;
+$dark-grey: #4A5859;
+$dark-purple: #2C1320;
+$stone: #A7ADC6;
+
+body {
+    margin: 0;
+    background-color: $hoppers-gray;
+}
+
+.card-title {
+    font-family: 'Quantico', monospace;
+    font-size: 2em;
+
+    //combination 1
+    // color: $nav-yellow;
+    // background: rgba($dark-grey, 0.8);
+    // padding: 20px 0;
+
+    //combination 2
+    // color: $dark-purple;
+    // background: $stone;
+    // padding: 20px 0;
+
+
+    //combination 3
+    // color: $stone;
+    // background-color: $hoppers-green;
+    // padding: 20px 0;
+
+    //personal favourite - a simple text shadow (can change color to $hoppers-gray)
+    // color: $nav-yellow;
+    // text-shadow: 2px 2px $stone;
+    // padding: 10px 0;
+
+    //combination - hoppers green text with grey shadow
+    // color: $hoppers-green;
+    // text-shadow: 2px 2px $stone;
+    // padding: 10px 0;
+
+    //combination - green text with yellow shadow - looks cool
+    color: $hoppers-green;
+    text-shadow: 2px 2px $nav-yellow;
+    padding: 10px 0;
+    
+    margin: -10px -10px;
+
+    &::selection{
+        background-color: $dark-grey;
+    }
+}
+
+//the horizontal line below each subtitle
+// .mb-4{
+//     display: none;
+// }
+
+.cover {
+    font-family: 'Quantico', sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-image: linear-gradient($powder-blue, $hoppers-gray);
+}
+
+.cover h1 {
+    font-size: 3.5em;
+}
+
+.cover h4 {
+    color: $pinkish;
+    // margin: 2rem 0 2rem;
+}
+
+.cover img {
+    width: 60%;
+    max-width: 1000px;
+
+    @media (min-width: 768px) {
+      float: left;
+      margin-left: -10vw;
+    }
+}
+
+.cover-btn {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+    letter-spacing: .5px;
+    display: inline-block;
+    line-height: 2.5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.cover-btn:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    text-decoration: none;
+}
+
+.cover {
+    text-align: center;
+}
+
+.cover h1,
+.cover h3,
+.cover h4 {
+    font-weight: 500;
+    margin-top: 3vw;
+    // &:hover {
+    //     font-weight: 600;
+    // }
+}
+
+/*
+Nav menu design - id: cover
+*/
+
+#nav-cover {
+    margin-top: 1rem;
+    background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
+}
+
+.table td{
+    font-family: 'Inconsolata', monospace;
+}
+
+#eventLink:hover{
+    font-weight: 400;
+}
