@@ -1,0 +1,27 @@
+<div id = "schedule">
+    <table class = "table table-bordered" style = "table-layout:auto;">
+      <thead>
+        <th scope="col">Time</td>
+        <th scope="col-lg-2" class="text-center" colspan=100>Event name</td> <!-- Really high colspan to span over all columns -->
+      </thead>
+      <tbody>
+
+        {%- for member in site.data[page.schedule] -%}
+	        <tr>
+	          <th scope="row"> {{member.time}} </th>
+	          {%- for event in member.events -%}
+	            <td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+	            	<span id = "eventName"> {{ event.name }} </span> {%- if event.description %} - {{ event.description }} {% endif%}
+                {%- if event.link -%} 
+                  <br> <a id = "eventLink" href = '{{ event.link }}' target = '_blank'>  Event link </a>
+                {%- endif -%}
+              </td>
+
+              
+	          {%- endfor -%}
+	        </tr>
+        {%- endfor -%}
+
+      </tbody>
+    </table>
+</div>

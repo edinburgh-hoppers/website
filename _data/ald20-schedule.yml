@@ -1,0 +1,34 @@
+- time: "8:30"
+  events: 
+    - name: "Keynote address"
+      description: "Susan Wojcicki - Nicole said we had to find a quick way for users to see more info about presenters"
+      colspan: "12"
+- time: "9:00"
+  events: 
+      - name: "Event1"
+        description: "Some workshop"
+        link: https://www.google.com/
+        colspan: 2
+      - name: "Event2"
+        description: "Some talk"
+        link: https://www.netflix.com/
+        colspan: 2
+      - name: "Event 3"
+        description: "More things to add - adding blank text to see if text is being wrapped"
+        colspan: 2
+
+- time: "10:00"
+  events: 
+      - name: "Event1"
+        description: "Some workshop"
+        link: "anothereventlink.com"
+        colspan: 3
+      - name: "Event2"
+        description: "Some talk "
+        colspan: 3
+
+
+- time: "10:30"
+  events: 
+      - name: "Break"
+        colspan: 12
