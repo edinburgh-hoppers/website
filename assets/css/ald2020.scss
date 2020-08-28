@@ -43,8 +43,18 @@ body {
     // padding: 20px 0;
 
     //personal favourite - a simple text shadow (can change color to $hoppers-gray)
-    color: $nav-yellow;
-    text-shadow: 1px 1px $stone;
+    // color: $nav-yellow;
+    // text-shadow: 2px 2px $stone;
+    // padding: 10px 0;
+
+    //combination - hoppers green text with grey shadow
+    // color: $hoppers-green;
+    // text-shadow: 2px 2px $stone;
+    // padding: 10px 0;
+
+    //combination - green text with yellow shadow - looks cool
+    color: $hoppers-green;
+    text-shadow: 2px 2px $nav-yellow;
     padding: 10px 0;
     
     margin: -10px -10px;
@@ -115,7 +125,6 @@ body {
 .cover h1,
 .cover h3,
 .cover h4 {
-    font-size: 2em;
     font-weight: 500;
     margin-top: 3vw;
     // &:hover {
@@ -136,4 +145,6 @@ Nav menu design - id: cover
     font-family: 'Inconsolata', monospace;
 }
 
-
+#eventLink:hover{
+    font-weight: 400;
+}
