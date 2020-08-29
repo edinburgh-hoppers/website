@@ -53,10 +53,20 @@ body {
     // padding: 10px 0;
 
     //combination - green text with yellow shadow - looks cool
-    color: $hoppers-green;
-    text-shadow: 2px 2px $nav-yellow;
+    //color: $hoppers-green;
+    //text-shadow: 2px 2px $nav-yellow;
+    //padding: 10px 0;
+
+    //combination - pinkish text with green border
+    color: $pinkish;
+    text-shadow: -2px 0 $hoppers-green, 0 2px $hoppers-green, 2px 0 $hoppers-green, 0 -2px $hoppers-green;
     padding: 10px 0;
-    
+
+    //combination - green text with pinkish border
+    //color: $hoppers-green;
+    //text-shadow: -1px 0 $pinkish, 0 1px $pinkish, 1px 0 $pinkish, 0 -1px $pinkish;
+    //padding: 10px 0;
+
     margin: -10px -10px;
 
     &::selection{
