@@ -151,12 +151,12 @@ Nav menu design - id: cover
     background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
 }
 
-.table td{
-    font-family: 'Inconsolata', monospace;
+.table th {
+    padding: 1rem 0.5rem 0.5rem;
 }
 
-#eventLink:hover{
-    font-weight: 400;
+.eventName {
+    font-weight: bold;
 }
 
 .ada{

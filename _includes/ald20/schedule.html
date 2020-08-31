@@ -1,27 +1,23 @@
 <div id = "schedule">
     <table class = "table table-bordered" style = "table-layout:auto;">
-      <thead>
-        <th scope="col">Time</td>
-        <th scope="col-lg-2" class="text-center" colspan=100>Event name</td> <!-- Really high colspan to span over all columns -->
-      </thead>
-      <tbody>
+      	{%- for date in site.data[page.schedule] -%}
+	        <th scope="col-lg-2" colspan=100> {{ date.date }} </td> <!-- Really high colspan to span over all columns -->
 
-        {%- for member in site.data[page.schedule] -%}
-	        <tr>
-	          <th scope="row"> {{member.time}} </th>
-	          {%- for event in member.events -%}
-	            <td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
-	            	<span id = "eventName"> {{ event.name }} </span> {%- if event.description %} - {{ event.description }} {% endif%}
-                {%- if event.link -%} 
-                  <br> <a id = "eventLink" href = '{{ event.link }}' target = '_blank'>  Event link </a>
-                {%- endif -%}
-              </td>
+	        {%- for time in date.timeslots -%}
+		        <tr>
+		          	<td scope="row"> {{ time.time }} </td>
 
-              
-	          {%- endfor -%}
-	        </tr>
-        {%- endfor -%}
-
-      </tbody>
+		          	{%- for event in time.events -%}
+		            	<td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+			            	<span class="eventName"> {{ event.name }} </span> {%- if event.description %} <br> {{ event.description }} {% endif%}
+			                {%- if event.link -%} 
+			                  <br>
+			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Link to {{ event.platform }}{% else %}Event link{% endif %}</a>
+			                {%- endif -%}
+	              		</td>	              
+		          	{%- endfor -%}
+		        </tr>
+	        {%- endfor -%}
+      	{%- endfor -%}
     </table>
 </div>
