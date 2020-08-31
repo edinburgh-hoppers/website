@@ -5,11 +5,11 @@
 
 	        {%- for time in date.timeslots -%}
 		        <tr>
-		          	<td scope="row"> {{ time.time }} </td>
+		          	<td class="time" scope="row"> {{ time.time }} </td>
 
 		          	{%- for event in time.events -%}
-		            	<td style="width: 30%" colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
-			            	<span class="eventName"> {{ event.name }} </span> {%- if event.description %} <br> {{ event.description }} {% endif%}
+		            	<td colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+			            	<span class="eventName"> {{ event.name }} </span> {%- if event.description %} <br> {{ event.description }} {% endif %}
 			                {%- if event.link -%} 
 			                  <br>
 			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Link to {{ event.platform }}{% else %}Event link{% endif %}</a>

@@ -151,8 +151,12 @@ Nav menu design - id: cover
     background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
 }
 
-.table th {
+table th {
     padding: 1rem 0.5rem 0.5rem;
+}
+
+table .time {
+    min-width: 70px;
 }
 
 .eventName {

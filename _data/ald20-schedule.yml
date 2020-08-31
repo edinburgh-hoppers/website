@@ -1,42 +1,58 @@
-- date: "Tuesday, 13.10.2020"
+- date: "Monday, 12.10.2020"
   timeslots:
-    - time: "8:30"
+    - time: "12:00"
       events: 
         - name: "Keynote address"
-          description: "Susan Wojcicki - Nicole said we had to find a quick way for users to see more info about presenters"
-          colspan: "12"
-    - time: "9:00"
+          description: "1 hour talk, 15min Q&A"
+          colspan: "2"
+    - time: "13:00"
       events: 
-        - name: "Event1"
-          description: "Some workshop"
+        - name: "Hubspot Intro to webapps talk"
+          description: "1 hour"
           link: https://www.google.com/
           platform: "Google"
-          colspan: 2
-        - name: "Event2"
-          description: "Some talk"
-          link: https://www.netflix.com/
-          platform: "Netflix"
-          colspan: 2
-        - name: "Event 3"
-          description: "More things to add - adding blank text to see if text is being wrapped"
-          colspan: 2
-    - time: "10:00"
+        - name: "Spark workshop"
+          description: "5pm earliest, 1-1.5h"
+    - time: "13:30"
       events: 
-        - name: "Event1"
-          description: "Some workshop"
+        - name: "Pre-event session like Yoga or Breakfast"
           link: "anothereventlink.com"
-          colspan: 3
-        - name: "Event2"
-          description: "Some talk "
-          colspan: 3
-    - time: "10:30"
+          colspan: 2
+    - time: "14:00"
       events: 
-          - name: "Break"
-            colspan: 6
-- date: "Wednesday, 14.10.2020"
-  timeslots:
-    - time: "8:30"
+        - name: "UI/UX workshop"
+          description: "max of 1 hour"
+        - name: "Blockchain Talk and Q&A"
+          description: "30 min, TBC"
+    - time: "15:00"
       events:
-        - name: "test"
-          description: "Something happens here."
-          colspan: 6
+        - name: "Elena's talk"
+          description: "30 min"
+          colspan: 2
+- date: "Tuesday, 13.10.2020"
+  timeslots:
+    - time: "13:00"
+      events:
+        - name: "Fake News Keynote"
+          description: "TBC"
+          colspan: 2
+    - time: "14:00"
+      events:
+        - name: "I am Remarkable"
+          description: "1.5 hours"
+          colspan: 2
+    - time: "15:00"
+      events:
+        - name: "Pet Parade"
+          colspan: 2
+    - time: "16:00"
+      events:
+        - name: "Smaller Workshops"
+          description: "TBC"
+        - name: "Talk on AI and Ethics"
+          description: "TBC"
+    - time: "17:00"
+      events:
+        - name: "Tell me about your"
+          description: "Lightning talks/Parade"
+          colspan: 2
