@@ -16,7 +16,7 @@ ___ -->
     
     // syntax: setView(coordinates, zoom level (least - 0-18 - most))
     
-    var mymap = L.map('mapid').setView([38.548165, -6.328125], 2.5);
+    var mymap = L.map('mapid').setView([38.548165, -6.328125], 3.);
 
     //popup messages for markers - need to make this more dynamic?
     var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
@@ -32,7 +32,7 @@ ___ -->
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
-    id: 'mapbox/streets-v11',
+    id: 'mapbox/light-v10',
     tileSize: 512,
     zoomOffset: -1,
     accessToken: 'sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ'
