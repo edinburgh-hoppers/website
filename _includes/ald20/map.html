@@ -1,0 +1,46 @@
+<!-- ___
+
+I used the Leaflets opensource library to create the map (https://leafletjs.com/)
+In addition to that, to add the tile layer to the map, I created an access token
+on MapBox - adds a nice map design - can experiment with different layers later. 
+Currently created a token on a personal account (Aparna), but can create an account
+on the Hoppers email and update that.
+
+personal note - no brackets or quotes for access token specifier
+                coordinates of Appleton: 55.944294, -3.186888
+___ -->
+
+<div id="mapid" style = "height: 500px"></div>
+
+<script>
+    
+    // syntax: setView(coordinates, zoom level (least - 0-18 - most))
+    
+    var mymap = L.map('mapid').setView([38.548165, -6.328125], 2.5);
+
+    //popup messages for markers - need to make this more dynamic?
+    var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
+    hubSpot.bindPopup("Hubspot might be here").openPopup();
+
+    var lonMarker = L.marker([51.499607, -0.103855]).addTo(mymap);
+    lonMarker.bindPopup("Some other place in London").openPopup();
+
+    var uoeMarker = L.marker([55.944294, -3.186888]).addTo(mymap);
+    uoeMarker.bindPopup("Appleton Tower, University of Edinburgh").openPopup();
+
+    //function to add tile layer to map 
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ'
+}).addTo(mymap);
+
+    // Normal coordinates don't work here - sample function to retrieve coordinates
+    // mymap.on('click' ,() => {
+    //     window.alert(mymap.getCenter());
+    // });
+</script>
+
