@@ -26,16 +26,23 @@
 
 	document.write("Hello WOrld!", "");
 	function askForKey() {
-		var input = prompt("To be able to see the links to attend the events, please enter the key you were given on registration. If you haven't registered yet, just enter nothing.", );
-		if (input != "EdinburghAdaLovelaceHoppers2020") {
-			[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
-  				el.style.visibility = 'hidden';
-			});
+		if (window.location.search != "?pwd=EdinburghAdaLovelace2020") {
+			var input = prompt("To be able to see the links to attend the events, please enter the key you were given on registration. If you haven't registered yet, just enter nothing.", );
+			if (input != "EdinburghAdaLovelaceHoppers2020") {
+				changeVisibilityOfEventLinks("hidden");
+			} else {
+				changeVisibilityOfEventLinks("visible");
+			}
 		} else {
-			[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
-  				el.style.visibility = 'visible';
-			});
+			changeVisibilityOfEventLinks("visible");
 		}
 	}
+
+	function changeVisibilityOfEventLinks(v) {
+		[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
+				el.style.visibility = v;
+		});
+	}
+
 	window.onload = askForKey;
 </script>
