@@ -1,0 +1,4 @@
+- name: ISTE NITK
+  file: istelogo.png
+  link: "https://iste.nitk.ac.in/"
+  width: 1000px
