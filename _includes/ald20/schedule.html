@@ -26,7 +26,8 @@
 
 	document.write("Hello WOrld!", "");
 	function askForKey() {
-		if (window.location.search != "?pwd=EdinburghAdaLovelace2020") {
+		var today = new Date();
+		if (window.location.search != "?pwd=EdinburghAdaLovelace2020" && today.monthIndex == 9) {
 			var input = prompt("To be able to see the links to attend the events, please enter the key you were given on registration. If you haven't registered yet, just enter nothing.", );
 			if (input != "EdinburghAdaLovelaceHoppers2020") {
 				changeVisibilityOfEventLinks("hidden");
