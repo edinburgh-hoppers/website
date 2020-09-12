@@ -24,8 +24,8 @@ body {
 
 .card-title {
     font-family: 'Quantico', monospace;
-    font-size: 2em;
-
+    font-size: 2.5em;
+    // text-shadow: 2px 2px rgba($stone, 0.5);
     //combination 1
     // color: $nav-yellow;
     // background: rgba($dark-grey, 0.8);
@@ -58,9 +58,9 @@ body {
     //padding: 10px 0;
 
     //combination - pinkish text with green border
-    color: $pinkish;
-    text-shadow: -2px 0 $hoppers-green, 0 2px $hoppers-green, 2px 0 $hoppers-green, 0 -2px $hoppers-green;
-    padding: 10px 0;
+    // color: $pinkish;
+    // text-shadow: -2px 0 $hoppers-green, 0 2px $hoppers-green, 2px 0 $hoppers-green, 0 -2px $hoppers-green;
+    // padding: 10px 0;
 
     //combination - green text with pinkish border
     //color: $hoppers-green;
@@ -85,8 +85,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-image: linear-gradient($powder-blue, $hoppers-gray);
+    background: white;
+    // background-image: linear-gradient($powder-blue, $hoppers-gray);
 }
 
 .cover-inner{
@@ -107,7 +107,6 @@ body {
 }
 
 .cover h4 {
-    color: $pinkish;
     @media (min-width: 768px){
         font-size: 2em;
     }
@@ -123,25 +122,25 @@ body {
     }
 }
 
-.cover-btn {
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.6);
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-    letter-spacing: .5px;
-    display: inline-block;
-    line-height: 2.5rem;
-    border: none;
-    border-radius: 2px;
-}
+// .cover-btn {
+//     color: #ffffff;
+//     background-color: rgba(0, 0, 0, 0.6);
+//     text-decoration: none;
+//     font-weight: bold;
+//     text-transform: uppercase;
+//     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+//     letter-spacing: .5px;
+//     display: inline-block;
+//     line-height: 2.5rem;
+//     border: none;
+//     border-radius: 2px;
+// }
 
-.cover-btn:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #eee;
-    text-decoration: none;
-}
+// .cover-btn:hover {
+//     background-color: rgba(0, 0, 0, 0.3);
+//     color: #eee;
+//     text-decoration: none;
+// }
 
 .cover {
     text-align: center;
@@ -152,6 +151,7 @@ body {
 .cover h4 {
     font-weight: 600;
     margin-top: 3vw;
+    color: black;
 }
 
 /*
@@ -160,7 +160,8 @@ Nav menu design - id: cover
 
 #nav-cover {
     margin-top: 1rem;
-    background-image: linear-gradient(to right, $nav-turquoise, $nav-yellow, $nav-red, $nav-blue);
+    background: none;
+    transition: background 0.5s, color 0.5s;
 }
 
 table th {
@@ -181,10 +182,4 @@ table .time {
 
 .eventLink {
     visibility: hidden;
-}
-
-.sample{
-    height: 200px;
-    width: 200px;
-    background-color: black;
 }

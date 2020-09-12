@@ -69,4 +69,26 @@
     {% include footer.html %}
 
   </body>
+  <script>
+    var navBar = document.getElementById('nav-cover');
+    function isVisible(){
+      let currPos = document.getElementsByClassName('cover')[0].getBoundingClientRect();
+      let coverBottom = currPos.bottom;
+      var isVisible = (coverBottom >= 0);
+      return isVisible;
+    }
+    //FIX ISSUE - WHY IS NAV BAR COLOR NOT CHANGING - THE NAV BAR BORDER CHANGES 
+  
+    window.onscroll = function(){
+       if(isVisible()){
+          navBar.style.color = '#000';
+          navBar.style.background = '#1F1F1F';
+        }
+        else{
+          navBar.style.border = '0px'
+          navBar.style.color = 'black';
+          navBar.style.background = 'linear-gradient(to right, #50C9CE, #FDCA40, #DB5461,  #72A1E5)';
+        }
+      }
+     </script>
 </html>
