@@ -74,18 +74,18 @@ body {
     }
 }
 
-//the horizontal line below each subtitle
-// .mb-4{
-//     display: none;
-// }
-
 .cover {
     font-family: 'Quantico', sans-serif;
 
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background: white;
+    z-index: 0;
+
+    text-align: center;
+    overflow: hidden;
     // background-image: linear-gradient($powder-blue, $hoppers-gray);
 }
 
@@ -99,8 +99,8 @@ body {
 }
 
 .cover h1 {
+    margin-top: 10vw;
     font-size: 3.5em;
-
     @media (min-width: 768px){
         font-size: 5em;
     }
@@ -113,8 +113,10 @@ body {
 }
 
 .cover img {
-    width: 60%;
+    width: 50%;
     max-width: 1000px;
+    position: relative;
+    z-index: 10;
 
     @media (min-width: 768px) {
       float: left;
@@ -122,36 +124,20 @@ body {
     }
 }
 
-// .cover-btn {
-//     color: #ffffff;
-//     background-color: rgba(0, 0, 0, 0.6);
-//     text-decoration: none;
-//     font-weight: bold;
-//     text-transform: uppercase;
-//     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
-//     letter-spacing: .5px;
-//     display: inline-block;
-//     line-height: 2.5rem;
-//     border: none;
-//     border-radius: 2px;
-// }
-
-// .cover-btn:hover {
-//     background-color: rgba(0, 0, 0, 0.3);
-//     color: #eee;
-//     text-decoration: none;
-// }
-
-.cover {
-    text-align: center;
-}
-
 .cover h1,
 .cover h3,
 .cover h4 {
+    position: relative;
     font-weight: 600;
-    margin-top: 3vw;
     color: black;
+    z-index: 10;
+}
+
+.cover .button{
+    position: relative;
+    z-index: 10;
+
+    box-shadow: 5px 5px white;
 }
 
 /*
@@ -160,7 +146,8 @@ Nav menu design - id: cover
 
 #nav-cover {
     margin-top: 1rem;
-    background: none;
+    color: white;
+    background-color: #1F1F1F;
     transition: background 0.5s, color 0.5s;
 }
 
@@ -182,4 +169,32 @@ table .time {
 
 .eventLink {
     visibility: hidden;
+}
+
+
+.stars{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 100%;
+    animation-name: bigger;
+    animation-duration: 25s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+
+@keyframes bigger{
+    0%{
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    80%{
+        transform: scale(25);
+        opacity: 0.4;
+    }
+    100%{
+        transform: scale(10);
+        opacity: 0;
+    }
 }

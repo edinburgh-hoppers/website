@@ -69,6 +69,7 @@
     {% include footer.html %}
 
   </body>
+  {% if page.title == 'Ada Lovelace Day'%}
   <script>
     var navBar = document.getElementById('nav-cover');
     function isVisible(){
@@ -81,14 +82,39 @@
   
     window.onscroll = function(){
        if(isVisible()){
-          navBar.style.color = '#000';
+          navBar.style.color = 'white';
           navBar.style.background = '#1F1F1F';
+          navBar.style.transition = 'background 0.5s, color 0.5s';
         }
         else{
-          navBar.style.border = '0px'
           navBar.style.color = 'black';
           navBar.style.background = 'linear-gradient(to right, #50C9CE, #FDCA40, #DB5461,  #72A1E5)';
+          navBar.style.transition = 'background 0.5s, color 0.5s';
         }
       }
+
+      var cover = document.getElementsByClassName('cover')[0];
+
+let colorPicker = 0;
+
+let colorScheme = ['#17BEBB', "#BF2227", "#73F764", "#B373D4", "#D37D36", "#FFC847", "#4520FE", "#D75BC0"];
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
+var height = cover.clientHeight;
+
+setInterval(function(){
+  var star = document.createElement('div');
+  star.className = 'stars';
+  star.style.top = getRndInteger(10, 10+height) + "px";
+  star.style.left = getRndInteger(10,1500) + "px";
+  star.style.backgroundColor = colorScheme[colorPicker];
+  colorPicker = (colorPicker == 7) ? 0 : colorPicker+1 ;
+  cover.appendChild(star);
+}, 200);
+
      </script>
+     {% endif %}
 </html>
