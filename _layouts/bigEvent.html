@@ -71,49 +71,55 @@
   </body>
   {% if page.title == 'Ada Lovelace Day'%}
   <script>
+
+    //FOR THE RESPONSIVE NAV BAR
     var navBar = document.getElementById('nav-cover');
+    var navLink = document.getElementsByClassName('nav-link');
     function isVisible(){
       let currPos = document.getElementsByClassName('cover')[0].getBoundingClientRect();
       let coverBottom = currPos.bottom;
       var isVisible = (coverBottom >= 0);
       return isVisible;
     }
-    //FIX ISSUE - WHY IS NAV BAR COLOR NOT CHANGING - THE NAV BAR BORDER CHANGES 
   
     window.onscroll = function(){
        if(isVisible()){
-          navBar.style.color = 'white';
+          for(let i of navLink){
+            i.style.color = 'white';
+          }
           navBar.style.background = '#1F1F1F';
           navBar.style.transition = 'background 0.5s, color 0.5s';
         }
         else{
-          navBar.style.color = 'black';
+          for(let i of navLink){
+            i.style.color = 'black';
+          }
           navBar.style.background = 'linear-gradient(to right, #50C9CE, #FDCA40, #DB5461,  #72A1E5)';
           navBar.style.transition = 'background 0.5s, color 0.5s';
         }
       }
 
+      //FOR THE CIRCLES BACKGROUND
+
       var cover = document.getElementsByClassName('cover')[0];
+      let colorPicker = 0;
+      let colorScheme = ['#17BEBB', "#BF2227", "#73F764", "#B373D4", "#D37D36", "#FFC847", "#4520FE", "#D75BC0"];
 
-let colorPicker = 0;
+      function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+      }
 
-let colorScheme = ['#17BEBB', "#BF2227", "#73F764", "#B373D4", "#D37D36", "#FFC847", "#4520FE", "#D75BC0"];
+      var height = cover.clientHeight;
 
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
-}
-
-var height = cover.clientHeight;
-
-setInterval(function(){
-  var star = document.createElement('div');
-  star.className = 'stars';
-  star.style.top = getRndInteger(10, 10+height) + "px";
-  star.style.left = getRndInteger(10,1500) + "px";
-  star.style.backgroundColor = colorScheme[colorPicker];
-  colorPicker = (colorPicker == 7) ? 0 : colorPicker+1 ;
-  cover.appendChild(star);
-}, 200);
+      setInterval(function(){
+        var star = document.createElement('div');
+        star.className = 'stars';
+        star.style.top = getRndInteger(10, 10+height) + "px";
+        star.style.left = getRndInteger(10,1500) + "px";
+        star.style.backgroundColor = colorScheme[colorPicker];
+        colorPicker = (colorPicker == 7) ? 0 : colorPicker+1 ;
+        cover.appendChild(star);
+      }, 200);
 
      </script>
      {% endif %}

@@ -99,7 +99,7 @@ body {
 }
 
 .cover h1 {
-    margin-top: 10vw;
+    margin-top: 12vh;
     font-size: 3.5em;
     @media (min-width: 768px){
         font-size: 5em;
@@ -146,9 +146,12 @@ Nav menu design - id: cover
 
 #nav-cover {
     margin-top: 1rem;
-    color: white;
     background-color: #1F1F1F;
     transition: background 0.5s, color 0.5s;
+}
+
+#nav-cover a{
+    color: white;
 }
 
 table th {
