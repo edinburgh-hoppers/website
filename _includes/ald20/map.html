@@ -34,26 +34,26 @@ ___ -->
 
 
     //map layer - custom colors 
-    L.tileLayer('https://api.mapbox.com/styles/v1/ap0806/ckeriticr3otp1apdwi9h0f1x/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 12,
-    tileSize: 256,
-    accessToken: 'pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q'
-}).addTo(mymap);
+//     L.tileLayer('https://api.mapbox.com/styles/v1/ap0806/ckeriticr3otp1apdwi9h0f1x/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q', {
+//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+//     maxZoom: 12,
+//     tileSize: 256,
+//     accessToken: 'pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q'
+// }).addTo(mymap);
 
 
     
     
 
     //function to add tile layer to map - monochrome - grey style
-//     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//     maxZoom: 18,
-//     id: 'mapbox/light-v10',
-//     tileSize: 512,
-//     zoomOffset: -1,
-//     accessToken: 'sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ'
-// }).addTo(mymap);
+    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox/light-v10',
+    tileSize: 512,
+    zoomOffset: -1,
+    accessToken: 'sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ'
+}).addTo(mymap);
 
     // Normal coordinates don't work here - sample function to retrieve coordinates
     // mymap.on('click' ,() => {

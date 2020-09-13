@@ -28,4 +28,6 @@ crossorigin=""></script>
 
 
 <!-- css -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" type="text/css">
+{%  if page.title != 'Ada Lovelace Day'%}
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css" type="text/css">
+{% endif %}

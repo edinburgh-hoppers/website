@@ -69,4 +69,8 @@
     {% include footer.html %}
 
   </body>
+  {% if page.title == 'Ada Lovelace Day'%}
+    <script src = '{{ site.baseurl }}/assets/scripts/ald20.js'>
+    </script>
+  {% endif %}
 </html>
