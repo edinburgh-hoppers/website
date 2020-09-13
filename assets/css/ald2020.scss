@@ -151,7 +151,7 @@ table .time {
     border-radius: 100%;
     animation-name: bigger;
     animation-duration: 20s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     // animation-direction: alternate;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
@@ -169,7 +169,7 @@ table .time {
     }
 
     80%{
-        transform: scale(20);
+        transform: scale(21);
         opacity: 0.5;
     }
     100%{
@@ -317,7 +317,7 @@ table .time {
   .navbar-logo {
     margin: -50%;
     z-index: 1;
-  
+    border: 3px solid #444;
     /* used on small screens */
     &-sm {
       position: absolute;
@@ -337,6 +337,11 @@ table .time {
   
   .nav-link {
     font-weight: normal;
+  }
+
+  //hamburger menu in mobile screen
+  .navbar-toggler-icon{
+      color: white;
   }
   
   

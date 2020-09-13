@@ -38,19 +38,25 @@ then we pick a random integer for the position of the "stars", and pick one colo
 */
 var cover = document.getElementsByClassName('cover')[0];
 let colorPicker = 0;
+let counter = 0;
 let colorScheme = ['#50C9CE', '#FDCA40', '#DB5461',  '#72A1E5', '#73F764', '#D37D36'];
 //first 4 - nav bar color scheme, after - additional colors to fill in 
 
 var height = cover.clientHeight;
 
-setInterval(function(){
+var createNewBubble = setInterval(function(){
     var star = document.createElement('div');
+    counter++;
     star.className = 'stars';
     star.style.top = getRndInteger(10, 10+height) + "px";
-    star.style.left = getRndInteger(10,2200) + "px";
+    star.style.left = getRndInteger(10,window.innerWidth) + "px";
     star.style.backgroundColor = colorScheme[colorPicker];
     colorPicker = (colorPicker == 7) ? 0 : colorPicker+1 ;
     cover.appendChild(star);
+    if(counter == 300){
+        //threshold, no need to keep creating new divs
+        clearInterval(createNewBubble);
+    }
 }, 100);
 
 
