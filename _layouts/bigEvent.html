@@ -20,29 +20,31 @@
     <section class="cover">
       <div class="cover-inner">
         <img src="{{ '/assets/img/' | append: page.logo | relative_url }}"/>
-        <h1>{{ page.title }}</h1>
+        <div>
+	        <h1>{{ page.title }}</h1>
 
-        <!-- optional subtitle -->
-        {% if page.subtitle %}
-          <h3>{{ page.subtitle }}</h3>
-        {% endif %}
+	        <!-- optional subtitle -->
+	        {% if page.subtitle %}
+	          <h3>{{ page.subtitle }}</h3>
+	        {% endif %}
 
-        <h4>{{ page.day }}</h4>
+	        <h4>{{ page.day }}</h4>
 
-        <div class="row justify-content-center align-items-center">
-          <!-- optional facebook -->
-          {% if page.facebook %}
-            <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
-              <a class="button clickable shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
-            </div>
-          {% endif %}
+	        <div class="row justify-content-center align-items-center">
+	          <!-- optional facebook -->
+	          {% if page.facebook %}
+	            <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
+	              <a class="button clickable shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
+	            </div>
+	          {% endif %}
 
-          <!-- optional book tickets -->
-          {% if page.bookTickets %}
-          <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
-            <a class="button clickable shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
-          </div>
-          {% endif %}
+	          <!-- optional book tickets -->
+	          {% if page.bookTickets %}
+	          <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
+	            <a class="button clickable shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
+	          </div>
+	          {% endif %}
+	        </div>
         </div>
       </div>
     </section>
