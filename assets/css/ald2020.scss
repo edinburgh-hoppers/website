@@ -195,186 +195,230 @@ table .time {
     background-color: $hoppers-green;
 }
   
-  .announcement img {
-    width: 100%;
-  }
-  
-  .announcement h5 {
-    padding: 0.5rem 0 0.25rem;
-  }
-  
-  .announcement-description {
-    color: #000;
-    background-color: #fff;
-  
-    padding: 0.5rem;
-  
-    border: 3px solid $hoppers-green;
-    border-radius: 0.5rem;
-  }
-  
-  
-  /* EVENTS PAGE */
-  
-  .event-categories {
-    padding: 0 0.9rem;
-  }
-  
-  .event-categories .button {
-    border-radius: 0;
-    margin: 0.1rem 0;
-  
-    &:hover {
-      background-color: $hoppers-gray-light;
-      color: $hoppers-green !important;
-    }
-  }
-  
-  .event-categories div:first-child a {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-    margin-top: 0;
-  }
-  
-  .event-categories div:last-child a {
-    border-bottom-left-radius: 0.25rem;
-    border-bottom-right-radius: 0.25rem;
-    margin-bottom: 0;
-  }
-  
-  @media (min-width: 992px){
-    .event-categories-wrapper{
-      display: none;
-    }
-  
-    .event-cards img {
-      height: 20%;
-    }
-  }
-  
-  
-  /* SPONSORS PAGE */
-  
-  .sponsors div {
-    margin: 0 !important;
-    padding: 0;
-  }
-  
-  .sponsors img {
-    max-height: 200px;
-    max-width: 100%;
-    margin: 1.5rem auto;
-    display: block;
-  }
+.announcement img {
+  width: 100%;
+}
 
-  body {
-    background-color: $hoppers-gray;
-  }
-  
-  card {
+.announcement h5 {
+  padding: 0.5rem 0 0.25rem;
+}
+
+.announcement-description {
+  color: #000;
+  background-color: #fff;
+
+  padding: 0.5rem;
+
+  border: 3px solid $hoppers-green;
+  border-radius: 0.5rem;
+}
+
+
+/* EVENTS PAGE */
+
+.event-categories {
+  padding: 0 0.9rem;
+}
+
+.event-categories .button {
+  border-radius: 0;
+  margin: 0.1rem 0;
+
+  &:hover {
     background-color: $hoppers-gray-light;
+    color: $hoppers-green !important;
   }
-  
-  h1, h3 {
-    color: $hoppers-green;
-  }
-  
-  h2, p {
-    color: $hoppers-black;
-  }
-  
-  a { 
-    color: $hoppers-green;
-    font-weight: bold;
-  
-    &:hover {
-        color: $hoppers-green;
-    }
-  }
-  
-  .nodecor {
-    text-decoration: none;
-    &:hover {
-      text-decoration: none;
-    }
-  }
-  
-  .center-horizentally{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .shadow {
-    -webkit-box-shadow: 5px 5px 4px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
-    -moz-box-shadow:    5px 5px 4px 2px #ccc;  /* Firefox 3.5 - 3.6 */
-    box-shadow:         5px 5px 4px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  }
-  
-  
-  /* NAVIGATION BAR */
-  
-  .navbar-logo {
-    margin: -50%;
-    z-index: 1;
-    border: 3px solid #444;
-    /* used on small screens */
-    &-sm {
-      border: 2px solid #444;
-      position: absolute;
-      right: 20px;
-      top: -20px;
-      z-index: 1;
-    }
-  }
-  
-  .nav-item {
-    transition: background $jwow-ease-out;
-    &:hover {
-      background: rgba($hoppers-gray-light, 0.4);
-      transition: background $jwow-ease;
-    }
-  }
-  
-  .nav-link {
-    font-weight: normal;
+}
+
+.event-categories div:first-child a {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  margin-top: 0;
+}
+
+.event-categories div:last-child a {
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  margin-bottom: 0;
+}
+
+@media (min-width: 992px){
+  .event-categories-wrapper{
+    display: none;
   }
 
-  //hamburger menu in mobile screen
-  .navbar-toggler-icon{
-      color: white;
+  .event-cards img {
+    height: 20%;
+  }
+}
+
+
+/* SPONSORS PAGE */
+
+.sponsors div {
+  margin: 0 !important;
+  padding: 0;
+}
+
+.sponsors img {
+  max-height: 200px;
+  max-width: 100%;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+body {
+  background-color: $hoppers-gray;
+}
+
+card {
+  background-color: $hoppers-gray-light;
+}
+
+h1, h3 {
+  color: $hoppers-green;
+}
+
+h2, p {
+  color: $hoppers-black;
+}
+
+a { 
+  color: $hoppers-green;
+  font-weight: bold;
+
+  &:hover {
+      color: $hoppers-green;
+  }
+}
+
+.nodecor {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.center-horizentally{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.shadow {
+  -webkit-box-shadow: 5px 5px 4px 2px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    5px 5px 4px 2px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         5px 5px 4px 2px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar-logo {
+  margin: -50%;
+  z-index: 1;
+  border: 3px solid #444;
+  /* used on small screens */
+  &-sm {
+    border: 2px solid #444;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    z-index: 1;
+  }
+}
+
+.nav-item {
+  transition: background $jwow-ease-out;
+  &:hover {
+    background: rgba($hoppers-gray-light, 0.4);
+    transition: background $jwow-ease;
+  }
+}
+
+.nav-link {
+  font-weight: normal;
+}
+
+//hamburger menu in mobile screen
+.navbar-toggler-icon{
+    color: white;
+}
+
+
+/* BUTTONS */
+
+.button {
+  color: #ffffff !important;
+  text-align: center;
+
+  background-color: $hoppers-green;
+  padding: .5rem!important;
+  border: 1.5px $hoppers-green solid;
+  border-radius: 0.25rem;
+
+  display: inline-block;
+  min-width: 150px;
+  width: 100%;
+
+  &:hover {
+    text-decoration: none;
+  };
+}
+
+.clickable {
+  transition: transform $jwow-ease-out;
+  
+  &:hover {
+    transition: transform $jwow-ease;
+    transform: scale(1.05);
   }
   
-  
-  /* BUTTONS */
-  
-  .button {
-    color: #ffffff !important;
-    text-align: center;
-  
-    background-color: $hoppers-green;
-    padding: .5rem!important;
-    border: 1.5px $hoppers-green solid;
-    border-radius: 0.25rem;
-  
-    display: inline-block;
-    min-width: 150px;
-    width: 100%;
-  
-    &:hover {
-      text-decoration: none;
-    };
+  &:active {
+    transform: scale(1.07);
   }
-  
-  .clickable {
-    transition: transform $jwow-ease-out;
-    
-    &:hover {
-      transition: transform $jwow-ease;
-      transform: scale(1.05);
-    }
-    
-    &:active {
-      transform: scale(1.07);
-    }
+}
+
+
+/* POPUP BOXES FOR SCHEDULE */
+
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+  margin: 0 auto;
+  padding: 1rem;
+  display: block;
+
+  width: 80%;
+  @media (min-width: 992px){
+      width: 50%;
   }
+}
+
+.closePopup {
+  font-size: 28px;
+  color: #666;
+  position: absolute;
+  right: 0.75rem;
+  top: 0;
+  font-weight: bold;
+}
+
+.closePopup:hover,
+.closePopup:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}

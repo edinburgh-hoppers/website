@@ -1,3 +1,5 @@
+# To add moreInformation, you also need id (a single word), which won't be displayed but used intern
+
 - date: "Monday, 12.10.2020"
   timeslots:
     - time: "12:00"

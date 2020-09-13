@@ -8,13 +8,44 @@
 		          	<td class="time" scope="row"> {{ time.time }} </td>
 
 		          	{%- for event in time.events -%}
+
 		            	<td colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
-			            	<span class="eventName"> {{ event.name }} </span> {%- if event.description %} <br> {{ event.description }} {% endif %}
+			            	<span class="eventName"> {{ event.name }} </span>
+
+			            	{%- if event.description %}
+			            		<br> {{ event.description }}
+			            	{% endif %}
+
+			                {%- if event.moreInformation and event.id -%}
+				                <br>
+				                <a href="javascript:document.getElementById('{{ event.id }}').style.display = 'block'; true;">
+				                	more information
+				                </a>
+
+							    <div id="{{ event.id }}" class="popup">
+								    <div class="popup-content card shadow-sm">
+								    	<span class="closePopup" onclick="document.getElementById('{{ event.id }}').style.display='none';">&times;</span>
+								    	<p>{{ event.moreInformation }}</p>
+								    </div>
+
+								    <!-- Close popup when clicking somewhere else -->
+								    <script type="text/javascript">
+								    	window.onclick = function(e) {
+								    	  var popup = document.getElementById('{{ event.id }}');
+										  if (event.target == popup) {
+										    popup.style.display = "none";
+										  }
+										}
+									</script>
+								</div>
+							{%- endif -%}
+			                
 			                {%- if event.link -%} 
 			                  <br>
 			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Link to {{ event.platform }}{% else %}Event link{% endif %}</a>
 			                {%- endif -%}
-	              		</td>	              
+	              		</td>	       
+
 		          	{%- endfor -%}
 		        </tr>
 	        {%- endfor -%}
