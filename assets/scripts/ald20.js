@@ -20,11 +20,13 @@ window.onscroll = function(){
         }
         navBar.style.background = '#333';
         navBar.style.transition = 'background 0.5s, color 0.5s';
+        document.getElementsByClassName('navbar-logo')[0].style.border = '3px solid #444';
     }
     else{
         for(let i of navLink){
             i.style.color = '#444';
         }
+        document.getElementsByClassName('navbar-logo')[0].style.border = '0';
         navBar.style.background = 'linear-gradient(to right, #50C9CE, #FDCA40, #DB5461,  #72A1E5)';
         navBar.style.transition = 'background 0.5s, color 0.5s';
     }
