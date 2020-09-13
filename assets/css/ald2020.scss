@@ -31,48 +31,6 @@ body {
 .card-title {
     font-family: 'Quantico', monospace;
     font-size: 2.5em;
-    // text-shadow: 2px 2px rgba($stone, 0.5);
-    //combination 1
-    // color: $nav-yellow;
-    // background: rgba($dark-grey, 0.8);
-    // padding: 20px 0;
-
-    //combination 2
-    // color: $dark-purple;
-    // background: $stone;
-    // padding: 20px 0;
-
-
-    //combination 3
-    // color: $stone;
-    // background-color: $hoppers-green;
-    // padding: 20px 0;
-
-    //personal favourite - a simple text shadow (can change color to $hoppers-gray)
-    // color: $nav-yellow;
-    // text-shadow: 2px 2px $stone;
-    // padding: 10px 0;
-
-    //combination - hoppers green text with grey shadow
-    // color: $hoppers-green;
-    // text-shadow: 2px 2px $stone;
-    // padding: 10px 0;
-
-    //combination - green text with yellow shadow - looks cool
-    //color: $hoppers-green;
-    //text-shadow: 2px 2px $nav-yellow;
-    //padding: 10px 0;
-
-    //combination - pinkish text with green border
-    // color: $pinkish;
-    // text-shadow: -2px 0 $hoppers-green, 0 2px $hoppers-green, 2px 0 $hoppers-green, 0 -2px $hoppers-green;
-    // padding: 10px 0;
-
-    //combination - green text with pinkish border
-    //color: $hoppers-green;
-    //text-shadow: -1px 0 $pinkish, 0 1px $pinkish, 1px 0 $pinkish, 0 -1px $pinkish;
-    //padding: 10px 0;
-
     margin: -10px -10px;
 
     &::selection{
@@ -92,7 +50,6 @@ body {
 
     text-align: center;
     overflow: hidden;
-    // background-image: linear-gradient($powder-blue, $hoppers-gray);
 }
 
 .cover-inner{
@@ -152,7 +109,7 @@ Nav menu design - id: cover
 
 #nav-cover {
     margin-top: 1rem;
-    background-color: #1F1F1F;
+    background-color: #444;
     transition: background 0.5s, color 0.5s;
 }
 
@@ -160,6 +117,11 @@ Nav menu design - id: cover
     color: white;
 }
 
+
+
+/**
+schedule design
+*/
 table th {
     padding: 1rem 0.5rem 0.5rem;
 }
@@ -180,33 +142,44 @@ table .time {
     visibility: hidden;
 }
 
+// BUBBLES ANIMATION ON MAIN COVER OF ALD20
 
 .stars{
-    width: 10px;
-    height: 10px;
+    width: 1vw;
+    height: 1vw;
     position: absolute;
     border-radius: 100%;
     animation-name: bigger;
-    animation-duration: 25s;
+    animation-duration: 20s;
     animation-iteration-count: 1;
+    // animation-direction: alternate;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
     z-index: 4;
 }
 
 @keyframes bigger{
     0%{
         transform: scale(1);
+        opacity: 0;
+    }
+
+    5%{
         opacity: 0.9;
     }
+
     80%{
-        transform: scale(25);
-        opacity: 0.4;
+        transform: scale(20);
+        opacity: 0.5;
     }
     100%{
-        transform: scale(10);
+        transform: scale(5);
         opacity: 0;
     }
 }
+
+
+//DIRECTLY TAKEN FROM STYLE.SCSS - HAD TO DELETE SOME STYLES FROM IT.
 
 /* ANNOUNCEMENTS */
 
@@ -220,7 +193,7 @@ table .time {
     color: #fff;
     text-align: center;
     background-color: $hoppers-green;
-  }
+}
   
   .announcement img {
     width: 100%;
@@ -357,8 +330,8 @@ table .time {
   .nav-item {
     transition: background $jwow-ease-out;
     &:hover {
+      background: rgba($hoppers-gray-light, 0.4);
       transition: background $jwow-ease;
-      background-color: $hoppers-gray;
     }
   }
   

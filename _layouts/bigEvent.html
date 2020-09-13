@@ -70,57 +70,7 @@
 
   </body>
   {% if page.title == 'Ada Lovelace Day'%}
-  <script>
-
-    //FOR THE RESPONSIVE NAV BAR
-    var navBar = document.getElementById('nav-cover');
-    var navLink = document.getElementsByClassName('nav-link');
-    function isVisible(){
-      let currPos = document.getElementsByClassName('cover')[0].getBoundingClientRect();
-      let coverBottom = currPos.bottom;
-      var isVisible = (coverBottom >= 0);
-      return isVisible;
-    }
-  
-    window.onscroll = function(){
-       if(isVisible()){
-          for(let i of navLink){
-            i.style.color = 'white';
-          }
-          navBar.style.background = '#444';
-          navBar.style.transition = 'background 0.5s, color 0.5s';
-        }
-        else{
-          for(let i of navLink){
-            i.style.color = 'black';
-          }
-          navBar.style.background = 'linear-gradient(to right, #50C9CE, #FDCA40, #DB5461,  #72A1E5)';
-          navBar.style.transition = 'background 0.5s, color 0.5s';
-        }
-      }
-
-      //FOR THE CIRCLES BACKGROUND
-
-      var cover = document.getElementsByClassName('cover')[0];
-      let colorPicker = 0;
-      let colorScheme = ['#17BEBB', "#BF2227", "#73F764", "#B373D4", "#D37D36", "#FFC847", "#4520FE", "#D75BC0"];
-
-      function getRndInteger(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) ) + min;
-      }
-
-      var height = cover.clientHeight;
-
-      setInterval(function(){
-        var star = document.createElement('div');
-        star.className = 'stars';
-        star.style.top = getRndInteger(10, 10+height) + "px";
-        star.style.left = getRndInteger(10,2200) + "px";
-        star.style.backgroundColor = colorScheme[colorPicker];
-        colorPicker = (colorPicker == 7) ? 0 : colorPicker+1 ;
-        cover.appendChild(star);
-      }, 200);
-
-     </script>
-     {% endif %}
+    <script src = '{{ site.baseurl }}/assets/scripts/ald20.js'>
+    </script>
+  {% endif %}
 </html>
