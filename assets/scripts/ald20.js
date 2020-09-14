@@ -40,7 +40,7 @@ then we pick a random integer for the position of the "stars", and pick one colo
 */
 var cover = document.getElementsByClassName('cover')[0];
 let colorPicker = 0;
-// let counter = 0;
+let counter = 0;
 let colorScheme = ['#50C9CE', '#FDCA40', '#DB5461',  '#72A1E5', '#73F764', '#D37D36'];
 //first 4 - nav bar color scheme, after - additional colors to fill in 
 
