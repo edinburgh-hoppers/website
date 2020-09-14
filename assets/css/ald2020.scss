@@ -150,17 +150,17 @@ table .time {
     position: absolute;
     border-radius: 100%;
     animation-name: bigger;
-    animation-duration: 20s;
+    animation-duration: 21s;
     animation-iteration-count: infinite;
     // animation-direction: alternate;
     animation-fill-mode: forwards;
-    animation-timing-function: ease-out;
+    animation-timing-function: linear;
     z-index: 4;
 }
 
 @keyframes bigger{
     0%{
-        transform: scale(1);
+        transform: translateZ(0) scale(1);
         opacity: 0;
     }
 
@@ -169,11 +169,11 @@ table .time {
     }
 
     80%{
-        transform: scale(21);
+        transform: translateZ(0) scale(18);
         opacity: 0.5;
     }
     100%{
-        transform: scale(5);
+        transform: translateZ(0) scale(5);
         opacity: 0;
     }
 }
