@@ -7,6 +7,8 @@
         - name: "Keynote address"
           description: "1 hour talk, 15min Q&A"
           colspan: "2"
+          moreInformation: "Here could be more details on the talk or on the speaker(s)."
+          id: "keynote"
     - time: "13:00"
       events: 
         - name: "Hubspot Intro to webapps talk"

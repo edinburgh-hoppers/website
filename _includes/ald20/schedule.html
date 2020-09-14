@@ -55,23 +55,45 @@
 
 <script type="text/javascript">
 	function askForKey() {
+		if (! sessionStorage.getItem('allowLinksToBeShown')) {
+			sessionStorage.setItem('allowLinksToBeShown', false);
+		}
+		var alreadyMadeVisible = sessionStorage.getItem('allowLinksToBeShown');
+
 		var today = new Date();
-		if (window.location.search != "?pwd=EdinburghAdaLovelace2020" && today.monthIndex == 9) {
+
+		if (alreadyMadeVisible == "true") {
+			changeVisibilityOfEventLinks("visible");
+			console.log("Test1");
+			console.log(alreadyMadeVisible);
+		} else if (window.location.search == "?pwd=EdinburghAdaLovelace2020") {
+			changeVisibilityOfEventLinks("visible");
+			console.log("Test2");
+		} else if (today.monthIndex == 9) { // only ask for password during october
 			var input = prompt("To be able to see the links to attend the events, please enter the key you were given on registration. If you haven't registered yet, just enter nothing.", );
-			if (input != "EdinburghAdaLovelaceHoppers2020") {
+			if (input != "EdinburghAdaLovelace2020") {
 				changeVisibilityOfEventLinks("hidden");
 			} else {
 				changeVisibilityOfEventLinks("visible");
-			}
+			}			
 		} else {
-			changeVisibilityOfEventLinks("visible");
+			changeVisibilityOfEventLinks("hidden");
+			console.log("Test3");
 		}
 	}
 
 	function changeVisibilityOfEventLinks(v) {
-		[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
-				el.style.visibility = v;
-		});
+		if (v == "visible") {
+			[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
+					el.style.display = "block";
+			});
+			sessionStorage.setItem('allowLinksToBeShown', true);
+		} else {
+			[].forEach.call(document.querySelectorAll('.eventLink'), function (el) {
+					el.style.display = "none";
+			});
+			sessionStorage.setItem('allowLinksToBeShown', false);
+		}
 	}
 
 	window.onload = askForKey;
