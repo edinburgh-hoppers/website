@@ -4,8 +4,6 @@
   includeFrom: "ald20/aboutAL.html"
 - title: "Schedule"
   includeFrom: "ald20/schedule.html"
-- title: "Sample Map page"
-  includeFrom: "ald20/map.html"
 - title: "FAQ (Frequently asked questions)"
   includeFrom: "ald20/faq.html"
 - title: "Sponsors"

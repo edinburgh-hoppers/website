@@ -4,15 +4,15 @@
   timeslots:
     - time: "12:00"
       events: 
-        - name: "Keynote address"
+        - name: "Keynote address - Jenny Brennan"
           description: "1 hour talk, 15min Q&A"
           colspan: "2"
           moreInformation: "Here could be more details on the talk or on the speaker(s)."
           id: "keynote"
     - time: "13:00"
       events: 
-        - name: "Hubspot Intro to webapps talk"
-          description: "1 hour"
+        - name: "Workshop - Introduction to Web Apps"
+          description: "HubSpot"
           link: https://www.google.com/
           platform: "Google"
         - name: "Spark workshop"
@@ -24,8 +24,8 @@
           colspan: 2
     - time: "14:00"
       events: 
-        - name: "UI/UX workshop"
-          description: "max of 1 hour"
+        - name: "Workshop - UI/UX design"
+          description: "ISTE NITK"
         - name: "Blockchain Talk and Q&A"
           description: "30 min, TBC"
     - time: "15:00"
@@ -37,12 +37,12 @@
   timeslots:
     - time: "13:00"
       events:
-        - name: "Fake News Keynote"
+        - name: "Keynote address - Wendy Grossman"
           description: "TBC"
           colspan: 2
     - time: "14:00"
       events:
-        - name: "I am Remarkable"
+        - name: "Workshop - I am Remarkable"
           description: "1.5 hours"
           colspan: 2
     - time: "15:00"
@@ -57,6 +57,6 @@
           description: "TBC"
     - time: "17:00"
       events:
-        - name: "Tell me about your"
-          description: "Lightning talks/Parade"
+        - name: "Tell me about your job"
+          description: "Panel Discussion"
           colspan: 2

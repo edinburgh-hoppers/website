@@ -16,17 +16,17 @@ ___ -->
     
     // syntax: setView(coordinates, zoom level (least - 0-18 - most))
     
-    var mymap = L.map('mapid').setView([38.548165, -6.328125], 3.);
+    var mymap = L.map('mapid').setView([38.548165, -6.328125], 3.0);
 
     //popup messages for markers - need to make this more dynamic?
     var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
     hubSpot.bindPopup("Hubspot might be here");
 
-    var lonMarker = L.marker([51.499607, -0.103855]).addTo(mymap);
-    lonMarker.bindPopup("Some other place in London");
+    var lonMarker = L.marker([13.011342, 74.793313]).addTo(mymap);
+    lonMarker.bindPopup("NITK");
 
     var uoeMarker = L.marker([55.944294, -3.186888]).addTo(mymap);
-    uoeMarker.bindPopup("Appleton Tower, University of Edinburgh").openPopup();
+    uoeMarker.bindPopup("University of Edinburgh").openPopup();
     
     //tester icon with customized div 
     // var myIcon = L.divIcon({className: 'sample'});
