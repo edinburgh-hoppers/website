@@ -2,28 +2,28 @@
   href: 
 
 - text: "Schedule"
-  href: "iwd20?pi=3#schedule"
+  href: "#schedule"
 
 - text: "Instructions for HubSpot Workshop"
-  href: "iwd20?pi=22#reactWorkshop"
+  href: "#reactWorkshop"
 
 - text: "Challenges"
-  href: "iwd20?pi=1234#challenges"
+  href: "#challenges"
     
 - text: "Location"
-  href: "iwd20?pi=14#location"
+  href: "#location"
 
 - text: "Poster Competition"
-  href: "iwd20?pi=15#posterCompetition"
+  href: "#poster"
 
 - text: "FAQ"
-  href: "iwd20?pi=92#faq"
+  href: "#faq"
 
 - text: "Sponsors"
-  href: "iwd20?pi=65#sponsors"
+  href: "#sponsors"
 
 - text: "Partners"
-  href: "iwd20?pi=35#partners"
+  href: "#partners"
 
 - text: "Contact Us"
-  href: "iwd20?pi=89#contact"
+  href: "#contact"

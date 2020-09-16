@@ -1,15 +1,22 @@
 - title: "Welcome to Hoppers"
   includeFrom: "ald20/welcome.html"
+  id : welcome
 - title: "Who was Ada Lovelace?"
   includeFrom: "ald20/aboutAL.html"
+  id: about
 - title: "Schedule"
   includeFrom: "ald20/schedule.html"
+  id: schedule
 - title: "FAQ (Frequently asked questions)"
   includeFrom: "ald20/faq.html"
+  id: faq
 - title: "Sponsors"
   includeFrom: "iwd20/sponsors.html"
+  id: sponsor
 - title: "Partners"
   includeFrom: "iwd20/partners.html"
+  id: partner
 - title: "Contact Us"
   includeFrom: "ald20/contact.html"
+  id: contact
 

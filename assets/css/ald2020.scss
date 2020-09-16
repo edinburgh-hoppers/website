@@ -23,6 +23,8 @@ $hoppers-black: #444; /* Pure black text on white backgrounds can cause eye stra
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
 
+
+
 body {
     margin: 0;
     background-color: $hoppers-gray;
@@ -109,13 +111,14 @@ Nav menu design - id: cover
 
 #nav-cover {
     margin-top: 1rem;
-    background-color: #444;
+    background: #333;
+    color: $hoppers-gray;
     transition: background 0.5s, color 0.5s;
 }
 
-#nav-cover a{
-    color: white;
-}
+// #nav-cover a{
+//     color: white;
+// }
 
 
 
@@ -207,6 +210,13 @@ table .time {
 
   border: 3px solid $hoppers-green;
   border-radius: 0.5rem;
+}
+
+.announcement-description a{
+  color: #000;
+  &:hover{
+    color: $hoppers-green;
+  }
 }
 
 

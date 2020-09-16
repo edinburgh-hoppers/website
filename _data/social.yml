@@ -1,6 +1,6 @@
 - name: "Email"
   description: "Feel free to write us an email to edinburghhoppers@gmail.com!"
-  link : ""
+  link : "mailto:edinburghhoppers@gmail.com"
   
 - name: "facebook"
   img: "f_logo.png"
@@ -12,7 +12,7 @@
 
 - name: "Instagram"
   img: "glyph-logo.png"
-  link: "https://www.instagram.com/edinburghuniversityhoppers/?hl=de"
+  link: "https://www.instagram.com/edinburghuniversityhoppers/"
 
 - name: "twitter"
   img: "Twitter_icon.png"

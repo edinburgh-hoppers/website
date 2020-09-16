@@ -1,6 +1,6 @@
 
 <!-- nav start -->
-<nav id = "nav-cover" class="nav navbar nav-pills shadow-sm navbar-expand-sm navbar-dark sticky-top">
+<nav id = "nav-cover" class="nav navbar nav-pills shadow-sm navbar-expand-sm navbar-light sticky-top">
 
 <!--  toggle buttons (only on small screens)  -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +19,10 @@
     </ul>
 
     <ul class="nav navbar-nav row">
-
+      
       {% for item in site.data[page.navItems] %}
       <li class="nav-item rounded mx-1">
-        <a class="nav-link" href="{{ site.baseurl }}/{{ item.href }}">{{ item.text }}</a>
+        <a class="nav-link" href="{{ item.href }}">{{ item.text }}</a>
       </li>
       {% endfor %}
 

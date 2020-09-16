@@ -2,16 +2,16 @@
   href: "index"
 
 - text: "Schedule"
-  href: "ald20#schedule"
+  href: "#schedule"
 
 - text: "FAQ"
-  href: "ald20?pi=92#faq"
+  href: "#faq"
 
 - text: "Sponsors"
-  href: "ald20?pi=65#sponsors"
+  href: "#sponsors"
 
 - text: "Partners"
-  href: "ald20?pi=35#partners"
+  href: "#partners"
 
 - text: "Contact Us"
-  href: "ald20?pi=89#contact"
+  href: "#contact"

@@ -155,6 +155,13 @@ a {
   border-radius: 0.5rem;
 }
 
+.announcement-description a{
+  color: #000;
+  &:hover{
+    color: $hoppers-green;
+  }
+}
+
 
 /* EVENTS PAGE */
 
