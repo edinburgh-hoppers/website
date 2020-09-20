@@ -1,6 +1,9 @@
 - text: "About Hoppers"
   href: "index"
 
+- text: "Our Speakers"
+  href: "#speakers"
+
 - text: "Schedule"
   href: "#schedule"
 

@@ -4,6 +4,8 @@
 - title: "Who was Ada Lovelace?"
   includeFrom: "ald20/aboutAL.html"
   id: about
+- title: "Our Speakers"
+  includeFrom: "ald20/speakers.html"
 - title: "Schedule"
   includeFrom: "ald20/schedule.html"
   id: schedule
