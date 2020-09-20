@@ -43,6 +43,9 @@ body {
 .cover {
     font-family: 'Quantico', sans-serif;
 
+    height: 100vh;
+    width: 100vw;
+
     display: flex;
     position: relative;
     justify-content: center;
@@ -430,6 +433,7 @@ a {
 }
 
 
+
 /* SPEAKERS */
 
 .speaker-name {
@@ -438,4 +442,33 @@ a {
 
 .speaker-shortDescription {
   color: rgba(0,0,0,.5);
+
+
+
+/* PET PARADE */
+
+#pet-parade .container-fluid.header{
+  background-color: $nav-blue;
+  text-align: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#pet-parade a{
+  float:left;
+  text-decoration: none;
+  padding: 0;
+  transition: background 0.4s;
+  height: 2vw;
+
+  &:hover{
+    background: $hoppers-gray;
+    transition: background 0.4s;
+  }
 }
