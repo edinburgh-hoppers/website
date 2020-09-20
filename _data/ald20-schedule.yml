@@ -1,61 +1,57 @@
 # To add moreInformation, you also need id (a single word), which won't be displayed but used intern
 
+# available properties:
+# - name
+# - colspan
+# - description
+# - link combined with platform (not necessary, but nicer)
+# - moreInformation combined with id
+
 - date: "Monday, 12.10.2020"
   timeslots:
-    - time: "12:00"
+    - time: "11:00"
       events: 
-        - name: "Keynote address - Jenny Brennan"
-          description: "1 hour talk, 15min Q&A"
+        - name: "Keynote by Jenny Brennan"
           colspan: "2"
-          moreInformation: "Here could be more details on the talk or on the speaker(s)."
-          id: "keynote"
-    - time: "13:00"
+    - time: "12:30"
       events: 
-        - name: "Workshop - Introduction to Web Apps"
-          description: "HubSpot"
-          link: https://www.google.com/
-          platform: "Google"
-        - name: "Spark workshop"
-          description: "5pm earliest, 1-1.5h"
+        - name: "Workshop - Introduction to Web Appt"
+          description: "by HubSpot"
+        - name: "Workshop"
+          description: "by Spark"
     - time: "13:30"
-      events: 
-        - name: "Pre-event session like Yoga or Breakfast"
-          link: "anothereventlink.com"
-          colspan: 2
-    - time: "14:00"
-      events: 
-        - name: "Workshop - UI/UX design"
-          description: "ISTE NITK"
-        - name: "Blockchain Talk and Q&A"
-          description: "30 min, TBC"
-    - time: "15:00"
       events:
-        - name: "Elena's talk"
-          description: "30 min"
+        - name: "Lunch break / Yoga Stretching Session"
+          colspan: 2
+    - time: "15:00"
+      events: 
+        - name: "UI/UX design"
+        - name: "How to become a freelancer"
+          description: "by Edinburgh Innovations"
+    - time: "16:15"
+      events:
+        - name: "Elena's talk and Q&A"
           colspan: 2
 - date: "Tuesday, 13.10.2020"
   timeslots:
+    - time: "11:00"
+      events:
+        - name: "Keynote on Fake News"
+          colspan: 2
+    - time: "12:30"
+      events:
+        - name: "Workshop - How to host a website"
+        - name: "Talk Becky from TechSheCan"
     - time: "13:00"
       events:
-        - name: "Keynote address - Wendy Grossman"
-          description: "TBC"
+        - name: "Lunch Break / Pet Parade"
           colspan: 2
     - time: "14:00"
       events:
         - name: "Workshop - I am Remarkable"
-          description: "1.5 hours"
+          description: "by Google"
           colspan: 2
-    - time: "15:00"
-      events:
-        - name: "Pet Parade"
-          colspan: 2
-    - time: "16:00"
-      events:
-        - name: "Smaller Workshops"
-          description: "TBC"
-        - name: "Talk on AI and Ethics"
-          description: "TBC"
-    - time: "17:00"
+    - time: "15:30"
       events:
         - name: "Tell me about your job"
           description: "Panel Discussion"
