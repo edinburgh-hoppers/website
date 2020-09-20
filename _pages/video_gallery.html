@@ -1,0 +1,25 @@
+---
+title : Pet Parade
+styleSheet : ald2020.css
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> {{ page.title }} </title>
+        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.styleSheet }}" type="text/css">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        
+    </head>
+
+    <body id = 'pet-parade'>
+        <div class = 'container-fluid header'>
+            <a href = "{{site.baseurl}}/ald20.html"> Go back to ALD page </a>
+            <h1> {{ page.title }} </h1>
+        </div>
+        <section class = 'container-fluid'>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu_i2Y_J-1uuwpP5-4zfcN1Bm0uZOwrx-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </body>
+</html>

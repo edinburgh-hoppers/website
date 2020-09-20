@@ -16,7 +16,7 @@ ___ -->
     
     // syntax: setView(coordinates, zoom level (least - 0-18 - most))
     
-    var mymap = L.map('mapid').setView([38.548165, -6.328125], 3.0);
+    var mymap = L.map('mapid').setView([26.115987, 3.164063], 2.0);
 
     //popup messages for markers - need to make this more dynamic?
     var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
@@ -56,8 +56,8 @@ ___ -->
 }).addTo(mymap);
 
     // Normal coordinates don't work here - sample function to retrieve coordinates
-    // mymap.on('click' ,() => {
-    //     window.alert(mymap.getCenter());
-    // });
+    mymap.on('click' ,() => {
+        window.alert(mymap.getCenter());
+    });
 </script>
 
