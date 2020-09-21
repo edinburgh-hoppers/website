@@ -23,16 +23,18 @@ embedLink: ald20-petparade
             <h3>Watch the pet videos submitted by our participants, and make sure to vote for your favourite one!</h3>
         </div>
         <div class = 'container-fluid'>
-            <section class = "pet-videos row justify-content-center" style = "display: inline">
+            <section class = "pet-videos column justify-content-center">
                 {% for item in site.data[page.embedLink] %}
-                <div class = 'col-xs-6 col-sm-4 col-md-3'>
-                    {% if item.description %}
-                        <p> {{ item.description }} </p>
-                    {% endif %}
-                </div>
-                <div class = 'col-xs-6 col-sm-4 col-md-4'>
-                    <iframe width="560" height="315" src="{{ item.link }}" allowfullscreen></iframe>
-                </div>
+                <div class = "row">
+                	<div class = 'col-xs-6 col-sm-4 col-md-4'>
+                    		<iframe width="560" height="315" src="{{ item.link }}" allowfullscreen></iframe>
+                	</div>
+			{% if item.description %}
+				<div class = 'col-xs-6 col-sm-4 col-md-3'>
+					<p> {{ item.description }} </p>
+				</div>
+			{% endif %}
+		</div>
                 {% endfor %}
             </section>
             
