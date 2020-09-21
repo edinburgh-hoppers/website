@@ -473,7 +473,7 @@ a {
   text-decoration: none;
   padding: 0;
   
-  transition: background 0.4s;
+  transition: background 0.2s, color 0.2s;
   height: 4vw;
   width: 7vw;
   font-size: 2vw;
@@ -482,9 +482,12 @@ a {
   align-items: center; 
   justify-content: center;
 
+  color: $gold-crayola;
+
   &:hover{
     background: $hoppers-gray;
-    transition: background 0.4s;
+    color: $nav-blue;
+    transition: background 0.2s, color 0.2s;
   }
 
   i{
