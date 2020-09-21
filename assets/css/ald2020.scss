@@ -115,8 +115,11 @@ Nav menu design - id: cover
 #nav-cover {
     margin-top: 1rem;
     background: #333;
-    color: $hoppers-gray;
     transition: background 0.5s, color 0.5s;
+
+    a{
+      color: #BBB;
+    }
 }
 
 // #nav-cover a{
@@ -458,17 +461,38 @@ a {
   align-items: center;
   justify-content: center;
   position: relative;
+  flex-direction: column;
 }
 
 #pet-parade a{
+  position: absolute;
+  top: 1vw;
+  left: 2vw;
+
   float:left;
   text-decoration: none;
   padding: 0;
+  
   transition: background 0.4s;
-  height: 2vw;
+  height: 4vw;
+  width: 7vw;
+  font-size: 2vw;
+
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 
   &:hover{
     background: $hoppers-gray;
     transition: background 0.4s;
   }
+
+  i{
+    color: black;
+  }
+}
+
+#pet-parade section{
+  margin-top: 3vw;
+
 }

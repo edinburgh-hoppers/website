@@ -16,7 +16,7 @@ function isVisible(){
 window.onscroll = function(){
     if(isVisible()){
         for(let i of navLink){
-           i.style.color = 'white';
+           i.style.color = '#BBB';
         }
         navBar.style.background = '#333';
         navBar.style.transition = 'background 0.5s, color 0.5s';

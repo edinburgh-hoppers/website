@@ -1,11 +1,9 @@
 - title: "Schedule"
   includeFrom: "iwd20/schedule.html"
-  id : schedule
 - title: "Instructions for HubSpot Workshop"
   includeFrom: "iwd20/hubSpotWorkshop.html"
 - title: "Challenges"
   includeFrom: "iwd20/challenges.html"
-  id: challenges
 - title: "Location"
   includeFrom: "iwd20/location.html"
 - title: "Poster Competition"
@@ -19,4 +17,3 @@
   includeFrom: "iwd20/partners.html"
 - title: "Contact Us"
   includeFrom: "iwd20/contact.html"
-  id : contact
