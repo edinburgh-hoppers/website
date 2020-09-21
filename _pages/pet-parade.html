@@ -1,12 +1,14 @@
 ---
 title : Pet Parade
 styleSheet : ald2020.css
+embedLink: ald20-petparade
 ---
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
         <title> {{ page.title }} </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel='icon' href = '{{ site.baseurl }}/assets/img/events/ald20/paw.png'>
         <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.styleSheet }}" type="text/css">
         <!-- bootstrap -->
@@ -20,15 +22,22 @@ styleSheet : ald2020.css
             <h1> {{ page.title }} </h1> 
             <h3>Watch the pet videos submitted by our participants, and make sure to vote for your favourite one!</h3>
         </div>
-        <div class = 'd-flex justify-content-center align-items-center flex-column'>
-            <section>
-                <div class = 'col-lg'>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLu_i2Y_J-1uuwpP5-4zfcN1Bm0uZOwrx-" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class = 'container-fluid'>
+            <section class = "pet-videos row justify-content-center" style = "display: inline">
+                {% for item in site.data[page.embedLink] %}
+                <div class = 'col-xs-6 col-sm-4 col-md-3'>
+                    {% if item.description %}
+                        <p> {{ item.description }} </p>
+                    {% endif %}
                 </div>
+                <div class = 'col-xs-6 col-sm-4 col-md-4'>
+                    <iframe width="560" height="315" src="{{ item.link }}" allowfullscreen></iframe>
+                </div>
+                {% endfor %}
             </section>
             
-            <section>
-                <div class = 'col-lg'>
+            <section class = 'row'>
+                <div>
                     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccsvE9Wh4lc5uunxHEmidhqwHJjZ1WJqCCtFym_k3KGdiO_Q/viewform?embedded=true" width="560" height="502" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </section>

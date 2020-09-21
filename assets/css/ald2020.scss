@@ -466,8 +466,8 @@ a {
 
 #pet-parade a{
   position: absolute;
-  top: 1vw;
-  left: 2vw;
+  top: 2vw;
+  left: 5vw;
 
   float:left;
   text-decoration: none;
@@ -475,12 +475,12 @@ a {
   
   transition: background 0.2s, color 0.2s;
   height: 4vw;
-  width: 7vw;
-  font-size: 2vw;
+  width: 10vw;
+  font-size: 4vw;
 
   display: flex;
   align-items: center; 
-  justify-content: center;
+  justify-content: left;
 
   color: $gold-crayola;
 
