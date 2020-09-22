@@ -6,6 +6,7 @@
 # - description
 # - link combined with platform (not necessary, but nicer)
 # - moreInformation combined with id
+# - linkToTheirPage
 
 - date: "Monday, 12.10.2020"
   timeslots:
@@ -48,9 +49,10 @@
           colspan: 2
     - time: "14:00"
       events:
-        - name: "Workshop - I am Remarkable"
-          description: "by Google"
+        - name: "Workshop - #IamRemarkable"
+          description: "This is a Google initiative empowering women and other underrepresented groups to celebrate their achievements in the workplace and beyond."
           colspan: 2
+          linkToTheirPage: "https://iamremarkable.withgoogle.com/"
     - time: "15:30"
       events:
         - name: "Tell me about your job"

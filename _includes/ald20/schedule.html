@@ -14,7 +14,12 @@
 
 			            	{%- if event.description %}
 			            		<br> {{ event.description }}
-			            	{% endif %}
+			            	{%- endif -%}
+
+							{%- if event.linkToTheirPage -%}
+								<br>
+								<a href="{{ event.linkToTheirPage }} " target="_blank">more information</a>
+							{%- endif -%}
 
 			                {%- if event.moreInformation and event.id -%}
 				                <br>
