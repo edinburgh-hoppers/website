@@ -7,6 +7,7 @@
 # - link combined with platform (not necessary, but nicer)
 # - moreInformation combined with id
 # - linkToTheirPage
+# - img
 
 - date: "Monday, 12.10.2020"
   timeslots:
@@ -53,6 +54,7 @@
           description: "This is a Google initiative empowering women and other underrepresented groups to celebrate their achievements in the workplace and beyond."
           colspan: 2
           linkToTheirPage: "https://iamremarkable.withgoogle.com/"
+          img: "iamremarkable.png"
     - time: "15:30"
       events:
         - name: "Tell me about your job"

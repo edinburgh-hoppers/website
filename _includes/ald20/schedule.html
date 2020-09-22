@@ -10,6 +10,11 @@
 		          	{%- for event in time.events -%}
 
 		            	<td colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+		            		{%- if event.img -%}
+		            			<img src="{{ '/assets/img/events/ald20/schedule/' | append: event.img | relative_url }}">
+		            		{%- endif -%}
+
+
 			            	<span class="eventName"> {{ event.name }} </span>
 
 			            	{%- if event.description %}

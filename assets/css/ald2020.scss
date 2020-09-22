@@ -131,21 +131,34 @@ Nav menu design - id: cover
 /**
 schedule design
 */
-table th {
-    padding: 1rem 0.5rem 0.5rem;
+#schedule th {
+   padding: 1rem 0.5rem 0.5rem;
 }
 
-table .time {
-    min-width: 70px;
+#schedule td {
+  text-align: center;
+}
+
+#schedule td img {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+
+#schedule .time {
+  min-width: 70px;
 }
 
 .eventName {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .ada{
-    font-family: 'Roboto';
+  font-family: 'Roboto';
 }
+
+
+
 
 // BUBBLES ANIMATION ON MAIN COVER OF ALD20
 
