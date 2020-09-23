@@ -367,7 +367,8 @@ a {
 
 //hamburger menu in mobile screen
 .navbar-toggler-icon{
-    color: white;
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=333');
+
 }
 
 
@@ -463,51 +464,80 @@ a {
 
 /* PET PARADE */
 
-#pet-parade .container-fluid.header{
-  background-color: $nav-blue;
-  text-align: center;
+#pet-parade{
+  .container-fluid{
+    background-color: $nav-blue;
+    text-align: center;
 
-  width: 100vw;
-  height: 100vh;
+    width: 100vw;
+    height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  flex-direction: column;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
 
-#pet-parade a{
-  position: absolute;
-  top: 2vw;
-  left: 5vw;
+    h1{
+      font-size: 5vw;
+    }
+    h3{
+      font-size: 4vw;
+    }
+  }
 
-  float:left;
-  text-decoration: none;
-  padding: 0;
+  .container{
+    position: relative;
+  }
+
+  .something-else{
+    width: 70%;
+    margin-top: 4vw;
+  }
+
+  section{
+    margin-top: 10vh;
+  }
+
+  .description{
+    font-size: 2vw;
+    float: right;
+  }
+
+  iframe{
+    width: 40vw;
+    height: 30vh;
+    border: none;
+  }
+
+  a{
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
   
-  transition: background 0.2s, color 0.2s;
-  height: 4vw;
-  width: 10vw;
-  font-size: 4vw;
-
-  display: flex;
-  align-items: center; 
-  justify-content: left;
-
-  color: $gold-crayola;
-
-  &:hover{
-    background: $hoppers-gray;
-    color: $nav-blue;
+    float:left;
+    text-decoration: none;
+    padding: 0;
+    
     transition: background 0.2s, color 0.2s;
+    height: 4vw;
+    width: 10vw;
+    font-size: 3.6vw;
+  
+    display: flex;
+    align-items: center; 
+    justify-content: left;
+  
+    color: $gold-crayola;
+  
+    &:hover{
+      background: $hoppers-gray;
+      color: $nav-blue;
+      transition: background 0.2s, color 0.2s;
+    }
+  
+    i{
+      color: black;
+    }
   }
-
-  i{
-    color: black;
-  }
-}
-
-#pet-parade section{
-  margin-top: 7vw;
-}
+} 

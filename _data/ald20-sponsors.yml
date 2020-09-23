@@ -2,3 +2,7 @@
   file: HubSpot.png
   link: "https://www.hubspot.com/"
   width: 321px
+- name: "Google"
+  file: google.png
+  link:
+  width: 300px

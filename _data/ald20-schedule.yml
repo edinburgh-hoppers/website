@@ -14,13 +14,14 @@
     - time: "11:00"
       events: 
         - name: "Keynote by Jenny Brennan"
+          description: "Jenny is a Researcher at the Ada Lovelace Institute, working at the intersection of AI and data-driven technology, policy and society. Bridging policy and technology, Jenny has deep practical experience of the implications of these technologies from her work at Twitter and Entrepreneur first, as well as consulting with a number of early stage startups on projects ranging from developing AI personal assistants to teaching over 200 kids to code."
           colspan: "2"
     - time: "12:30"
       events: 
-        - name: "Workshop - Introduction to Web Appt"
+        - name: "Workshop - Introduction to Web Apps"
           description: "by HubSpot"
-        - name: "Workshop"
-          description: "by Spark"
+        - name: "Spark Workshop"
+          description: "Workshop hosted by HUB Chiclayo Valley"
     - time: "13:30"
       events:
         - name: "Lunch break / Yoga Stretching Session"
@@ -28,17 +29,19 @@
     - time: "15:00"
       events: 
         - name: "UI/UX design"
+          description: "NITK"
         - name: "How to become a freelancer"
           description: "by Edinburgh Innovations"
     - time: "16:15"
       events:
-        - name: "Elena's talk and Q&A"
+        - name: "Life of a Digital Nomad - Elena Lape"
+          description: "Elena Lape is a final year AI & CS student currently based in London. Last year, she interrupted university to lead a nomadic lifestyle. She lived in a hacker house in a Panamanian jungle working remotely with GitHub, where she managed partnerships for the GitHub Student Developer Pack. Elena is a firm believer in learning by doing and being unafraid to take risks."
           colspan: 2
 - date: "Tuesday, 13.10.2020"
   timeslots:
     - time: "11:00"
       events:
-        - name: "Keynote on Fake News"
+        - name: "Keynote - Wendy Grossman"
           colspan: 2
     - time: "12:30"
       events:
@@ -58,5 +61,9 @@
     - time: "15:30"
       events:
         - name: "Tell me about your job"
-          description: "Panel Discussion"
+          panel: yes
+          description: "An interesting panel discussion involving women with various backgrounds and careers in the tech field. More about our speakers:<br>"
+          speaker-info: 
+            - info : Olivia Gambelin is an AI Ethicist who works to bring ethical analysis into tech development to create human-centric innovation. She believes there is strength in human values that, when applied to artificial intelligence, lead to robust technological solutions we can trust. Olivia holds an MSc in Philosophy from the University of Edinburgh, concentration in AI Ethics with special focus on probability and moral responsibility in autonomous cars, as well as a BA in Philosophy and Entrepreneurship from Baylor University. Currently, Olivia works as the Founder of Ethical Intelligence where she leads a remote team of over thirty experts in the Tech Ethics field. She is also on the Founding Editorial Board for Springer's AI and Ethics Journal, the co-founder of the Beneficial AI Society, sits on the Advisory Board of Tech Scotland Advocates and is on the External Ethics Review for Save the Children US.
+            - info : Prof. Alex Lascarides studied Mathematics at Durham, graduating in 1984. While doing her maths degree, she also took options in philosophy and logic, and found that she enjoyed engaging in work that combines insights from the sciences and humanties. This developed into an interest in Cognitive Science, and she came to Edinburgh to do her Masters and PhD because of its reputation in inter-disciplinary research. She found the research environment in Edinburgh so stimulating and the city itself so attractive that she has stayed in Edinburgh ever since---other than one year spent at Stanford as a visiting assistant professor---first as a postdoctoral fellow and then as a lecturer, reader and professor. <br><br> Prof. Lascarides' research interests are in modelling discourse and dialogue, including face to face dialogues where people gesture as well as speak, and non-cooperative dialogues where people may be deceptive and unhelpful in other ways.
           colspan: 2
