@@ -1,3 +1,26 @@
+- name: "Jenny Brennan"
+  shortDescription: Researcher at the Ada Lovelace Institute
+  img: jenny_brennan.jpg
+- name: "Wendy Grossman"
+  shortDescription: Freelance journalist
+  img: wendy-grossman.jpeg
 - name: "Fabrizio Mundana"
   shortDescription: Hub Chiclayo Valley
   img: Fabrizio_Mundana_Spark_Workshop.jpg
+- name: "Elena Lape"
+  shortDescription: 
+  img: elena_lape.jpeg
+- name: Alex Lascarides 
+  shortDescription: Deputy Director of Informatics Graduate School and Researcher at University of Edinburgh
+  img: alex.tattoo.jpeg
+- name: Elitsa Bankova
+  shortDescription: Software Engineer at Google
+  img: 
+- name: Olivia Gambelin
+  shortDescription: Founder - Ethical Intelligence
+  img: olivia-gambelin.jpeg
+- name: Lucy Havens
+  shortDescription: RBS
+  img: 
+- name: "Aditi"
+  shortDescription: "NITK - UI/UX workshop - waiting on details"

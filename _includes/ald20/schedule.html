@@ -49,6 +49,14 @@
 									</script>
 								</div>
 							{%- endif -%}
+
+							<!-- SPECIAL DESCRIPTION AREA FOR PANELISTS -->
+							{%- if event.panel -%}
+								{%- for each in event.speaker-info-%}
+								<hr>
+									<p>{{ each.info }} <br> <br></p>
+								{%- endfor -%}
+							{%- endif -%}
 			                
 			                {%- if event.link -%} 
 			                  <br>

@@ -22,17 +22,13 @@ embedLink: ald20-petparade
             <h1> {{ page.title }} </h1> 
             <h3>Watch the pet videos submitted by our participants, and make sure to vote for your favourite one!</h3>
         </div>
-        <div class = 'container-fluid'>
-            <section class = "pet-videos column justify-content-center">
+        <div class = 'container'>
+            <section class = "pet-videos">
                 {% for item in site.data[page.embedLink] %}
-                <div class = "row">
-                	<div class = 'col-xs-6 col-sm-4 col-md-4'>
-                    		<iframe width="560" height="315" src="{{ item.link }}" allowfullscreen></iframe>
-                	</div>
+                <div class = "something-else">
+                    		<iframe src="{{ item.link }}" allowfullscreen></iframe>
 			{% if item.description %}
-				<div class = 'col-xs-6 col-sm-4 col-md-3'>
-					<p> {{ item.description }} </p>
-				</div>
+					<p class = 'description'> {{ item.description }} </p>
 			{% endif %}
 		</div>
                 {% endfor %}
@@ -40,7 +36,7 @@ embedLink: ald20-petparade
             
             <section class = 'row'>
                 <div>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccsvE9Wh4lc5uunxHEmidhqwHJjZ1WJqCCtFym_k3KGdiO_Q/viewform?embedded=true" width="560" height="502" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccsvE9Wh4lc5uunxHEmidhqwHJjZ1WJqCCtFym_k3KGdiO_Q/viewform?embedded=true">Loading…</iframe>
                 </div>
             </section>
         </div>

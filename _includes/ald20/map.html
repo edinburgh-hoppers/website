@@ -22,12 +22,18 @@ ___ -->
     var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
     hubSpot.bindPopup("Hubspot might be here");
 
-    var lonMarker = L.marker([13.011342, 74.793313]).addTo(mymap);
-    lonMarker.bindPopup("NITK");
+    var nitk = L.marker([13.011342, 74.793313]).addTo(mymap);
+    nitk.bindPopup("NITK");
 
     var uoeMarker = L.marker([55.944294, -3.186888]).addTo(mymap);
     uoeMarker.bindPopup("University of Edinburgh").openPopup();
-    
+
+    var adaLovelaceInstitute = L.marker([51.518544, -0.129701]).addTo(mymap);
+    adaLovelaceInstitute.bindPopup("Ada Lovelace Institute");
+
+    var hubChiclayoValley = L.marker([-6.77329, -79.856701]).addTo(mymap);
+    hubChiclayoValley.bindPopup("Hub Chiclayo Valley");
+
     //tester icon with customized div 
     // var myIcon = L.divIcon({className: 'sample'});
     // L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
