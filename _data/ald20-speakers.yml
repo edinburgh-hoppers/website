@@ -1,21 +1,3 @@
-- name: Tes Test
-  shortDescription: Really great person!
-  img: test.png
-- name: test test
-  shortDescription: whatever
-- name: Tes Test
-  shortDescription: Really great person!
-  img: test.png
-- name: test test
-  shortDescription: whatever
-- name: Tes Test
-  shortDescription: Really great person!
-  img: test.png
-- name: test test
-  shortDescription: whatever
-- name: test test
-  shortDescription: whatever
-- name: test test
-  shortDescription: whatever
-- name: test test
-  shortDescription: whatever
+- name: "Fabrizio Mundana"
+  shortDescription: Hub Chiclayo Valley
+  img: Fabrizio_Mundana_Spark_Workshop.jpg
