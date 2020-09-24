@@ -4,7 +4,7 @@ i USED THE MABBOX GL API - ALL coordinates based on WGS84 system
 (easy tool to help convert coordinates) https://coordinates-converter.com/en/decimal/55.944128,-3.188406?karte=OpenStreetMap&zoom=8
 ___ -->
 
-<div id="mapid" style = "height: 500px"></div>
+<div id="mapid" style = "height: 50vh"></div>
 
 <script>
     
@@ -19,9 +19,11 @@ ___ -->
     map.touchZoomRotate.enable(); //zooming in on touch screen devices
     map.scrollZoom.setWheelZoomRate(1/600);
     map.boxZoom.enable();
-    var uoemarker = new mapboxgl.Marker({'marker-color' : '#444'})
+    map.addControl(new mapboxgl.NavigationControl(), 'top-left');
+
+    var uoemarker = new mapboxgl.Marker()
         .setLngLat([-3.1872, 55.944])
-        .addTo(map);
+        .addTo(map).setPopup(new mapboxgl.Popup({ offset: 15, closeOnMove: true }).setText('University of Edinburgh'));
     
     var nitkmarker = new mapboxgl.Marker()
         .setLngLat([74.796, 13.0111])
