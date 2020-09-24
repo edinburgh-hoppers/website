@@ -1,69 +1,44 @@
 <!-- ___
 
-I used the Leaflets opensource library to create the map (https://leafletjs.com/)
-In addition to that, to add the tile layer to the map, I created an access token
-on MapBox - adds a nice map design - can experiment with different layers later. 
-Currently created a token on a personal account (Aparna), but can create an account
-on the Hoppers email and update that.
-
-personal note - no brackets or quotes for access token specifier
-                coordinates of Appleton: 55.944294, -3.186888
+i USED THE MABBOX GL API - ALL coordinates based on WGS84 system
+(easy tool to help convert coordinates) https://coordinates-converter.com/en/decimal/55.944128,-3.188406?karte=OpenStreetMap&zoom=8
 ___ -->
 
 <div id="mapid" style = "height: 500px"></div>
 
 <script>
     
-    // syntax: setView(coordinates, zoom level (least - 0-18 - most))
-    
-    var mymap = L.map('mapid').setView([26.115987, 3.164063], 2.0);
-
-    //popup messages for markers - need to make this more dynamic?
-    var hubSpot = L.marker([53.34789, -6.240637]).addTo(mymap);
-    hubSpot.bindPopup("Hubspot might be here");
-
-    var nitk = L.marker([13.011342, 74.793313]).addTo(mymap);
-    nitk.bindPopup("NITK");
-
-    var uoeMarker = L.marker([55.944294, -3.186888]).addTo(mymap);
-    uoeMarker.bindPopup("University of Edinburgh").openPopup();
-
-    var adaLovelaceInstitute = L.marker([51.518544, -0.129701]).addTo(mymap);
-    adaLovelaceInstitute.bindPopup("Ada Lovelace Institute");
-
-    var hubChiclayoValley = L.marker([-6.77329, -79.856701]).addTo(mymap);
-    hubChiclayoValley.bindPopup("Hub Chiclayo Valley");
-
-    //tester icon with customized div 
-    // var myIcon = L.divIcon({className: 'sample'});
-    // L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
-
-
-    //map layer - custom colors 
-//     L.tileLayer('https://api.mapbox.com/styles/v1/ap0806/ckeriticr3otp1apdwi9h0f1x/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q', {
-//     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-//     maxZoom: 12,
-//     tileSize: 256,
-//     accessToken: 'pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx0enJwbTA2eGEzMHQ4YXE0d2VoZGcifQ.A16F9b05Y_HQe1uRcnpj5Q'
-// }).addTo(mymap);
-
-
-    
-    
-
-    //function to add tile layer to map - monochrome - grey style
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/light-v10',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'sk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZWx1Njl6ejBxNDEyeG53eHd5d2N5dXoifQ.GMIVC_ZnsJtySHxo2GsfrQ'
-}).addTo(mymap);
-
-    // Normal coordinates don't work here - sample function to retrieve coordinates
-    mymap.on('click' ,() => {
-        window.alert(mymap.getCenter());
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXAwODA2IiwiYSI6ImNrZmdoMm5zMzBhejkycnMyc29nNXd1ZTkifQ.cvkg8PmP_9JeDqgUL_cHbQ';
+    //public access token created on my account (Aparna Rajeev)
+    var map = new mapboxgl.Map({
+        container: 'mapid',
+        style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
+        center: [10,27], // starting position [lng, lat]
+        zoom: 1.7, // starting zoom
     });
+    map.touchZoomRotate.enable(); //zooming in on touch screen devices
+    map.scrollZoom.setWheelZoomRate(1/600);
+    map.boxZoom.enable();
+    var uoemarker = new mapboxgl.Marker({'marker-color' : '#444'})
+        .setLngLat([-3.1872, 55.944])
+        .addTo(map);
+    
+    var nitkmarker = new mapboxgl.Marker()
+        .setLngLat([74.796, 13.0111])
+        .addTo(map);
+    
+    var hubspotmarker = new mapboxgl.Marker()
+        .setLngLat([-6.241221,53.348816])
+        .addTo(map);
+    
+    var alimarker = new mapboxgl.Marker()
+        .setLngLat([0.131396,51.518766])
+        .addTo(map);
+
+    var hchvmarker = new mapboxgl.Marker()
+        .setLngLat([-79.840831, -6.766417])
+        .addTo(map);
+
+        
 </script>
 
