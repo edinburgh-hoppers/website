@@ -541,3 +541,13 @@ a {
     }
   }
 } 
+
+
+/* SCHEDULE */
+#schedule table td {
+	width: 50%;
+}
+
+#schedule table td:first-child {
+	width: auto;
+}
