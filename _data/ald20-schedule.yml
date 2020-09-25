@@ -19,9 +19,9 @@
     - time: "12:30"
       events: 
         - name: "Workshop - Introduction to Web Apps"
-          description: "HubSpot"
+          description: "An introductory workshop into web apps. Check out the set up instructions <a href = '#reactWorkshop'>here.</a>"
         - name: "Spark Workshop"
-          description: "HUB Chiclayo Valley"
+          description: "Welcome to the augmented reality world. Spark AR allows you to create awesome filters  for you social networks (Instagram and Facebook). Use your camera cellphone to take a shot of you wearing glasses with a beach on the background and much more. In this worshop you'll learn the basics to work on Spark AR and have fun. Creativity has no limits!"
     - time: "13:30"
       events:
         - name: "Lunch break / Yoga Stretching Session"
