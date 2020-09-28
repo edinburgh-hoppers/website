@@ -1,24 +1,30 @@
 - name: "Jenny Brennan"
   shortDescription: Researcher at the Ada Lovelace Institute
   img: jenny_brennan.jpg
+  link: https://jennybrennan.com/about
 - name: "Wendy Grossman"
-  shortDescription: Freelance journalist
+  shortDescription: Freelance science and technology writer
   img: wendy-grossman.jpeg
+  link: https://www.pelicancrossing.net/
 - name: "Fabrizio Mundaca"
   shortDescription: Hub Chiclayo Valley
   img: Fabrizio_Mundana_Spark_Workshop.jpg
+  link: https://www.facebook.com/hubchiclayovalley
 - name: "Elena Lape"
   shortDescription: 
   img: elena_lape.jpeg
+  link: https://www.linkedin.com/in/elenalape/
 - name: Alex Lascarides 
   shortDescription: University of Edinburgh
   img: alex.tattoo.jpeg
-- name: Elitsa Bankova
-  shortDescription: Software Engineer at Google
-  img: 
+  link: http://homepages.inf.ed.ac.uk/alex/
 - name: Olivia Gambelin
   shortDescription: Founder - Ethical Intelligence
   img: olivia-gambelin.jpeg
+  link: https://www.linkedin.com/in/oliviagambelin/
+- name: Elitsa Bankova
+  shortDescription: Software Engineer at Google
+  img: 
 - name: Lucy Havens
   shortDescription: RBS
   img: 

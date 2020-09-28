@@ -4,12 +4,13 @@
 
   {%- for speaker in speakers -%}
     <div class="col-6 col-sm-4 col-md-3 col-lg-2 column mb-5" style="height: 200px; text-align: center;">
-      <img class="w-75 rounded-circle mb-2" src="
+        <a {% if speaker.link %} href = '{{ speaker.link }}' target = "_blank"{% endif %}> <img class="w-75 rounded-circle mb-2 clickable" src="
           {%- if speaker.img -%}
             {{ '/assets/img/events/ald20/speakers/' | append: speaker.img | relative_url }}
           {%- else -%}
            {{ '/assets/img/hoppers-logo.png' | relative_url }}
           {%- endif -%}">
+        </a>
       <h6 class="speaker-name">{{ speaker.name }}</h6>
       <h6 class="speaker-shortDescription">{{ speaker.shortDescription }}</h6>
     </div>

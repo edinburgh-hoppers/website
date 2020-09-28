@@ -42,6 +42,7 @@
     - time: "11:00"
       events:
         - name: "Keynote - Wendy Grossman"
+          description: "Wendy M. Grossman is a freelance science and technology writer specializing in computers, freedom, and privacy. In 1987 she founded Britan's The Skeptic (www.skeptic.org.uk) magazine."
           colspan: 2
     - time: "12:30"
       events:
