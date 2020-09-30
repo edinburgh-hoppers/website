@@ -15,7 +15,7 @@
   img: elena_lape.jpeg
   link: https://www.linkedin.com/in/elenalape/
 - name: Alex Lascarides 
-  shortDescription: University of Edinburgh
+  shortDescription: Professor in Semantics
   img: alex.tattoo.jpeg
   link: http://homepages.inf.ed.ac.uk/alex/
 - name: Olivia Gambelin
@@ -26,9 +26,13 @@
   shortDescription: Software Engineer at Google
   img: 
 - name: Lucy Havens
-  shortDescription: RBS
-  img: 
-- name: "Aditi"
-  shortDescription: "NITK"
-- name: "Becky"
-  shortDescription: "TechSheCan"
+  shortDescription: PhD student at University of Edinburgh.
+  img: lucy-havens.jpeg
+  link: https://ljhavens.myportfolio.com/
+- name: "Aditi Chalisgaonkar"
+  shortDescription: "Experience Designer - Local Theory"
+  link: https://www.linkedin.com/in/aditi-chalisgaonkar-95a5937a/
+- name: "Becky Hartley"
+  shortDescription: "Women In Tech Programme Manager - PwC"
+  img: becky.jpeg
+  link: https://www.linkedin.com/in/becky-hartley-3b443b63/?originalSubdomain=uk

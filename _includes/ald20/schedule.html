@@ -1,4 +1,5 @@
 <div id="schedule" onload="askForKey()">
+<p style = "font-size: 1.25rem;"><b>Note:</b> all times listed are in BST.</p>
     <table class = "table table-bordered">
       	{%- for date in site.data[page.schedule] -%}
 	        <th scope="col-lg-2" colspan=100> {{ date.date }} </td> <!-- Really high colspan to span over all columns -->
