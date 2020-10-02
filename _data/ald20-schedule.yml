@@ -31,7 +31,8 @@
         - name: "UI/UX design"
           description: "NITK"
         - name: "Top tips for Freelancers - Edinburgh Innovations"
-          description: "Edinburgh Innovations"
+          description: "If you think you might look at freelancing now or in the future, please join us to go over some of the practical considerations. In this session, we will cover various topics like how to market yourself, how to make sure you get paid and how to operate lawfully.
+                        <br>This particular version of the workshop is designed in collaboration with Edinburgh Hoppers, as part of Ada Lovelace day. It will be designed with web developers in mind, but the content is largely applicable to all freelancers."
     - time: "16:15"
       events:
         - name: "Life of a Digital Nomad - Elena Lape"

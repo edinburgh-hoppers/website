@@ -1,5 +1,5 @@
 - name: "Jenny Brennan"
-  shortDescription: Researcher at the Ada Lovelace Institute
+  shortDescription: Researcher - Ada Lovelace Institute
   img: jenny_brennan.jpg
   link: https://jennybrennan.com/about
 - name: "Wendy Grossman"
@@ -15,7 +15,7 @@
   img: elena_lape.jpeg
   link: https://www.linkedin.com/in/elenalape/
 - name: Alex Lascarides 
-  shortDescription: Professor in Semantics
+  shortDescription: Professor in Semantics - University of Edinburgh
   img: alex.tattoo.jpeg
   link: http://homepages.inf.ed.ac.uk/alex/
 - name: Olivia Gambelin
@@ -23,10 +23,10 @@
   img: olivia-gambelin.jpeg
   link: https://www.linkedin.com/in/oliviagambelin/
 - name: Elitsa Bankova
-  shortDescription: Software Engineer at Google
+  shortDescription: Software Engineer - Google
   img: 
 - name: Lucy Havens
-  shortDescription:  PhD student - UoE, web dev and designer - RBS, consultant - West Monroe Partners
+  shortDescription:  Web dev and designer - RBS, consultant - West Monroe Partners
   img: lucy-havens.jpeg
   link: https://ljhavens.myportfolio.com/
 - name: "Aditi Chalisgaonkar"
@@ -36,5 +36,5 @@
   shortDescription: "Women In Tech Programme Manager - PwC"
   img: becky.jpeg
   link: https://www.linkedin.com/in/becky-hartley-3b443b63/?originalSubdomain=uk
-- name: "Shreya Shekar"
+- name: "Sneha Shekar"
   link: https://www.linkedin.com/in/sneha-shekar-767372137/

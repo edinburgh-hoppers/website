@@ -10,7 +10,7 @@
 
 		          	{%- for event in time.events -%}
 
-		            	<td colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}">
+		            	<td colspan="{% if event.colspan %}{{ event.colspan }}{% else %} 1 {% endif%}" style="padding: 2vh">
 		            		{%- if event.img -%}
 		            			<img src="{{ '/assets/img/events/ald20/schedule/' | append: event.img | relative_url }}">
 		            		{%- endif -%}

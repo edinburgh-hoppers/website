@@ -7,6 +7,8 @@
   includeFrom: "ald20/speakers.html"
 - title: "Schedule"
   includeFrom: "ald20/schedule.html"
+- title: "Etiquette for individual sessions"
+  includeFrom: "ald20/etiquette.html"
 - title: "Instructions for HubSpot Workshop"
   includeFrom: "ald20/hubSpotWorkshop.html"
 - title: "FAQ (Frequently asked questions)"

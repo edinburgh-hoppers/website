@@ -13,8 +13,8 @@ ___ -->
     var map = new mapboxgl.Map({
         container: 'mapid',
         style: 'mapbox://styles/mapbox/light-v10', // stylesheet location
-        center: [10,27], // starting position [lng, lat]
-        zoom: 1.7, // starting zoom
+        center: [10,30], // starting position [lng, lat]
+        zoom: 1.1, // starting zoom
     });
     map.touchZoomRotate.enable(); //zooming in on touch screen devices
     map.scrollZoom.setWheelZoomRate(1/600);
@@ -23,7 +23,7 @@ ___ -->
 
     var uoemarker = new mapboxgl.Marker()
         .setLngLat([-3.1872, 55.944])
-        .addTo(map).setPopup(new mapboxgl.Popup({ offset: 15, closeOnMove: true }).setText('University of Edinburgh'));
+        .addTo(map).setPopup(new mapboxgl.Popup({ offset: 15, closeOnMove: true }).setHTML('<b>University of Edinburgh</b>'));
     
     var nitkmarker = new mapboxgl.Marker()
         .setLngLat([74.796, 13.0111])
