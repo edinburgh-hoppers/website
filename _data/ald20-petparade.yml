@@ -1,2 +1,4 @@
+- title: "We want your vote!"
+  includeFrom: "ald20/petparade-voting.html"
 - title: "Pet Videos"
   includeFrom: "ald20/petparade-videos.html"
