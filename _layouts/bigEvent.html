@@ -14,7 +14,9 @@
 
   <body id="bigEvent">
 
-    {% include nav-bigEvent.html %}
+    {% if page.navItems %}
+      {% include nav-bigEvent.html %}
+    {% endif %}
 
     <!-- PAGE COVER -->
     <section class="cover">
@@ -28,7 +30,9 @@
 	          <h3>{{ page.subtitle }}</h3>
 	        {% endif %}
 
-	        <h4>{{ page.day }}</h4>
+          {% if page.day %}
+	          <h4>{{ page.day }}</h4>
+          {% endif %}
 
 	        <div class="row justify-content-center align-items-center">
 	          <!-- optional facebook -->

@@ -1,45 +1,9 @@
 ---
-title : Pet Parade
-styleSheet : ald2020.css
-embedLink: ald20-petparade
+layout: bigEvent
+styleSheet: ald2020.css
+cover: events/iwd20/background.png
+logo: events/ald20/paw.png
+title: Pet Parade
+subtitle: Watch the pet videos submitted by our participants, and make sure to vote for your favourite one!
+data: ald20-petparade
 ---
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> {{ page.title }} </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel='icon' href = '{{ site.baseurl }}/assets/img/events/ald20/paw.png'>
-        <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.styleSheet }}" type="text/css">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        
-    </head>
-
-    <body id = 'pet-parade'>
-        <div class = 'container-fluid header'>
-            <a href = "{{site.baseurl}}/ald20.html"><i class="fas fa-arrow-alt-circle-left"></i>Back</a>
-            <h1> {{ page.title }} </h1> 
-            <h3>Watch the pet videos submitted by our participants, and make sure to vote for your favourite one!</h3>
-        </div>
-        <div class = 'container'>
-            <section class = "pet-videos">
-                {% for item in site.data[page.embedLink] %}
-                <div class = "something-else">
-                    		<iframe src="{{ item.link }}" allowfullscreen></iframe>
-			{% if item.description %}
-					<p class = 'description'> {{ item.description }} </p>
-			{% endif %}
-		</div>
-                {% endfor %}
-            </section>
-            
-            <section class = 'row'>
-                <div>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSccsvE9Wh4lc5uunxHEmidhqwHJjZ1WJqCCtFym_k3KGdiO_Q/viewform?embedded=true">Loading…</iframe>
-                </div>
-            </section>
-        </div>
-        {% include footer.html %}
-    </body>
-</html>
