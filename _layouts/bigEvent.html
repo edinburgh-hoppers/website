@@ -13,7 +13,9 @@
   </head>
 
   <body id="bigEvent">
-
+    {% if page.title == "Pet Parade" %}
+      <a href = "{{site.baseurl}}/ald20.html">Back to ALD'20</a>
+    {% endif %}
     {% if page.navItems %}
       {% include nav-bigEvent.html %}
     {% endif %}

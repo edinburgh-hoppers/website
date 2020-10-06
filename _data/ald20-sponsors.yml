@@ -6,3 +6,6 @@
   file: google.png
   link:
   width: 300px
+- name: "American Express"
+  file: amex.png
+  width: 350px
