@@ -48,7 +48,8 @@
     - time: "12:30"
       events:
         - name: "Workshop - How to host a website (<b>TBC</b>)"
-        - name: "Talk Becky from TechSheCan"
+        - name: "The Tech She Can Charter - an info session"
+          description: "<b>Becky Hartley</b> runs the Women In Tech network including managing <a href = 'https://www.pwc.co.uk/who-we-are/women-in-technology/tech-she-can-charter.html' target = '_blank'>The Tech She Can Charter </a> at PwC.  The Charter aims to increase the number of women in tech roles by inspiring and educating young girls and women into tech careers.<br><br>She is passionate about equal opportunities for all regardless of gender, race, sexuality or background. Her career has included working on some of the firm's high profile client and internal events, training programmes and setting up and opening the firm's first collaborative tech led co-working and events space. Becky is the Producer for the firm Pantomime.  A unique charitable production that aims to bring joy to children everywhere, especially those from inner-city schools and charities that may never have the opportunity to otherwise visit a theatre or central London."
     - time: "13:00"
       events:
         - name: "Lunch Break / Pet Parade"
