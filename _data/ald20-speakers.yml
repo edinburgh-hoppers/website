@@ -41,3 +41,19 @@
 - name: "Sneha Shekar"
   link: https://www.linkedin.com/in/sneha-shekar-767372137/
   shortDescription: "Security analyst - Cisco"
+- name: Iulia Crisan
+  link: https://www.linkedin.com/in/crisaniulia/?originalSubdomain=ie
+  shortDescription: "Manager, International Growth Team - Google"
+  img: Iulia.png
+- name: Grazia Frontoso
+  link: https://www.linkedin.com/in/maria-grazia-frontoso-6803bb5/
+  shortDescription: "Data Analytics Lead, Public Sector - Google"
+  img: Grazia.png
+- name: Caitlin Attal
+  link: https://www.linkedin.com/in/caitlinattal/
+  shortDescription: "Revenue Strategy Lead - Google"
+  img: Caitlin.png
+- name: Brid McMahon
+  link: https://www.linkedin.com/in/br%C3%ADdmcmahon/
+  shortDescription: "Head of Global Technology Partners - Google"
+  img: Brid.png
