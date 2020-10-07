@@ -482,8 +482,11 @@ a {
   color: #444;
   background-color: rgba($nav-turquoise ,0.4);
   padding: 10px 20px;
-  @media (max-width: 992px){
+  @media (max-width: 1000px){
     font-size: 2em;
+  }
+  @media (max-width: 768px){
+    font-size: 1.25em;
   }
 
   &:hover{
