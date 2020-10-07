@@ -42,8 +42,8 @@ body {
 
 .cover {
     font-family: 'Quantico', sans-serif;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    min-width: 100vw;
 
     display: flex;
     position: relative;
@@ -70,7 +70,7 @@ body {
 }
 
 .cover h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     @media (min-width: 768px){
         font-size: 5em;
     }
@@ -78,7 +78,7 @@ body {
 
 .cover h4 {
     @media (min-width: 768px){
-        font-size: 2em;
+        font-size: 1.2em;
     }
 }
 
