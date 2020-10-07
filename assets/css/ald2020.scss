@@ -473,6 +473,28 @@ a {
   }
 }
 
+#bigEvent .back{
+  position: fixed; 
+  display: flex;
+  z-index: 100;
+  font-size: 4em;
+  justify-items: center;
+  color: #444;
+  background-color: rgba($nav-turquoise ,0.4);
+  padding: 10px 20px;
+  @media (max-width: 992px){
+    font-size: 2em;
+  }
+
+  &:hover{
+    background-color: rgba($nav-turquoise ,0.9);
+  }
+}
+
+.petparade .cover{
+  background-image: url('../img/events/ald20/pet-parade.png');
+}
+
 /* SCHEDULE */
 #schedule table td {
 	width: 50%;
