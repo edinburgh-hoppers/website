@@ -1,9 +1,5 @@
 <div id="petparade-videos" class="column text-center">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/7Rcp9PzpIXE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/dT7I1RfYBug" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/WJSCv9nmEqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/b9c60Rbs-wc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	{% for pet in site.data[page.pet] %}
+		<iframe width="560" height="315" src="{{ pet.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	{% endfor %}
 </div>
