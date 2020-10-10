@@ -50,6 +50,11 @@
 									</script>
 								</div>
 							{%- endif -%}
+			                
+			                {%- if event.link -%} 
+			                  <br>
+			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Join us on {{ event.platform }}{% else %}Event link{% endif %}</a>
+			                {%- endif -%}
 
 							<!-- SPECIAL DESCRIPTION AREA FOR PANELISTS -->
 							{%- if event.panel -%}
@@ -58,11 +63,6 @@
 									<p>{{ each.info }} <br> <br></p>
 								{%- endfor -%}
 							{%- endif -%}
-			                
-			                {%- if event.link -%} 
-			                  <br>
-			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Join us on {{ event.platform }}{% else %}Event link{% endif %}</a>
-			                {%- endif -%}
 	              		</td>	       
 
 		          	{%- endfor -%}
