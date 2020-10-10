@@ -44,7 +44,9 @@ body {
     font-family: 'Quantico', sans-serif;
     height: 100vh;
     width: 100vw;
-
+    @media (max-height: 690px){
+      height: auto;
+    }
     display: flex;
     position: relative;
     justify-content: center;
@@ -70,7 +72,7 @@ body {
 }
 
 .cover h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
     @media (min-width: 768px){
         font-size: 5em;
     }
@@ -78,7 +80,7 @@ body {
 
 .cover h4 {
     @media (min-width: 768px){
-        font-size: 2em;
+        font-size: 1.2em;
     }
 }
 
@@ -469,6 +471,31 @@ a {
     max-width: 600px;
     margin: 1rem;
   }
+}
+
+#bigEvent .back{
+  position: fixed; 
+  display: flex;
+  z-index: 100;
+  font-size: 4em;
+  justify-items: center;
+  color: #444;
+  background-color: rgba($nav-turquoise ,0.4);
+  padding: 10px 20px;
+  @media (max-width: 1000px){
+    font-size: 2em;
+  }
+  @media (max-width: 768px){
+    font-size: 1.25em;
+  }
+
+  &:hover{
+    background-color: rgba($nav-turquoise ,0.9);
+  }
+}
+
+.petparade .cover{
+  background-image: url('../img/events/ald20/pet-parade.png');
 }
 
 /* SCHEDULE */
