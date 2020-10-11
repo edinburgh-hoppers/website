@@ -1,4 +1,4 @@
-- name: "University of Edinburgh"
+- disp: "University of Edinburgh"
   coordinates: -3.1872, 55.944
 - name: "NITK"
   coordinates: 74.796, 13.0111
@@ -16,3 +16,9 @@
   coordinates: 91.691583, 26.187808
 - name: "VIT"
   coordinates: 79.159416, 12.971743
+- name: "Local Theory"
+  coordinates: -94.195304, 36.364308
+- name: "University of Kansas"
+  coordinates: -95.24775, 38.958058
+- name: "RV"
+  coordinates: 77.499542, 12.925398

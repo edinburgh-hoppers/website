@@ -24,7 +24,10 @@ ___ -->
     {%- for member in site.data[page.map] -%}
     var marker = new mapboxgl.Marker()
         .setLngLat([{{ member.coordinates }}])
-        .addTo(map).setPopup(new mapboxgl.Popup({ offset: 15, closeOnMove: true }).setHTML('<b>{{ member.name }}</b>'));
+        .addTo(map);
+        {% if member.disp %}
+            marker.setPopup(new mapboxgl.Popup({ offset: 15, closeOnMove: true }).setHTML('<b>{{ member.disp }}</b>'));
+        {% endif %}
     
     {% endfor %}
     // var uoemarker = new mapboxgl.Marker()
