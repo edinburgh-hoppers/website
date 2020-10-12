@@ -11,7 +11,7 @@
 
 - date: "Monday, 12.10.2020"
   timeslots:
-    - time: "before 11:00"
+    - time: "10:30"
       events:
         - name: "Pre-session Ice Breakers"
           colspan: "2"
@@ -60,7 +60,7 @@
           platform: "Zoom"
 - date: "Tuesday, 13.10.2020"
   timeslots:
-    - time: "before 11:00"
+    - time: "10:30"
       events:
         - name: "Pre-session Ice Breakers"
           colspan: "2"
