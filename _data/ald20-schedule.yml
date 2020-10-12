@@ -84,6 +84,7 @@
       events:
         - name: "Lunch Break / Pet Parade"
           colspan: 2
+          link2: "https://forms.gle/gxRjeQgdxVwdH5P5A"
           link: "https://ed-ac-uk.zoom.us/j/87160276927"
           platform: "Zoom"
     - time: "14:00"

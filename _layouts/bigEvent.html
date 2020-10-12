@@ -37,19 +37,12 @@
           {% endif %}
 
 	        <div class="row justify-content-center align-items-center">
-	          <!-- optional facebook -->
-	          {% if page.facebook %}
-	            <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
-	              <a class="button clickable shadow-sm" target="_blank" href="{{ page.facebook }}">Facebook</a>
-	            </div>
-	          {% endif %}
-
-	          <!-- optional book tickets -->
-	          {% if page.bookTickets %}
-	          <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
-	            <a class="button clickable shadow-sm" target="_blank" href="{{ page.bookTickets }}">Book Tickets</a>
-	          </div>
-	          {% endif %}
+            <!-- optional facebook -->
+            {% for one in site.data[page.cover-button] %}
+            <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
+              <a class="button clickable shadow-sm" target="_blank" href="{{ one.link }}">{{ one.text }}</a>
+            </div>
+            {% endfor %}
 	        </div>
         </div>
       </div>

@@ -55,6 +55,10 @@
 			                  <br>
 			                  <a class="eventLink" href='{{ event.link }}' target='_blank'>{% if event.platform %}Join us on {{ event.platform }}{% else %}Event link{% endif %}</a>
 			                {%- endif -%}
+							{% if event.link2 %}
+							<br>
+			                  <a class="eventLink" href='{{ event.link2 }}' target='_blank'>Submit your video for the pet parade here.</a>
+							{% endif %}
 
 							<!-- SPECIAL DESCRIPTION AREA FOR PANELISTS -->
 							{%- if event.panel -%}
