@@ -38,54 +38,54 @@
       events:
         - name: "Lunch break / Yoga Stretching Session"
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/86397118397"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/68fb66cd7ade4474b583a1960d09ff1d"
+          platform: "Blackboard Collaborate"
     - time: "15:00"
       events: 
         - name: "UI/UX workshop"
           description: "This workshop will focus on the process of building a user experience, using an example to demonstrate the importance of research, prototyping, and the final implementation. This workshop will be presented by Aditi Chalisgaonkar, one of our panelists in our future panel discussion session."
-          link: "https://ed-ac-uk.zoom.us/j/83804813302"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/cb8758e5cced4925a7129cd7e551ebf4"
+          platform: "Blackboard Collaborate"
         - name: "Top tips for Freelancers - Edinburgh Innovations"
           description: "If you think you might look at freelancing now or in the future, please join us to go over some of the practical considerations. In this session, we will cover various topics like how to market yourself, how to make sure you get paid and how to operate lawfully.
                         <br>This particular version of the workshop is designed in collaboration with Edinburgh Hoppers, as part of Ada Lovelace day. It will be designed with web developers in mind, but the content is largely applicable to all freelancers."
-          link: "https://ed-ac-uk.zoom.us/j/82646055090"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/95ff983c20484890ac771beed00f1cf3"
+          platform: "Blackboard Collaborate"
     - time: "16:15"
       events:
         - name: "Life of a Digital Nomad - Elena Lape"
           description: "Elena Lape is a final year AI & CS student currently based in London. Last year, she interrupted university to lead a nomadic lifestyle. She lived in a hacker house in a Panamanian jungle working remotely with GitHub, where she managed partnerships for the GitHub Student Developer Pack. Elena is a firm believer in learning by doing and being unafraid to take risks."
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/81982163650"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/06f00253c5fa447aad2fe7fb71d865ea"
+          platform: "Blackboard Collaborate"
 - date: "Tuesday, 13.10.2020"
   timeslots:
     - time: "10:30"
       events:
         - name: "Pre-session Ice Breakers"
           colspan: "2"
-          link: "https://ed-ac-uk.zoom.us/j/84426768854"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/224072048bb74a62a288507d0f0d5519"
+          platform: "Blackboard Collaborate"
     - time: "11:00"
       events:
         - name: "Keynote - Wendy Grossman"
           description: "Wendy M. Grossman is a freelance science and technology writer specializing in computers, freedom, and privacy. In 1987 she founded Britan's <a href = 'https://www.skeptic.org.uk/' target = '_blank'>The Skeptic </a>magazine."
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/85769039356"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/82da4d1ac3b144c793892a0625d829e7"
+          platform: "Blackboard Collaborate"
     - time: "12:30"
       events:
         - name: "Presentation of Tech She Can Charter - by Becky"
           description: "The Tech She Charter aims to increase the number of women in tech roles by inspiring and educating young girls and women into tech careers. As a group we know this is an important problem to solve as technology is set to influence every aspect of our lives. We need to ensure that females have an equal opportunity to take part in the jobs of the future. <br><br><b>Becky Hartley</b> runs the Women In Tech network including managing <a href = 'https://www.pwc.co.uk/who-we-are/women-in-technology/tech-she-can-charter.html' target = '_blank'>The Tech She Can Charter </a> at PwC. She is passionate about equal opportunities for all regardless of gender, race, sexuality or background."
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/83450199932"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/0fb794a59f7d4165aa10ac69d6381051"
+          platform: "Blackboard Collaborate"
     - time: "13:00"
       events:
         - name: "Lunch Break / Pet Parade"
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/87160276927"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/ee6910bc5c494bcdb724090c56a1bc62"
+          platform: "Blackboard Collaborate"
     - time: "14:00"
       events:
         - name: "Workshop - #IamRemarkable"
@@ -106,5 +106,5 @@
             - info : <b>Elitsa Bankova</b> has been working at Google Zurich since 2018 as a Software Engineer in Knowledge Graph, used to enhance the Search results and answer Assistant questions. She has interned 3 times in the Zurich and MTV offices prior to joining full-time. Elitsa graduated in 2018 from the University of Edinburgh with a Bachelor Degree in Artificial Intelligence and Computer Science. Outside of her work, she enjoys dancing and learning new languages, and is currently battling with (Swiss)German.
             - info : <b>Sneha Shekar</b> joined Cisco Systems as a Security Researcher after completing her undergrad in Information Science and Engineering in 2019. She is a GREM certified malware analyst and holds the Black Belt in the Cisco Security Ninja program. Along with threat hunting, reversing malware samples and building prototypes to keep the internet safe, she delivers talks and conducts bootcamps at various conferences like Cisco SecCon Village, IEEE young professionals section and multiple universities across India.
           colspan: 2
-          link: "https://ed-ac-uk.zoom.us/j/85144441973"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/8c3cff27439e4a58a91d715fa401af58"
+          platform: "Blackboard Collaborate"
