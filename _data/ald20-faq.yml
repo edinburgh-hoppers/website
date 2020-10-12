@@ -14,3 +14,5 @@
   answer: "All you would require is a laptop and a stable WiFi connection - some workshops might require some preparation from the participants beforehand, which will be mentioned in the schedule."
 - question: "What if I miss a session?"
   answer: "We are going to be recording each session, which will later be uploaded to our YouTube channel. You can check out our channel <a href = 'https://www.youtube.com/channel/UC8kHxhiU2BHaKPQThGRtFfQ' target = '_blank'>here</a>."
+- question: "What if I have troubles using Blackboard Collaborate because I am in China?"
+  answer: "Try using the VPN service. The university website will help you set it up. See https://www.ed.ac.uk/information-services/computing/desktop-personal/vpn/vpn-service-using-in-china."
