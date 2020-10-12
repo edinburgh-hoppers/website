@@ -28,12 +28,12 @@
       events: 
         - name: "Workshop - Introduction to Web Apps"
           description: "Want to learn more about web development but don't know where to begin? This is an introductory workshop into web apps - suitable for beginners. There are a few instructions to set up your programming environment prior to the workshop. You can find the instructions <a href = '#reactWorkshop'>here.</a>"
-          link: "https://hubspot.zoom.us/j/91352500254?pwd=b2F5TjJBNU1JSGI0b1lCYWcrbUpNdz09"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/0e2dfbca23e44d64baec92a37c4c7c7e"
+          platform: "Blackboard Collaborate"
         - name: "Spark Workshop"
           description: "Welcome to the augmented reality world. Spark AR allows you to create awesome filters  for you social networks (Instagram and Facebook). Use your camera cellphone to take a shot of you wearing glasses with a beach on the background and much more. In this worshop you'll learn the basics to work on Spark AR and have fun. Creativity has no limits!"
-          link: "https://ed-ac-uk.zoom.us/j/82311636580"
-          platform: "Zoom"
+          link: "https://eu.bbcollab.com/guest/fb9c9e87b2504621b47c09031bb15fb2"
+          platform: "Blackboard Collaborate"
     - time: "13:30"
       events:
         - name: "Lunch break / Yoga Stretching Session"
