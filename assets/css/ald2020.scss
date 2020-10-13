@@ -498,6 +498,26 @@ a {
   background-image: url('../img/events/ald20/pet-parade.png');
 }
 
+.videoWrapper {
+  position: relative;
+  padding-bottom: calc(var(--aspect-ratio, .5625) * 100%); 
+  height: 0;
+}
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.pet-div {
+  margin-bottom: 5rem;
+}
+
+
+
 /* SCHEDULE */
 #schedule table td {
 	width: 50%;
