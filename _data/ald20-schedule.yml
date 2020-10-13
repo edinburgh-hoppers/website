@@ -92,7 +92,7 @@
         - name: "Workshop - #IamRemarkable"
           description: "This is a Google initiative empowering women and other underrepresented groups to celebrate their achievements in the workplace and beyond. Our facilitators for the workshop are Iulia Crisan, Grazia Frontoso, Caitlin Attal, and Brid McMahon."
           colspan: 2
-          linkToTheirPage: "https://iamremarkable.withgoogle.com/"
+          linkToTheirPage: "https://events.withgoogle.com/iamremarkable-workshop-for-ada-lovelace-day/"
           img: "iamremarkable.png"
     - time: "15:30"
       events:
