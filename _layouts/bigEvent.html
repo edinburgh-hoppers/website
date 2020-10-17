@@ -12,7 +12,7 @@
     {% endif %}
   </head>
 
-  <body id="bigEvent" {% if page.title == "Pet Parade" %} class = "petparade" {% endif %}>
+  <body id="bigEvent" {% if page.title == "Pet Parade" or page.subtitle == "Recordings" %} class = "petparade" {% endif %}>
     {% if page.title == "Pet Parade" %}
       <a href = "{{site.baseurl}}/ald20.html" class = "back">Back</a>
     {% endif %}
@@ -37,7 +37,7 @@
           {% endif %}
 
 	        <div class="row justify-content-center align-items-center">
-            <!-- optional facebook -->
+            <!-- the buttons on the cover -->
             {% for one in site.data[page.cover-button] %}
             <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
               <a class="button clickable shadow-sm" target="_blank" href="{{ one.link }}">{{ one.text }}</a>
