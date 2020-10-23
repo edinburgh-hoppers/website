@@ -46,6 +46,7 @@ body {
     width: 100vw;
     @media (max-height: 690px){
       height: auto;
+      padding-bottom: 50px;
     }
     display: flex;
     position: relative;
