@@ -2,7 +2,7 @@
 
   <div class="row justify-content-center">
 
-    {%- for member in site.data[page.partners] -%}
+    {%- for member in site.data[page.subpages][page.partners] -%}
 
     <div class="col-12 col-lg-6">
       <a href="{{ member.link }}" target="_blank" style="width: {{ member.width }}; max-width : 100%;" class="d-block mx-auto">

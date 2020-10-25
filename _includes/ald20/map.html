@@ -21,7 +21,7 @@ ___ -->
     map.boxZoom.enable();
     map.addControl(new mapboxgl.NavigationControl(), 'top-left');
 
-    {%- for member in site.data[page.map] -%}
+    {%- for member in site.data[page.subpages][page.map] -%}
     var marker = new mapboxgl.Marker()
         .setLngLat([{{ member.coordinates }}])
         .addTo(map);

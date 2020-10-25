@@ -20,7 +20,7 @@
 
     <ul class="nav navbar-nav row">
       
-      {% for item in site.data[page.navItems] %}
+      {% for item in site.data[page.subpages][page.navItems] %}
       <li class="nav-item rounded mx-1">
         <a class="nav-link" href="{{ item.href }}">{{ item.text }}</a>
       </li>
