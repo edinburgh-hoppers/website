@@ -12,8 +12,8 @@
     {% endif %}
   </head>
 
-  <body id="bigEvent" {% if page.title == "Pet Parade" %} class = "petparade" {% endif %}>
-    {% if page.title == "Pet Parade" %}
+  <body id="bigEvent" {% if page.title == "Pet Parade" or page.subtitle == "Recordings" %} class = "petparade" {% endif %}>
+    {% if page.title == "Pet Parade" or page.subtitle == "Recordings" %}
       <a href = "{{site.baseurl}}/ald20.html" class = "back">Back</a>
     {% endif %}
     {% if page.navItems %}
@@ -37,8 +37,8 @@
           {% endif %}
 
 	        <div class="row justify-content-center align-items-center">
-            <!-- optional facebook -->
-            {% for one in site.data[page.cover-button] %}
+            <!-- the buttons on the cover -->
+            {% for one in site.data[page.subpages][page.cover-button] %}
             <div class="col-12 col-md-4 col-lg-3 my-2 center-horizentally">
               <a class="button clickable shadow-sm" target="_blank" href="{{ one.link }}">{{ one.text }}</a>
             </div>
@@ -52,7 +52,7 @@
     <main class="event-info">
       <div class="container">
 
-        {%- for member in site.data[page.data] -%}
+        {%- for member in site.data[page.subpages][page.data] -%}
 
           <div class="card shadow-sm border-0 mb-3">
             <div class="card-body" id = "{% if member.id %}{{ member.id }}{% endif %}">

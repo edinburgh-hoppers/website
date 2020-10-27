@@ -14,8 +14,8 @@
   img: sarah.jpg
   role: Head of Media
 
-- name: Nicole Meng
-  img: nicole.jpg
+- name: Alice Vlasov
+  img: alice.png
   role: Head of Big Events
 
 - name: Laura Ritter
@@ -24,7 +24,7 @@
 
 - name: Aparna Rajeev
   img: aparna.jpg
-  role: Head of Tech
+  role: Head of Tech and Website Coordinator
 
 - name: Alejandra Amaro
   img: alejandra.jpg
@@ -34,10 +34,6 @@
   img: jacintha.jpg
   role: Media Coordinator
 
-- name: Alice Vlasov
-  img: alice.png
-  role: Big Events Coordinator
-
 - name: Julia Castillo Trujillo
   img: julia.jpg
   role: Social and Website Coordinator
@@ -46,8 +42,8 @@
   img: jahnvi.jpg
   role: Tech Coordinator
 
-- name: Linda Mazanova
-  img: linda.jpg
+- name: Christine Friesen
+  img: 
   role: Tech Coordinator
 
 - name: Athiya Deviyani
@@ -58,6 +54,3 @@
   img: siang.jpg
   role: Diversity and Wellness Officer
 
-- name: Pauline Peters
-  img: pauline.jpg
-  role: Website Master

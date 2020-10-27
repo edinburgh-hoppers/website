@@ -1,5 +1,5 @@
 <div id="petparade-videos" class="column text-center">
-	{% for pet in site.data[page.pet] %}
+	{% for pet in site.data[page.subpages][page.pet] %}
 		<div class="pet-div row align-items-center">
 			<div class="pet-des col-12 col-md-4">
 				<h4>{{ pet.name }}</h4>

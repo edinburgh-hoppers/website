@@ -3,7 +3,7 @@
 
 <div id="schedule">
   <table>
-    {%- for member in site.data[page.schedule] -%}
+    {%- for member in site.data[page.subpages][page.schedule] -%}
 
       <tr>
         <td class="time {% unless member.content or member.last == "true" %}bd-b{% endunless %}">{{ member.time }}</td>

@@ -39,5 +39,6 @@ Create an new file in _pages and set the following variables:
   - facebook: [Link to the event on facebook. OPTIONAL.]
   - bookTickets: [Link to the event on eventbrite or a similar site. OPTIONAL.]
   - navItems: [Link to the data file that lists what to include in the navbar. Every element has a text (which is shown in the navbar) and a href (a relative path, starting at the base url of the page).]
+  - subpages: Put all yml files in _data in a folder for particular event and add that folder name here. Can refer to it using the following syntax: ```{% for member in site.data[page.subpages][page.<insert element like data, faq, schedule>]%}{% endfor %}.``` 
   - data: [Link to the event's data file which describes the page's content. Every element has a title and a includeFrom (relative path starting from the _includes folder that refers to the content of the section; using the data in the data files refered to with the following variables).]
   - [Include links to the data files needed to display certain contents (Schedule? FAQ?). Look into the _includes folder to find already designed segments from IWD20.]

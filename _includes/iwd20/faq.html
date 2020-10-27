@@ -1,5 +1,5 @@
 <div id="faq">
-  {%- for member in site.data[page.faq] -%}
+  {%- for member in site.data[page.subpages][page.faq] -%}
     <div>
       <h5>{{ member.question }}</h5>
       <p>{{ member.answer }}</h5>
