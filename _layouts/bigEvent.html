@@ -13,7 +13,7 @@
   </head>
 
   <body id="bigEvent" {% if page.title == "Pet Parade" or page.subtitle == "Recordings" %} class = "petparade" {% endif %}>
-    {% if page.title == "Pet Parade" %}
+    {% if page.title == "Pet Parade" or page.subtitle == "Recordings" %}
       <a href = "{{site.baseurl}}/ald20.html" class = "back">Back</a>
     {% endif %}
     {% if page.navItems %}

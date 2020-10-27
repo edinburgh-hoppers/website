@@ -474,6 +474,7 @@ a {
   }
 }
 
+/*back button in the pet parade and recordings page for ald*/
 #bigEvent .back{
   position: fixed; 
   display: flex;
@@ -482,7 +483,7 @@ a {
   justify-items: center;
   color: #444;
   background-color: rgba($nav-turquoise ,0.4);
-  padding: 10px 20px;
+  padding: 10px 1.13vw;
   @media (max-width: 1000px){
     font-size: 2em;
   }
@@ -491,7 +492,7 @@ a {
   }
 
   &:hover{
-    background-color: rgba($nav-turquoise ,0.9);
+    background-color: rgba($nav-turquoise, 0.9);
   }
 }
 
