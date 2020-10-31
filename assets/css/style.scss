@@ -216,6 +216,46 @@ a {
   display: block;
 }
 
+#tiers-intro {
+  text-align: center;
+  padding: 50px 90px 20px 90px;
+}
+
+.tiers td {
+  color: $hoppers-black;
+  text-align: center;
+  padding: 8px;
+}
+
+.tiers td:first-child{
+  text-align: left;
+  font-size: 105%;
+}
+
+.tiers img {
+  height: 25px;
+  width: 25px;
+}
+
+.tiers tr:nth-child(odd){background-color: $hoppers-gray-light;}
+
+.tiers tr:hover {background-color: $hoppers-gray;}
+
+.tiers th {
+  background-color: $hoppers-green;
+  color: $hoppers-gray-light;
+  padding: 5px;
+  font-size: 105%;
+}
+
+.tiers th:first-child{
+  background-color: white
+}
+
+.tiers a {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
 
 /* TEAM PAGE */
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Sponsors
+styleSheet: style.scss
 ---
 
 <div class="sponsors row px-4">
@@ -15,4 +16,62 @@ title: Sponsors
 
   {% endfor %}
 
+</div>
+
+<div class="tiers">
+
+  <div id="tiers-intro">
+    <h3>Sponsorships</h3>
+    <p>Are you or your company interested in working with Hoppers? Take a look at the different levels of sponsorship we offer or download our sponsorship proposal below. </p>
+    <p>If you have any questions or you want to sponsor us, contact us at edinburghhoppers@gmail.com .</p>
+  </div>
+
+  <table>
+    <colgroup>
+      <col width="40%" />
+      <col width="20%" />
+      <col width="20%" />
+      <col width="20%" />
+    </colgroup>
+    <thead>
+      <tr class="header" style="text-align: center; font-weight: bold;">
+        <th></th>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Bronze</th>
+      </tr>
+      <tr class="prices header" style="text-align: center;">
+        <th></th>
+        <th>£1500</th>
+        <th>£1000</th>
+        <th>£750</th>
+      </tr>
+    </thead>
+    <tbody>
+      {%- for row in site.data.sponsorship -%}
+      <tr>
+        <td>{{ row.name }}</td>
+        <td>
+          {%- if row.gold -%}
+          <img src="{{ '/assets/img/check-hoppers-green.png' | relative_url }}">
+          {%- endif -%}
+        </td>
+        <td>
+          {%- if row.silver -%}
+          <img src="{{ '/assets/img/check-hoppers-green.png' | relative_url }}">
+          {%- endif -%}
+        </td>
+        <td>
+          {%- if row.bronze -%}
+          <img src="{{ '/assets/img/check-hoppers-green.png' | relative_url }}">
+          {%- endif -%}
+        </td>
+      </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+
+  <div class="col-12 center-horizentally">
+    <a class="col-12 col-md-5 col-lg-4 button clickable" href="{{ 'assets/pdf/hoppers-sponsorships-20-21.pdf' | relative_url }}" target="_blank">Download our sponsorship proposal</a>
+  </div>
 </div>
