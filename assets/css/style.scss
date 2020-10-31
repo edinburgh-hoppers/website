@@ -218,7 +218,11 @@ a {
 
 #tiers-intro {
   text-align: center;
-  padding: 50px 90px 20px 90px;
+  padding: 5vw 9vw 2vw 9vw;
+  margin-bottom: 5vh;
+  @media(max-width: 700px){
+    font-size: 13px;
+  }
 }
 
 .tiers td {
@@ -235,6 +239,12 @@ a {
 .tiers img {
   height: 25px;
   width: 25px;
+}
+
+.tiers table{
+  @media(max-width: 700px){
+    font-size: 12px;
+  }
 }
 
 .tiers tr:nth-child(odd){background-color: $hoppers-gray-light;}
