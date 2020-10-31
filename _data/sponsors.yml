@@ -18,7 +18,12 @@
   link: "https://about.google/"
   width: 296px
 
-#- name: "Citigroup"
-#  img: citi
-#  link: ""
-#  width: 155px
+- name: "American Express"
+  img: amex
+  link: ""
+  width: 200px
+
+# - name: "Citi"
+#   img: citi
+#   link: ""
+#   width: 180px
