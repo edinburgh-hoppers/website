@@ -1,5 +1,6 @@
 ---
 layout: default
+link: "https://calendar.google.com/calendar/u/1?cid=MmE5MGwxOXZvdW9yOWtucTJzczg2ZzZtdTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ"
 ---
 
 <!-- To include events from facebook -->
@@ -35,7 +36,7 @@ add EVENT-TITLE and BANNER image
 <div class="row mb-4">
   <div class="col-12">
     <div class="row">
-      <div class="col-md-6 mb-4 event-categories-wrapper">
+      <!-- <div class="col-md-6 mb-4 event-categories-wrapper">
         <div class="row event-categories">
 
           {% for member in site.data.event-categories %}
@@ -45,7 +46,7 @@ add EVENT-TITLE and BANNER image
           {% endfor %}
 
         </div>
-      </div>
+      </div> -->
 
       <div class="col-md-6 col-lg-12">
         <p>Over the year we organise many different events. Every semester, there is a Big Event.
@@ -89,4 +90,15 @@ add EVENT-TITLE and BANNER image
 
   {% endfor %}
 
+</div>
+
+<div class = "container">
+  <div class = "mt-5 text-center">
+    <h4 style = "color:#333">Can't keep up with our events?</h4>
+    <p>We have now released our public events Google calendar. This can be added to your own Google calendar to ensure that you receive live updates as and when we publish new events.</p>
+    <a class = "col-12 col-md-5 col-lg-4 button clickable" target = "_blank" href = {{ page.link }}>Add Hoppers calendar</a>
+  </div>
+    
+  
+  
 </div>
