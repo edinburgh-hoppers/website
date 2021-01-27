@@ -5,6 +5,7 @@ on:
   pull_request:
     branches:
       - egm
+      - master
   schedule:
     - cron: 58 11 * * *
 
