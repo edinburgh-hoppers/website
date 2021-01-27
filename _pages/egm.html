@@ -1,0 +1,61 @@
+---
+layout: default
+title: EGM 2021
+data: egm_candidates
+---
+
+<div class = "EGM">
+
+<h3>Positions available: Secretary and Treasurer</h3>
+<h4>Candidates</h4>
+<div>
+    {% for person in site.data[page.data]%}
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="..." alt="Card image cap">
+            <div class="card-body">
+                <h5>{{ person.name }}</h5>
+                <h6>Running for: <span style = "color: #666">{{ person.position }}</span></h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>  
+    {% endfor %}
+</div>
+
+
+
+<!-- voting section -->
+
+    <a class="typeform-share button clickable" href="https://form.typeform.com/to/UifKXYPk?typeform-medium=embed-snippet" data-mode="drawer_right" 
+    style="display:inline-block;
+    text-decoration:none;
+    background-color:#3da08c;
+    color:white;
+    cursor:pointer;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:20px;
+    text-align:center;
+    height:50px;
+    padding:0px 33px;
+    border-radius:25px;
+    max-width:20%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:bold;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;" target="_blank">Vote now </a>
+    <script> 
+        (function() { 
+            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; 
+            if(!gi.call(d,id)){ 
+                js=ce.call(d,"script"); 
+                js.id=id; 
+                js.src=b+"embed.js"; 
+                q=gt.call(d,"script")[0]; 
+                q.parentNode.insertBefore(js,q) 
+                } })
+                () 
+    </script>
+
+
+</div>

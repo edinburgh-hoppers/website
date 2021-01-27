@@ -122,6 +122,28 @@ a {
   }
 }
 
+//egm 
+
+.EGM{
+  text-align: center;
+  h3{
+    color: $hoppers-black;
+  }
+} 
+
+
+.highlight{
+  background-color: #3da08c;
+  font-weight: 700;
+  transition: background-color 0.2s;
+  &:hover{
+    background-color: transparent;
+  }
+}
+
+.typeform-share{
+  font-family: 'Roboto Condensed';
+}
 
 /* ANNOUNCEMENTS */
 
