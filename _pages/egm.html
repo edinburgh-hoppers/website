@@ -1,0 +1,65 @@
+---
+layout: default
+title: EGM 2021
+data: egm_candidates
+---
+
+<div class = "EGM">
+
+<h3 class = "display-4" style="font-size: 30px">Positions available: Secretary and Treasurer</h3>
+<h4 style="color:#666;text-decoration: underline;">Candidates</h4>
+<div id = "card-group">
+    {% for person in site.data[page.data]%}
+        <div class="card border-secondary candidates w-100" style="width: 18rem;">
+            <!-- <img class="card-img-top" src="{{ person.img }}" alt="Card image cap"> -->
+            <div class="card-body">
+                <h5 class = "card-title">{{ person.name }}</h5>
+                <h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ person.position }}</span></h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><span class = "question">Why do you want to be a part of Hoppers? </span><br> {{ person.answer1 }}</li>
+                    <li class="list-group-item"><span class = "question">What experience do you have related to the role chosen?</span><br> {{ person.answer2}}</li>
+                    <li class="list-group-item"><span class = "question">How would you contribute to bettering the engagement with our members? </span><br> {{ person.answer3 }}</li>
+                  </ul>
+            </div>
+        </div>  
+    {% endfor %}
+</div>
+
+
+
+<!-- voting section -->
+
+    <a class="typeform-share button clickable mt-4" href="https://form.typeform.com/to/UifKXYPk?typeform-medium=embed-snippet" data-mode="drawer_right" 
+    style="display:inline-block;
+    text-decoration:none;
+    background-color:#3da08c;
+    color:white;
+    cursor:pointer;
+    font-family:Helvetica,Arial,sans-serif;
+    font-size:20px;
+    text-align:center;
+    height:50px;
+    padding:0px 33px;
+    border-radius:25px;
+    max-width:20%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight:bold;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;" target="_blank">Vote now </a>
+    <script> 
+        (function() { 
+            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; 
+            if(!gi.call(d,id)){ 
+                js=ce.call(d,"script"); 
+                js.id=id; 
+                js.src=b+"embed.js"; 
+                q=gt.call(d,"script")[0]; 
+                q.parentNode.insertBefore(js,q) 
+                } })
+                () 
+    </script>
+
+
+</div>

@@ -122,6 +122,59 @@ a {
   }
 }
 
+//egm 
+
+.EGM{
+  text-align: center;
+
+  .question{
+    font-weight: 700;
+  }
+  h3{
+    color: $hoppers-black;
+  }
+
+  .candidates{
+    display: inline-flex;
+  }
+
+  .card{
+    margin-top: 20px;
+    padding: 0;
+    width: 21vw;
+    background-color: rgba($hoppers-green, 0.1);
+    transition: background-color 0.3s;
+    &:hover{
+      background-color: white;
+    }
+  }
+
+  .list-group{
+    text-align: left;
+    
+    li{
+      background-color: transparent;
+      padding: 0;
+      padding-bottom: 10px;
+    }
+  }
+} 
+
+
+.highlight{
+  background-color: #3da08c;
+  font-weight: 700;
+  transition: background-color 0.2s;
+  &:hover{
+    background-color: transparent;
+  }
+}
+
+.typeform-share{
+  font-family: 'Roboto Condensed';
+}
+
+
 
 /* ANNOUNCEMENTS */
 
