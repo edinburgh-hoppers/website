@@ -32,7 +32,7 @@ bundle exec jekyll serve
  - \_layouts: contains the structure of our pages. A lot of variables in [Liquid](https://shopify.github.io/liquid/basics/introduction/) are present, so brushing up on how Liquid works is highly recommended. 
  - \_includes: contains sections of the websites that can be added onto a main page. This helps separate parts of a website into individual functionality. Each file is a .html file. These files can be included using the include keyword (eg: ```{% include <filename>.html %})```.
  - \_data: contains .yml files that holds all data files that are used in our website. 
- - \_assets: contains images, stylesheets, and script files that are used in the website. Stylesheets have the extension .scss, which is the [Sass](https://sass-lang.com/guide) preprocessor for CSS. Script files are in JavaScript. 
+ - \assets: contains images, stylesheets, and script files that are used in the website. Stylesheets have the extension .scss, which is the [Sass](https://sass-lang.com/guide) preprocessor for CSS. Script files are in JavaScript. Additionally, we also use [Bootstrap](https://getbootstrap.com/) to style our website.
 
 ## create big event
 
