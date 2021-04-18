@@ -8,10 +8,10 @@ data: trial_egm
     {% for position in site.data[page.data] %}
         <div id = "section pb-5">
             <h3>{{ position.title }}</h3>
-            <div id = "card-group">
+            <div id = "card-deck">
                 {% for candidate in position.candidates %}
-                    <div class="card border-secondary candidates col-sm-12 col-md-6">
-                        <img class="card-img-top" src="{{ candidate.img }}" alt="Candidate image">
+                    <div class="card border-secondary candidates text-center">
+                        <img class="card-img-top mx-auto pt-3" src="{{ candidate.img }}" alt="Candidate image"  style="width: 400px; height: 400px; object-fit: contain;">
                         <div class="card-body">
                             <h5 class = "card-title">{{ candidate.name }}</h5>
                             <!-- {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %} -->
