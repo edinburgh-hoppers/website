@@ -6,15 +6,15 @@ data: trial_egm
 
 <div class = "EGM">
     {% for position in site.data[page.data] %}
-        <div id = "section">
+        <div id = "section pb-5">
             <h3>{{ position.title }}</h3>
             <div id = "card-group">
                 {% for candidate in position.candidates %}
-                    <div class="card border-secondary candidates">
-                        <img class="card-img-top" src="{{ candidate.img }}" alt="Card image cap">
+                    <div class="card border-secondary candidates col-sm-12 col-md-6">
+                        <img class="card-img-top" src="{{ candidate.img }}" alt="Candidate image">
                         <div class="card-body">
                             <h5 class = "card-title">{{ candidate.name }}</h5>
-                            {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %}
+                            <!-- {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %} -->
                             <!-- {% if candidate.manifesto %}<h4><a href = "{{ candidate.manifesto }}" target="_blank">Manifesto</a></h4>{%endif%} -->
                         </div>
                         <div class="card-footer">
@@ -28,6 +28,7 @@ data: trial_egm
                 {% endfor %}
             </div> <!-- end of card group -->
         </div>
+        <hr>
     {% endfor %}
 
 
