@@ -1,29 +1,36 @@
 ---
 layout: default
-title: EGM 2021
-data: egm_candidates
+title: AGM 2021
+data: trial_egm
 ---
 
 <div class = "EGM">
-
-<h3 class = "display-4" style="font-size: 30px">Positions available: Secretary and Treasurer</h3>
-<h4 style="color:#666;text-decoration: underline;">Candidates</h4>
-<div id = "card-group">
-    {% for person in site.data[page.data]%}
-        <div class="card border-secondary candidates w-100" style="width: 18rem;">
-            <!-- <img class="card-img-top" src="{{ person.img }}" alt="Card image cap"> -->
-            <div class="card-body">
-                <h5 class = "card-title">{{ person.name }}</h5>
-                <h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ person.position }}</span></h6>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><span class = "question">Why do you want to be a part of Hoppers? </span><br> {{ person.answer1 }}</li>
-                    <li class="list-group-item"><span class = "question">What experience do you have related to the role chosen?</span><br> {{ person.answer2}}</li>
-                    <li class="list-group-item"><span class = "question">How would you contribute to bettering the engagement with our members? </span><br> {{ person.answer3 }}</li>
-                  </ul>
-            </div>
-        </div>  
+    {% for position in site.data[page.data] %}
+        <div id = "section">
+            <h3>{{ position.title }}</h3>
+            <div id = "card-group">
+                {% for candidate in position.candidates %}
+                    <div class="card border-secondary candidates">
+                        <img class="card-img-top" src="{{ candidate.img }}" alt="Card image cap"> 
+                        <div class="card-body">
+                            <h5 class = "card-title">{{ candidate.name }}</h5>
+                            {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %}
+                            <!-- {% if candidate.manifesto %}<h4><a href = "{{ candidate.manifesto }}" target="_blank">Manifesto</a></h4>{%endif%} -->
+                        </div>
+                        <div class="card-footer">
+                            {% if candidate.manifesto %}
+                                <medium><a href = "{{ candidate.manifesto }}" target="_blank">Manifesto</a></medium>
+                            {% else %}
+                                <small>Reopen Nomination</small>
+                            {%endif%}
+                        </div>  
+                    </div>
+                {% endfor %}
+            </div> <!-- end of card group -->
+        </div>
     {% endfor %}
-</div>
+
+
 
 
 
