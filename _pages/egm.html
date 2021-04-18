@@ -11,7 +11,7 @@ data: trial_egm
             <div id = "card-deck">
                 {% for candidate in position.candidates %}
                     <div class="card border-secondary candidates text-center">
-                        <img class="card-img-top mx-auto pt-3" src="{{ candidate.img }}" alt="Candidate image"  style="width: 400px; height: 400px; object-fit: contain;">
+                        <img class="card-img-top pt-4" src="{{ candidate.img }}" alt="Candidate image"  style="width: auto; height: 15vh; object-fit: contain;">
                         <div class="card-body">
                             <h5 class = "card-title">{{ candidate.name }}</h5>
                             <!-- {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %} -->
