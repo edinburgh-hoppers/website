@@ -11,7 +11,7 @@ data: trial_egm
             <div id = "card-group">
                 {% for candidate in position.candidates %}
                     <div class="card border-secondary candidates">
-                        <img class="card-img-top" src="{{ candidate.img }}" alt="Card image cap"> 
+                        <!--<img class="card-img-top" src="{{ candidate.img }}" alt="Card image cap">-->
                         <div class="card-body">
                             <h5 class = "card-title">{{ candidate.name }}</h5>
                             {% if candidate.roles %}<h6 class = "card.subtitle">Running for: <span style = "color: #666">{{ candidate.roles }}</span></h6> {% endif %}
@@ -21,9 +21,9 @@ data: trial_egm
                             {% if candidate.manifesto %}
                                 <medium><a href = "{{ candidate.manifesto }}" target="_blank">Manifesto</a></medium>
                             {% else %}
-                                <small>Reopen Nomination</small>
+                                <small>Re-open Nomination</small>
                             {%endif%}
-                        </div>  
+                        </div>
                     </div>
                 {% endfor %}
             </div> <!-- end of card group -->
@@ -36,7 +36,7 @@ data: trial_egm
 
 <!-- voting section -->
 
-    <a class="typeform-share button clickable mt-4" href="https://form.typeform.com/to/UifKXYPk?typeform-medium=embed-snippet" data-mode="drawer_right" 
+    <a class="typeform-share button clickable mt-4" href="https://form.typeform.com/to/UifKXYPk?typeform-medium=embed-snippet" data-mode="drawer_right"
     style="display:inline-block;
     text-decoration:none;
     background-color:#3da08c;
@@ -55,17 +55,17 @@ data: trial_egm
     font-weight:bold;
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;" target="_blank">Vote now </a>
-    <script> 
-        (function() { 
-            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; 
-            if(!gi.call(d,id)){ 
-                js=ce.call(d,"script"); 
-                js.id=id; 
-                js.src=b+"embed.js"; 
-                q=gt.call(d,"script")[0]; 
-                q.parentNode.insertBefore(js,q) 
+    <script>
+        (function() {
+            var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/";
+            if(!gi.call(d,id)){
+                js=ce.call(d,"script");
+                js.id=id;
+                js.src=b+"embed.js";
+                q=gt.call(d,"script")[0];
+                q.parentNode.insertBefore(js,q)
                 } })
-                () 
+                ()
     </script>
 
 
