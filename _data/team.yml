@@ -2,12 +2,12 @@
   img: ioana.jpg
   role: President
 
-- name: Gosia Borowiec
-  img: gosia.jpeg
+- name: Sraddheya Gurung
+  img: sraddheya.jpg
   role: Secretary
 
-- name: Kenza Amira
-  img: kenza.jpg
+- name: Regan Hwang
+  img: regan.jpg
   role: Treasurer
 
 - name: Sarah Kayser
@@ -43,7 +43,7 @@
   role: Tech Coordinator
 
 - name: Christine Friesen
-  img: 
+  img:
   role: Tech Coordinator
 
 - name: Pauline Brusset
@@ -58,3 +58,6 @@
   img: siang.jpg
   role: Diversity and Wellness Officer
 
+- name: Laura O'Sullivan
+  img: laura_o.jpg
+  role:

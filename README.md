@@ -27,18 +27,13 @@ this can be done by navigating to the repository in your terminal and issuing th
 bundle exec jekyll serve
 ```
 
+## sections of the website: 
+ - \_pages: this is where all the main pages of our website are defined. All of them mainly contain [front matter](https://jekyllrb.com/docs/front-matter/), and the majority of code goes in the \_layouts and \_includes folder. Most front matter contains a layout variable, which chooses a template from the \_layouts folder to implement. 
+ - \_layouts: contains the structure of our pages. A lot of variables in [Liquid](https://shopify.github.io/liquid/basics/introduction/) are present, so brushing up on how Liquid works is highly recommended. 
+ - \_includes: contains sections of the websites that can be added onto a main page. This helps separate parts of a website into individual functionality. Each file is a .html file. These files can be included using the include keyword. 
+ - \_data: contains .yml files that holds all data files that are used in our website. 
+ - \assets: contains images, stylesheets, and script files that are used in the website. Stylesheets have the extension .scss, which is the [Sass](https://sass-lang.com/guide) preprocessor for CSS. Script files are in JavaScript. Additionally, we also use [Bootstrap](https://getbootstrap.com/) to style our website.
+
 ## create big event
 
-Create an new file in _pages and set the following variables:
-  - layout: bigEvent
-  - cover: [Link to the cover image. Relative path starting from the img-folder.]
-  - logo: [Link to the logo. Relative path starting from the img-folder.]
-  - title: [Title of the event.]
-  - subtitle: [Subtitle of the event. OPTIONAL.]
-  - day: [Day of the event.]
-  - facebook: [Link to the event on facebook. OPTIONAL.]
-  - bookTickets: [Link to the event on eventbrite or a similar site. OPTIONAL.]
-  - navItems: [Link to the data file that lists what to include in the navbar. Every element has a text (which is shown in the navbar) and a href (a relative path, starting at the base url of the page).]
-  - subpages: Put all yml files in _data in a folder for particular event and add that folder name here. Can refer to it using the following syntax: ```{% for member in site.data[page.subpages][page.<insert element like data, faq, schedule>]%}{% endfor %}.``` 
-  - data: [Link to the event's data file which describes the page's content. Every element has a title and a includeFrom (relative path starting from the _includes folder that refers to the content of the section; using the data in the data files refered to with the following variables).]
-  - [Include links to the data files needed to display certain contents (Schedule? FAQ?). Look into the _includes folder to find already designed segments from IWD20.]
+For a big event website, create a new repository in the Hoppers organisation.
