@@ -372,24 +372,25 @@ a {
     color: $hoppers-green;
     margin: 0;
   }
+
+  .blurb p{
+    z-index: 10;
+    display: block;
+  }
+  
+  h4::before{
+    content: "";
+    display: block;
+    width: parent;
+    height: 5px;
+    background-color: rgba($hoppers-green, 0.3);
+    margin: 40px 0;
+    z-index: 1;
+  }
+  
+  .deadline{
+    font-weight: 800;
+    color:rgb(1, 82, 53);
+  }
 }
 
-.blurb p{
-  z-index: 10;
-  display: block;
-}
-
-h4::before{
-  content: "";
-  display: block;
-  width: parent;
-  height: 5px;
-  background-color: rgba($hoppers-green, 0.3);
-  margin: 40px 0;
-  z-index: 1;
-}
-
-.deadline{
-  font-weight: 800;
-  color:rgb(1, 82, 53);
-}
