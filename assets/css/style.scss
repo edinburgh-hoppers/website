@@ -9,11 +9,13 @@ $hoppers-gray: #eee;
 $hoppers-black: #444; /* Pure black text on white backgrounds can cause eye strain when users read the text over an extended period. */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,900&display=swap');
 
 /* GENERAL PROPERTIES */
 
 body {
   background-color: $hoppers-gray;
+  font-family: 'Roboto';
 }
 
 card {
@@ -162,8 +164,8 @@ a {
 
 
 .highlight{
-  background-color: #3da08c;
-  font-weight: 700;
+  background-color: rgba(#3da08c, 0.4);
+  font-weight: 600;
   transition: background-color 0.2s;
   &:hover{
     background-color: transparent;
@@ -343,4 +345,51 @@ a {
 
 .aboutUsVoices p {
   margin-bottom: 0.7rem;
+}
+
+
+/* SCHOLARSHIP */
+
+.scholarship{
+  z-index: 0;
+  ol{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  ol li{
+    counter-increment: step-counter;
+    left: 10px;
+  }
+
+  ol li::before{
+    content: counter(step-counter) ". ";
+    white-space: pre;
+    font-size: 1.2em;
+    font-weight: 600;
+    height: 50px;
+    color: $hoppers-green;
+    margin: 0;
+  }
+}
+
+.blurb p{
+  z-index: 10;
+  display: block;
+}
+
+h4::before{
+  content: "";
+  display: block;
+  width: parent;
+  height: 5px;
+  background-color: rgba($hoppers-green, 0.3);
+  margin: 40px 0;
+  z-index: 1;
+}
+
+.deadline{
+  font-weight: 800;
+  color:rgb(1, 82, 53);
 }
