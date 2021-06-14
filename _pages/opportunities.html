@@ -24,22 +24,34 @@ data: opportunities
         var data = results.data
         let date = moment();
         let eventDate;
-        let formattedDate;
+        let closingDate;
+        let closingMessage;
+
+        
         
         if (data.length === 0) {
           $('#opportunities').append(
-              
-            '<h4 class="opp-title"><span>No opportunities available at this time</span></h4>'
+            '<div style="text-align: center">' +
+              '<h5 class="opp-title"><span>No opportunities available at this time</span></h5>' +
+            '</div>'
           );
         } else {
+          console.log(data.length);
           for (var i = 0; i < data.length; i++) {
+
+            if (data[i].ClosingDate) {
+              closingDate = moment(data[i].ClosingDate, "DD-MM-YYYY").format("Do MMMM YYYY")
+              closingMessage = '<p class="opp-title"><b>Applications close on '+ closingDate + '</b></p>'
+            }
 
             $('#opportunities').append(
               
               '<div class="opportunity-card">' +
                 '<h4 class="opp-title"><span>' + data[i].Title + '</span></h4>' +
                 '<h5 class="opp-company">' + data[i].Company +  '</h5>' +
+                '<h6 class="opp-title">Location: ' + data[i].Location +  '</h6>' +
                 '<p class="opp-title">'+ data[i].Description + '</p>' +
+                closingMessage +
                 '<a class="col-12 col-md-5 col-lg-4 button clickable" href="' + data[i].Link + '" target="_blank"> Find out more </a>' +
               '</div>'
             );
