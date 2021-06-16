@@ -4,35 +4,35 @@ title: Opportunities
 data: opportunities
 ---
 
-<div id = "opportunities-page">
+<div id="opportunities-page">
   <div id="opportunities">
   </div>
-</div> 
+</div>
 
 <script src="./papaparse.min.js"></script>
 <script src="./moment.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  
-  <script>
-    const link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSNnb-Ca4JiuC3OuX7W2IgF1SFSsDgELWJjNN1vgaHemw7RjAYHky3AGre2t5QGKRSD9jZ4SdnznmE1/pub?output=csv';
 
-    function init() {
-      Papa.parse(link, {
+<script>
+  const link = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSNnb-Ca4JiuC3OuX7W2IgF1SFSsDgELWJjNN1vgaHemw7RjAYHky3AGre2t5QGKRSD9jZ4SdnznmE1/pub?output=csv';
+
+  function init() {
+    Papa.parse(link, {
       download: true,
       header: true,
-      complete: function(results) {
+      complete: function (results) {
         var data = results.data
         let date = moment();
         let eventDate;
         let closingDate;
         let closingMessage;
 
-        
-        
+
+
         if (data.length === 0) {
           $('#opportunities').append(
             '<div style="text-align: center">' +
-              '<h5 class="opp-title"><span>No opportunities available at this time</span></h5>' +
+            '<h5 class="opp-title"><span>No opportunities available at this time</span></h5>' +
             '</div>'
           );
         } else {
@@ -41,26 +41,26 @@ data: opportunities
 
             if (data[i].ClosingDate) {
               closingDate = moment(data[i].ClosingDate, "DD-MM-YYYY").format("Do MMMM YYYY")
-              closingMessage = '<p class="opp-title"><b>Applications close on '+ closingDate + '</b></p>'
+              closingMessage = '<p class="opp-desc"><b>Applications close on ' + closingDate + '</b></p>'
             }
 
             $('#opportunities').append(
-              
+
               '<div class="opportunity-card">' +
-                '<h4 class="opp-title"><span>' + data[i].Title + '</span></h4>' +
-                '<h5 class="opp-company">' + data[i].Company +  '</h5>' +
-                '<h6 class="opp-title">Location: ' + data[i].Location +  '</h6>' +
-                '<p class="opp-title">'+ data[i].Description + '</p>' +
-                closingMessage +
-                '<a class="col-12 col-md-5 col-lg-4 button clickable" href="' + data[i].Link + '" target="_blank"> Find out more </a>' +
+              '<h5 class="opp-title"><span>' + data[i].Title + '</span></h5>' +
+              '<h6 class="opp-company">' + data[i].Company + '</h6>' +
+              '<h6 class="opp-title">Location: ' + data[i].Location + '</h6>' +
+              '<p class="opp-desc">' + data[i].Description + '</p>' +
+              closingMessage +
+              '<a class="col-12 col-md-5 col-lg-4 button clickable" href="' + data[i].Link + '" target="_blank"> Find out more </a>' +
               '</div>'
             );
           }
         }
 
-        
-      }
-    })}
-    window.addEventListener('DOMContentLoaded', init)
-  </script>
 
+      }
+    })
+  }
+  window.addEventListener('DOMContentLoaded', init)
+</script>
