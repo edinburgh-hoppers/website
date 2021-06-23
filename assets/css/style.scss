@@ -14,7 +14,7 @@ $hoppers-black: #444; /* Pure black text on white backgrounds can cause eye stra
 /* GENERAL PROPERTIES */
 
 body {
-  background-color: $hoppers-gray;
+  /*background-color: $hoppers-gray;*/
   font-family: 'Roboto';
 }
 
@@ -30,7 +30,7 @@ h2, p {
   color: $hoppers-black;
 }
 
-a { 
+a {
   color: $hoppers-green;
   font-weight: bold;
 
@@ -113,18 +113,18 @@ a {
 
 .clickable {
   transition: transform $jwow-ease-out;
-  
+
   &:hover {
     transition: transform $jwow-ease;
     transform: scale(1.05);
   }
-  
+
   &:active {
     transform: scale(1.07);
   }
 }
 
-//egm 
+//egm
 
 .EGM{
   text-align: center;
@@ -153,14 +153,14 @@ a {
 
   .list-group{
     text-align: left;
-    
+
     li{
       background-color: transparent;
       padding: 0;
       padding-bottom: 10px;
     }
   }
-} 
+}
 
 
 .highlight{
@@ -377,7 +377,7 @@ a {
     z-index: 10;
     display: block;
   }
-  
+
   h4::before{
     content: "";
     display: block;
@@ -387,10 +387,9 @@ a {
     margin: 40px 0;
     z-index: 1;
   }
-  
+
   .deadline{
     font-weight: 800;
     color:rgb(1, 82, 53);
   }
 }
-
